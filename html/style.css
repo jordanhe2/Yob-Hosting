@@ -257,6 +257,7 @@ table tr th :last-child, table tr td :last-child {
 
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 span.frame {
