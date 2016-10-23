@@ -2,36 +2,26 @@
 
 <h1 id="usingcalculatedcolumns">Using Calculated Columns</h1>
 
-<p>Calculated Columns are a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry.</p>
-
-<p>Each column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header.</p>
+<p>Calculated Columns is a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry. Another benefit of Calculated Columns is that they are updated dynamically, so you can make changes on the fly without having to manually recalculate anything.
+Each column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header.</p>
 
 <p>The Calculated Column menu contains 3 items:</p>
 
 <ol>
-<li>The enabled checkbox.</li>
-<li>The expression field.</li>
-<li>The Data Type selector.</li>
+<li>The expression field</li>
+<li>The data selector</li>
+<li>The enabled checkbox</li>
 </ol>
 
 <h3 id="theexpressionfield">The Expression Field</h3>
 
-<p>The expression field is where the magic happens.</p>
-
-<p>Every Calculated Column expression needs another Column within it that is not dependent on the selected Column.</p>
+<p>The expression field is what is used to generate the values of the column. An example would be be <code>d1c1 + 2*d2c1</code>, which would make each value of the column be the sum of the cooresponding value in the first column of the first Data Set and twice the cooresponding value of the first column of the second Data Set. You can also reference Functions or Curve Fits in your expressions. For example, <code>f3(d1c1) / 10</code> would make each value of the column be 1/10th of the first column of the first Data Set run through the third function. One thing to watch out for, however, is circular dependencies. For example, you can&#8217;t have d1c1 use d2c1 in its expression if d2c1 uses d3c1 and d3c1 uses d1c1, because of the circular dependencies. [more on this]</p>
 
 <h3 id="thedatatypeselector">The Data Type Selector</h3>
 
-<p>The Data Type selector provides an more accessible way to figure out which Data Type it is that you want to use in your Calculated Column expression.</p>
+<p>The data selector provides an easy way to figure out which item it is that you want to use in your Calculated Column expression. For example, if you wanted to use the Distance column from a Distance vs Time Data Set but didn&#8217;t know its number, you could simply select it from the list then click &#8220;Insert&#8221;, which will insert the proper text&#8230; [more on this]</p>
 
 <h3 id="theenabledcheckbox">The Enabled Checkbox</h3>
 
-<p>The enabled checkbox sets whether or not the selected Column should generate (or calculate) its values from the expression.</p>
-
-<p>Calculated Columns cells appear yellow and cannot be modified within the table editor like regular Columns can.</p>
-
-<hr />
-
-<h1 id="example">Example</h1>
-
-<p>&#8230;</p>
+<p>The enabled checkbox sets whether or not the Column should generate (or calculate) its values from the expression.
+Calculated Columns cells appear yellow and cannot be modified within the table editor like regular Columns can.</p>
