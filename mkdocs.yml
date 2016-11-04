@@ -1,2 +1,9 @@
 site_name: Yob User Manual
-theme: yeti
+theme: cosmo
+pages:
+- Home: 'index.md'
+- Tutorials:
+    - 'Getting Started': 'tutorials/getting_started.md'
+    - 'Using Calculated Columns': 'tutorials/calculated_columns.md'
+- Reference: 'reference/reference.md'
+- About: 'about.md'

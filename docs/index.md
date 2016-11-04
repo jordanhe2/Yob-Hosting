@@ -1,13 +1,17 @@
-<link rel="stylesheet" href="./style.css">
-
 # ![Yob](https://rawgit.com/jordanhe2/Yob-Hosting/master/img/logo.png) Yob User Manual
-
 ---
 
-Welcome to the Yob Documentation page.  There's nothing here yet, but there will be soon.
+## Overview
+Yob is a **fast** and **simple** graphing tool that's geared towards performing graphical analysis...
 
-## Links
-For now, check out these awesome links:
+### Feature 1
 
-* [Interface](./interface/interface.html)
-* [How-To-Guides](./how-to/howto.html)
+### Feature 2
+
+### Preview your graph as you work
+
+### Feature 4
+
+---
+## Installation
+...

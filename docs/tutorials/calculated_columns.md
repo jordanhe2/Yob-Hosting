@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../style.css"/>
-
 # Using Calculated Columns
 
 Calculated Columns is a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry.  Another benefit of Calculated Columns is that they are updated dynamically, so you can make changes on the fly without having to manually recalculate anything.

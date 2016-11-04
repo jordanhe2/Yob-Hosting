@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../style.css"/>
-
 # Reference
 
 Here you can view the syntax of referring to each Data Type within expressions.

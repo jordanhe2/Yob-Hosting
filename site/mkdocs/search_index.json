@@ -2,28 +2,78 @@
     "docs": [
         {
             "location": "/",
-            "text": "Yob User Manual\n\n\n\n\nWelcome to the Yob Documentation page.  There's nothing here yet, but there will be soon.\n\n\nLinks\n\n\nFor now, check out these awesome links:\n\n\n\n\nInterface\n\n\nHow-To-Guides",
+            "text": "Yob User Manual\n\n\n\n\nOverview\n\n\nYob is a \nfast\n and \nsimple\n graphing tool that's geared towards performing graphical analysis...\n\n\nFeature 1\n\n\nFeature 2\n\n\nPreview your graph as you work\n\n\nFeature 4\n\n\n\n\nInstallation\n\n\n...",
             "title": "Home"
         },
         {
             "location": "/#yob-user-manual",
-            "text": "Welcome to the Yob Documentation page.  There's nothing here yet, but there will be soon.",
+            "text": "",
             "title": "Yob User Manual"
         },
         {
-            "location": "/#links",
-            "text": "For now, check out these awesome links:   Interface  How-To-Guides",
-            "title": "Links"
+            "location": "/#overview",
+            "text": "Yob is a  fast  and  simple  graphing tool that's geared towards performing graphical analysis...",
+            "title": "Overview"
         },
         {
-            "location": "/thankyou/",
-            "text": "Thank you!\n\n\n\n\nYou bought Yob!  You're great!",
-            "title": "Thankyou"
+            "location": "/#feature-1",
+            "text": "",
+            "title": "Feature 1"
         },
         {
-            "location": "/thankyou/#thank-you",
-            "text": "You bought Yob!  You're great!",
-            "title": "Thank you!"
+            "location": "/#feature-2",
+            "text": "",
+            "title": "Feature 2"
+        },
+        {
+            "location": "/#preview-your-graph-as-you-work",
+            "text": "",
+            "title": "Preview your graph as you work"
+        },
+        {
+            "location": "/#feature-4",
+            "text": "",
+            "title": "Feature 4"
+        },
+        {
+            "location": "/#installation",
+            "text": "...",
+            "title": "Installation"
+        },
+        {
+            "location": "/tutorials/getting_started/",
+            "text": "Getting Started",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/tutorials/getting_started/#getting-started",
+            "text": "",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/tutorials/calculated_columns/",
+            "text": "Using Calculated Columns\n\n\nCalculated Columns is a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry.  Another benefit of Calculated Columns is that they are updated dynamically, so you can make changes on the fly without having to manually recalculate anything.\nEach column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header.\n\n\nThe Calculated Column menu contains 3 items:\n\n\n\n\nThe expression field\n\n\nThe data selector\n\n\nThe enabled checkbox\n\n\n\n\nThe Expression Field\n\n\nThe expression field is what is used to generate the values of the column.  An example would be be \nd1c1 + 2*d2c1\n, which would make each value of the column be the sum of the cooresponding value in the first column of the first Data Set and twice the cooresponding value of the first column of the second Data Set.  You can also reference Functions or Curve Fits in your expressions.  For example, \nf3(d1c1) / 10\n would make each value of the column be 1/10th of the first column of the first Data Set run through the third function.  One thing to watch out for, however, is circular dependencies.  For example, you can't have d1c1 use d2c1 in its expression if d2c1 uses d3c1 and d3c1 uses d1c1, because of the circular dependencies. [more on this]\n\n\nThe Data Type Selector\n\n\nThe data selector provides an easy way to figure out which item it is that you want to use in your Calculated Column expression.  For example, if you wanted to use the Distance column from a Distance vs Time Data Set but didn't know its number, you could simply select it from the list then click \"Insert\", which will insert the proper text... [more on this]\n\n\nThe Enabled Checkbox\n\n\nThe enabled checkbox sets whether or not the Column should generate (or calculate) its values from the expression.\nCalculated Columns cells appear yellow and cannot be modified within the table editor like regular Columns can.",
+            "title": "Using Calculated Columns"
+        },
+        {
+            "location": "/tutorials/calculated_columns/#using-calculated-columns",
+            "text": "Calculated Columns is a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry.  Another benefit of Calculated Columns is that they are updated dynamically, so you can make changes on the fly without having to manually recalculate anything.\nEach column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header.  The Calculated Column menu contains 3 items:   The expression field  The data selector  The enabled checkbox",
+            "title": "Using Calculated Columns"
+        },
+        {
+            "location": "/tutorials/calculated_columns/#the-expression-field",
+            "text": "The expression field is what is used to generate the values of the column.  An example would be be  d1c1 + 2*d2c1 , which would make each value of the column be the sum of the cooresponding value in the first column of the first Data Set and twice the cooresponding value of the first column of the second Data Set.  You can also reference Functions or Curve Fits in your expressions.  For example,  f3(d1c1) / 10  would make each value of the column be 1/10th of the first column of the first Data Set run through the third function.  One thing to watch out for, however, is circular dependencies.  For example, you can't have d1c1 use d2c1 in its expression if d2c1 uses d3c1 and d3c1 uses d1c1, because of the circular dependencies. [more on this]",
+            "title": "The Expression Field"
+        },
+        {
+            "location": "/tutorials/calculated_columns/#the-data-type-selector",
+            "text": "The data selector provides an easy way to figure out which item it is that you want to use in your Calculated Column expression.  For example, if you wanted to use the Distance column from a Distance vs Time Data Set but didn't know its number, you could simply select it from the list then click \"Insert\", which will insert the proper text... [more on this]",
+            "title": "The Data Type Selector"
+        },
+        {
+            "location": "/tutorials/calculated_columns/#the-enabled-checkbox",
+            "text": "The enabled checkbox sets whether or not the Column should generate (or calculate) its values from the expression.\nCalculated Columns cells appear yellow and cannot be modified within the table editor like regular Columns can.",
+            "title": "The Enabled Checkbox"
         },
         {
             "location": "/reference/reference/",
@@ -56,49 +106,14 @@
             "title": "Curve Fits"
         },
         {
-            "location": "/tutorials/calccol/",
-            "text": "Using Calculated Columns\n\n\nCalculated Columns is a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry.  Another benefit of Calculated Columns is that they are updated dynamically, so you can make changes on the fly without having to manually recalculate anything.\nEach column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header.\n\n\nThe Calculated Column menu contains 3 items:\n\n\n\n\nThe expression field\n\n\nThe data selector\n\n\nThe enabled checkbox\n\n\n\n\nThe Expression Field\n\n\nThe expression field is what is used to generate the values of the column.  An example would be be \nd1c1 + 2*d2c1\n, which would make each value of the column be the sum of the cooresponding value in the first column of the first Data Set and twice the cooresponding value of the first column of the second Data Set.  You can also reference Functions or Curve Fits in your expressions.  For example, \nf3(d1c1) / 10\n would make each value of the column be 1/10th of the first column of the first Data Set run through the third function.  One thing to watch out for, however, is circular dependencies.  For example, you can't have d1c1 use d2c1 in its expression if d2c1 uses d3c1 and d3c1 uses d1c1, because of the circular dependencies. [more on this]\n\n\nThe Data Type Selector\n\n\nThe data selector provides an easy way to figure out which item it is that you want to use in your Calculated Column expression.  For example, if you wanted to use the Distance column from a Distance vs Time Data Set but didn't know its number, you could simply select it from the list then click \"Insert\", which will insert the proper text... [more on this]\n\n\nThe Enabled Checkbox\n\n\nThe enabled checkbox sets whether or not the Column should generate (or calculate) its values from the expression.\nCalculated Columns cells appear yellow and cannot be modified within the table editor like regular Columns can.",
-            "title": "Calccol"
+            "location": "/about/",
+            "text": "About",
+            "title": "About"
         },
         {
-            "location": "/tutorials/calccol/#using-calculated-columns",
-            "text": "Calculated Columns is a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry.  Another benefit of Calculated Columns is that they are updated dynamically, so you can make changes on the fly without having to manually recalculate anything.\nEach column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header.  The Calculated Column menu contains 3 items:   The expression field  The data selector  The enabled checkbox",
-            "title": "Using Calculated Columns"
-        },
-        {
-            "location": "/tutorials/calccol/#the-expression-field",
-            "text": "The expression field is what is used to generate the values of the column.  An example would be be  d1c1 + 2*d2c1 , which would make each value of the column be the sum of the cooresponding value in the first column of the first Data Set and twice the cooresponding value of the first column of the second Data Set.  You can also reference Functions or Curve Fits in your expressions.  For example,  f3(d1c1) / 10  would make each value of the column be 1/10th of the first column of the first Data Set run through the third function.  One thing to watch out for, however, is circular dependencies.  For example, you can't have d1c1 use d2c1 in its expression if d2c1 uses d3c1 and d3c1 uses d1c1, because of the circular dependencies. [more on this]",
-            "title": "The Expression Field"
-        },
-        {
-            "location": "/tutorials/calccol/#the-data-type-selector",
-            "text": "The data selector provides an easy way to figure out which item it is that you want to use in your Calculated Column expression.  For example, if you wanted to use the Distance column from a Distance vs Time Data Set but didn't know its number, you could simply select it from the list then click \"Insert\", which will insert the proper text... [more on this]",
-            "title": "The Data Type Selector"
-        },
-        {
-            "location": "/tutorials/calccol/#the-enabled-checkbox",
-            "text": "The enabled checkbox sets whether or not the Column should generate (or calculate) its values from the expression.\nCalculated Columns cells appear yellow and cannot be modified within the table editor like regular Columns can.",
-            "title": "The Enabled Checkbox"
-        },
-        {
-            "location": "/tutorials/getting_started/",
-            "text": "Getting Started",
-            "title": "Getting started"
-        },
-        {
-            "location": "/tutorials/getting_started/#getting-started",
+            "location": "/about/#about",
             "text": "",
-            "title": "Getting Started"
-        },
-        {
-            "location": "/tutorials/howto/",
-            "text": "This is where a how-to guide might be placed\n\n\n\n\nPretty neat, huh?",
-            "title": "Howto"
-        },
-        {
-            "location": "/tutorials/howto/#this-is-where-a-how-to-guide-might-be-placed",
-            "text": "Pretty neat, huh?",
-            "title": "This is where a how-to guide might be placed"
+            "title": "About"
         }
     ]
 }

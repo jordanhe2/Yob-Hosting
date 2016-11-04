@@ -3,15 +3,7 @@
 
 
     <url>
-     <loc>None/</loc>
-     <lastmod>2016-11-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-
-
-
-    <url>
-     <loc>None/thankyou/</loc>
+     <loc>/</loc>
      <lastmod>2016-11-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -20,33 +12,33 @@
 
 
     <url>
-     <loc>None/reference/reference/</loc>
-     <lastmod>2016-11-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-
-
-
-
-
-    <url>
-     <loc>None/tutorials/calccol/</loc>
+     <loc>/tutorials/getting_started/</loc>
      <lastmod>2016-11-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
 
     <url>
-     <loc>None/tutorials/getting_started/</loc>
+     <loc>/tutorials/calculated_columns/</loc>
      <lastmod>2016-11-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
+
+
+
 
     <url>
-     <loc>None/tutorials/howto/</loc>
+     <loc>/reference/reference/</loc>
      <lastmod>2016-11-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
 
+
+
+    <url>
+     <loc>/about/</loc>
+     <lastmod>2016-11-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
 
 
 </urlset>
