@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Yob User Manual\n\n\n\n\nOverview\n\n\nYob is a \nfast\n and \nsimple\n graphing tool that's geared towards performing graphical analysis...\n\n\nFeature 1\n\n\nFeature 2\n\n\nPreview your graph as you work\n\n\nFeature 4\n\n\n\n\nInstallation\n\n\n...",
+            "text": "Yob User Manual\n\n\n\n\nOverview\n\n\nYob is a \nfast\n and \nsimple\n graphing tool that's geared towards performing graphical analysis within Google Docs.\n\n\nSimple but powerful\n\n\nMaking graphs in Yob is quick and easy, making it a great choice for users who just want to plot some data and stick the graph in a document, but Yob also comes with many advanced features such as \ncalculated columns\n and \nnon-linear curve fitting\n, making it a useful tool for more advanced users as well.\n\n\nConvenient\n\n\nYob runs entirely within a Google Doc, so you never have to worry about transferring graphs between your computer and the document.  In fact, Yob \nblurs the lines\n between graph files and your document entirely.\n\n\n\n\nInstallation\n\n\n...",
             "title": "Home"
         },
         {
@@ -12,28 +12,18 @@
         },
         {
             "location": "/#overview",
-            "text": "Yob is a  fast  and  simple  graphing tool that's geared towards performing graphical analysis...",
+            "text": "Yob is a  fast  and  simple  graphing tool that's geared towards performing graphical analysis within Google Docs.",
             "title": "Overview"
         },
         {
-            "location": "/#feature-1",
-            "text": "",
-            "title": "Feature 1"
+            "location": "/#simple-but-powerful",
+            "text": "Making graphs in Yob is quick and easy, making it a great choice for users who just want to plot some data and stick the graph in a document, but Yob also comes with many advanced features such as  calculated columns  and  non-linear curve fitting , making it a useful tool for more advanced users as well.",
+            "title": "Simple but powerful"
         },
         {
-            "location": "/#feature-2",
-            "text": "",
-            "title": "Feature 2"
-        },
-        {
-            "location": "/#preview-your-graph-as-you-work",
-            "text": "",
-            "title": "Preview your graph as you work"
-        },
-        {
-            "location": "/#feature-4",
-            "text": "",
-            "title": "Feature 4"
+            "location": "/#convenient",
+            "text": "Yob runs entirely within a Google Doc, so you never have to worry about transferring graphs between your computer and the document.  In fact, Yob  blurs the lines  between graph files and your document entirely.",
+            "title": "Convenient"
         },
         {
             "location": "/#installation",
