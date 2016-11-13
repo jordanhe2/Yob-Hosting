@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Yob User Manual\n\n\n\n\nOverview\n\n\nYob is a \nfast\n and \nsimple\n graphing tool that's geared towards performing graphical analysis within Google Docs.\n\n\nSimple but powerful\n\n\nMaking graphs in Yob is quick and easy, making it a great choice for users who just want to plot some data and stick the graph in a document, but Yob also comes with many advanced features such as \ncalculated columns\n and \nnon-linear curve fitting\n, making it a useful tool for more advanced users as well.\n\n\nConvenient\n\n\nYob runs entirely within a Google Doc, so you never have to worry about transferring graphs between your computer and the document.  In fact, Yob \nblurs the lines\n between graph files and your document entirely.\n\n\n\n\nGetting Started\n\n\n...",
+            "text": "Yob User Manual\n\n\n\n\nOverview\n\n\nYob is a \nfast\n and \nsimple\n graphing tool that's geared towards performing graphical analysis within Google Docs.\n\n\nSimple but powerful\n\n\nMaking graphs in Yob is quick and easy, making it a great choice for users who just want to plot some data and stick the graph in a document.  However, Yob also comes with many advanced features such as \ncalculated columns\n and \nnon-linear curve fitting\n, making it a useful tool for more advanced users.\n\n\nConvenient\n\n\nYob runs entirely within a Google Doc, so you never have to worry about transferring graphs between your computer and the document.  In fact, Yob \nblurs the lines\n between graph files and your document entirely.\n\n\n\n\nGetting Started\n\n\nFollow \nthis tutorial\n to familiarize yourself with the basics of Yob.  More advanced users can check out \nthe reference\n to learn more.",
             "title": "Home"
         },
         {
@@ -17,7 +17,7 @@
         },
         {
             "location": "/#simple-but-powerful",
-            "text": "Making graphs in Yob is quick and easy, making it a great choice for users who just want to plot some data and stick the graph in a document, but Yob also comes with many advanced features such as  calculated columns  and  non-linear curve fitting , making it a useful tool for more advanced users as well.",
+            "text": "Making graphs in Yob is quick and easy, making it a great choice for users who just want to plot some data and stick the graph in a document.  However, Yob also comes with many advanced features such as  calculated columns  and  non-linear curve fitting , making it a useful tool for more advanced users.",
             "title": "Simple but powerful"
         },
         {
@@ -27,78 +27,168 @@
         },
         {
             "location": "/#getting-started",
-            "text": "...",
+            "text": "Follow  this tutorial  to familiarize yourself with the basics of Yob.  More advanced users can check out  the reference  to learn more.",
             "title": "Getting Started"
         },
         {
             "location": "/tutorials/getting_started/",
-            "text": "Getting Started\n\n\n...\n\n\n\n\nInstallation\n\n\n...",
+            "text": "Getting Started\n\n\nFor this tutorial, we will demonstrate the basics of Yob by plotting the time and distance traveled of a ball rolling across the floor and determining its projected distance traveled as time goes on.\n\n\n\n\nInstallation\n\n\nFirst thing\u2019s first.  If you don\u2019t have Yob installed already, visit our \nGoogle Doc add-on store page\n and click \u201cInstall.\u201d In order to use Yob, you must be within a Google Doc.  You can launch the program from the Add-ons toolbar under Yob and select \u201cOpen Graph Editor\u201d.\n\n\n\n\nThe Home Screen\n\n\nWhen you open the graph editor, you should see something like this:\n\n\n\n\n\nThe home screen is organized into two sections:  the graph preview, and the main menu. The graph preview can be moved by clicking and dragging, and zoomed by scrolling the mouse wheel. The main menu contains several submenus for managing specific parts of your graph.  Let\u2019s start with the Data Set menu.\n\n\nPlotting Data\n\n\nClick \u201cData Sets\u201d from the main menu, then click the + icon to create a new Data Set. Locate the table editor at the bottom of the menu.  Here, we can enter the time-distance data from our ball experiment. Here is some sample data that we have supplied for you (you may simply copy and paste this data):\n\n\n\n    \n\n    \n\n        \nTime (s)\n\n        \nDistance (cm)\n\n    \n\n    \n\n    \n\n        \n1\n\n        \n2\n\n    \n\n    \n\n        \n3\n\n        \n3.2\n\n    \n\n    \n\n        \n5\n\n        \n2.9\n\n    \n\n    \n\n        \n7\n\n        \n4.4\n\n    \n\n\n\n\n\nOnce entered into the table, the data can be viewed in the graph preview.\n\n\nNext, let\u2019s put proper labels on our Data Set.  We will set the xLabel field to \nTime\n and the xUnit field to \ns\n for seconds, then the yLabel field to \nDistance\n and the yUnit field to \ncm\n for centimeters.\n\n\nYour graph should now look something like the following:\n\n\n\n\n\nFinding the Projected Distance\n\n\nNow that we have plotted the data, we can find the projected distance of the ball as time goes on. To accomplish this, we want to create a Curve Fit, which will calculate the line of best fit, given a Data Set and a model.\n\n\nClick \u201cBack\u201d to return to the main menu.  Then click the Curve Fits submenu, and click the + icon to create a new Curve Fit.\n\n\nSet the data source of the new Curve Fit to the Data Set we previously created:  Data Set 1. Then change the model type from none to linear. Viola! You should now see the line of best fit for this data on the graph.\n\n\n\n\n\nAdding the Finishing Touches\n\n\nTo introduce a little more color on this graph, let\u2019s change the style of the Curve Fit line.  To accomplish this, click on the line preview icon near the top of the menu.  You will be presented with several styling options.  Let\u2019s change the color blue and make the line dashed, like so:\n\n\n\n\n\nAnd what\u2019s a graph without a title?  A title can be added to the graph back in the Labels submenu.  At the top of the menu, enter \u201cDistance vs Time\u201d in the Title field.\n\n\nInserting the Graph\n\n\nNow that our graph is complete, we can send it to the document. To do this, simply click \u201cInsert\u201d at the top of Yob, then select the size of the graph you want to insert. After the graph is added, you may notice that it has a link attached to it. \nDo not remove this link.\n This link is how Yob knows where the graph data is stored on your Google Drive account, so that you may edit the graph later if you wish.\n\n\nIf you wish to learn more about how Yob stores graph data, view \nthe data storage reference\n where we explain in greater detail.\n\n\nCheck Out the Other Tutorials\n\n\nYob is full of great features that are covered throughout our tutorial series. Click the \u201cNext\u201d button above to move on to the next tutorial.",
             "title": "Getting Started"
         },
         {
             "location": "/tutorials/getting_started/#getting-started",
-            "text": "...",
+            "text": "For this tutorial, we will demonstrate the basics of Yob by plotting the time and distance traveled of a ball rolling across the floor and determining its projected distance traveled as time goes on.",
             "title": "Getting Started"
         },
         {
             "location": "/tutorials/getting_started/#installation",
-            "text": "...",
+            "text": "First thing\u2019s first.  If you don\u2019t have Yob installed already, visit our  Google Doc add-on store page  and click \u201cInstall.\u201d In order to use Yob, you must be within a Google Doc.  You can launch the program from the Add-ons toolbar under Yob and select \u201cOpen Graph Editor\u201d.",
             "title": "Installation"
         },
         {
-            "location": "/tutorials/calculated_columns/",
-            "text": "Using Calculated Columns\n\n\nCalculated Columns is a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry.  Another benefit of Calculated Columns is that they are updated dynamically, so you can make changes on the fly without having to manually recalculate anything.\nEach column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header.\n\n\nThe Calculated Column menu contains 3 items:\n\n\n\n\nThe expression field\n\n\nThe data selector\n\n\nThe enabled checkbox\n\n\n\n\nThe Expression Field\n\n\nThe expression field is what is used to generate the values of the column.  An example would be be \nd1c1 + 2*d2c1\n, which would make each value of the column be the sum of the cooresponding value in the first column of the first Data Set and twice the cooresponding value of the first column of the second Data Set.  You can also reference Functions or Curve Fits in your expressions.  For example, \nf3(d1c1) / 10\n would make each value of the column be 1/10th of the first column of the first Data Set run through the third function.  One thing to watch out for, however, is circular dependencies.  For example, you can't have d1c1 use d2c1 in its expression if d2c1 uses d3c1 and d3c1 uses d1c1, because of the circular dependencies. [more on this]\n\n\nThe Data Type Selector\n\n\nThe data selector provides an easy way to figure out which item it is that you want to use in your Calculated Column expression.  For example, if you wanted to use the Distance column from a Distance vs Time Data Set but didn't know its number, you could simply select it from the list then click \"Insert\", which will insert the proper text... [more on this]\n\n\nThe Enabled Checkbox\n\n\nThe enabled checkbox sets whether or not the Column should generate (or calculate) its values from the expression.\nCalculated Columns cells appear yellow and cannot be modified within the table editor like regular Columns can.",
-            "title": "Using Calculated Columns"
+            "location": "/tutorials/getting_started/#the-home-screen",
+            "text": "When you open the graph editor, you should see something like this:   The home screen is organized into two sections:  the graph preview, and the main menu. The graph preview can be moved by clicking and dragging, and zoomed by scrolling the mouse wheel. The main menu contains several submenus for managing specific parts of your graph.  Let\u2019s start with the Data Set menu.",
+            "title": "The Home Screen"
         },
         {
-            "location": "/tutorials/calculated_columns/#using-calculated-columns",
-            "text": "Calculated Columns is a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry.  Another benefit of Calculated Columns is that they are updated dynamically, so you can make changes on the fly without having to manually recalculate anything.\nEach column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header.  The Calculated Column menu contains 3 items:   The expression field  The data selector  The enabled checkbox",
-            "title": "Using Calculated Columns"
+            "location": "/tutorials/getting_started/#plotting-data",
+            "text": "Click \u201cData Sets\u201d from the main menu, then click the + icon to create a new Data Set. Locate the table editor at the bottom of the menu.  Here, we can enter the time-distance data from our ball experiment. Here is some sample data that we have supplied for you (you may simply copy and paste this data):  \n     \n     \n         Time (s) \n         Distance (cm) \n     \n     \n     \n         1 \n         2 \n     \n     \n         3 \n         3.2 \n     \n     \n         5 \n         2.9 \n     \n     \n         7 \n         4.4 \n       Once entered into the table, the data can be viewed in the graph preview.  Next, let\u2019s put proper labels on our Data Set.  We will set the xLabel field to  Time  and the xUnit field to  s  for seconds, then the yLabel field to  Distance  and the yUnit field to  cm  for centimeters.  Your graph should now look something like the following:",
+            "title": "Plotting Data"
         },
         {
-            "location": "/tutorials/calculated_columns/#the-expression-field",
-            "text": "The expression field is what is used to generate the values of the column.  An example would be be  d1c1 + 2*d2c1 , which would make each value of the column be the sum of the cooresponding value in the first column of the first Data Set and twice the cooresponding value of the first column of the second Data Set.  You can also reference Functions or Curve Fits in your expressions.  For example,  f3(d1c1) / 10  would make each value of the column be 1/10th of the first column of the first Data Set run through the third function.  One thing to watch out for, however, is circular dependencies.  For example, you can't have d1c1 use d2c1 in its expression if d2c1 uses d3c1 and d3c1 uses d1c1, because of the circular dependencies. [more on this]",
-            "title": "The Expression Field"
+            "location": "/tutorials/getting_started/#finding-the-projected-distance",
+            "text": "Now that we have plotted the data, we can find the projected distance of the ball as time goes on. To accomplish this, we want to create a Curve Fit, which will calculate the line of best fit, given a Data Set and a model.  Click \u201cBack\u201d to return to the main menu.  Then click the Curve Fits submenu, and click the + icon to create a new Curve Fit.  Set the data source of the new Curve Fit to the Data Set we previously created:  Data Set 1. Then change the model type from none to linear. Viola! You should now see the line of best fit for this data on the graph.",
+            "title": "Finding the Projected Distance"
         },
         {
-            "location": "/tutorials/calculated_columns/#the-data-type-selector",
-            "text": "The data selector provides an easy way to figure out which item it is that you want to use in your Calculated Column expression.  For example, if you wanted to use the Distance column from a Distance vs Time Data Set but didn't know its number, you could simply select it from the list then click \"Insert\", which will insert the proper text... [more on this]",
-            "title": "The Data Type Selector"
+            "location": "/tutorials/getting_started/#adding-the-finishing-touches",
+            "text": "To introduce a little more color on this graph, let\u2019s change the style of the Curve Fit line.  To accomplish this, click on the line preview icon near the top of the menu.  You will be presented with several styling options.  Let\u2019s change the color blue and make the line dashed, like so:   And what\u2019s a graph without a title?  A title can be added to the graph back in the Labels submenu.  At the top of the menu, enter \u201cDistance vs Time\u201d in the Title field.",
+            "title": "Adding the Finishing Touches"
         },
         {
-            "location": "/tutorials/calculated_columns/#the-enabled-checkbox",
-            "text": "The enabled checkbox sets whether or not the Column should generate (or calculate) its values from the expression.\nCalculated Columns cells appear yellow and cannot be modified within the table editor like regular Columns can.",
-            "title": "The Enabled Checkbox"
+            "location": "/tutorials/getting_started/#inserting-the-graph",
+            "text": "Now that our graph is complete, we can send it to the document. To do this, simply click \u201cInsert\u201d at the top of Yob, then select the size of the graph you want to insert. After the graph is added, you may notice that it has a link attached to it.  Do not remove this link.  This link is how Yob knows where the graph data is stored on your Google Drive account, so that you may edit the graph later if you wish.  If you wish to learn more about how Yob stores graph data, view  the data storage reference  where we explain in greater detail.",
+            "title": "Inserting the Graph"
         },
         {
-            "location": "/reference/reference/",
+            "location": "/tutorials/getting_started/#check-out-the-other-tutorials",
+            "text": "Yob is full of great features that are covered throughout our tutorial series. Click the \u201cNext\u201d button above to move on to the next tutorial.",
+            "title": "Check Out the Other Tutorials"
+        },
+        {
+            "location": "/tutorials/getting_familiar/",
+            "text": "Getting Familiar",
+            "title": "Getting Familar"
+        },
+        {
+            "location": "/tutorials/getting_familiar/#getting-familiar",
+            "text": "",
+            "title": "Getting Familiar"
+        },
+        {
+            "location": "/tutorials/advanced_data_sets/",
+            "text": "Advanced Data Sets",
+            "title": "Advanced Data Sets"
+        },
+        {
+            "location": "/tutorials/advanced_data_sets/#advanced-data-sets",
+            "text": "",
+            "title": "Advanced Data Sets"
+        },
+        {
+            "location": "/tutorials/advanced_curve_fits/",
+            "text": "Advanced Curve Fits",
+            "title": "Advanced Curve Fits"
+        },
+        {
+            "location": "/tutorials/advanced_curve_fits/#advanced-curve-fits",
+            "text": "",
+            "title": "Advanced Curve Fits"
+        },
+        {
+            "location": "/tutorials/labeling_and_sizing_your_graph/",
+            "text": "Labeling and Sizing Your Graph",
+            "title": "Labeling and Sizing Your Graph"
+        },
+        {
+            "location": "/tutorials/labeling_and_sizing_your_graph/#labeling-and-sizing-your-graph",
+            "text": "",
+            "title": "Labeling and Sizing Your Graph"
+        },
+        {
+            "location": "/tutorials/styling_your_graph/",
+            "text": "Styling Your Graph",
+            "title": "Styling Your Graph"
+        },
+        {
+            "location": "/tutorials/styling_your_graph/#styling-your-graph",
+            "text": "",
+            "title": "Styling Your Graph"
+        },
+        {
+            "location": "/references/reference/",
             "text": "Reference\n\n\nHere you can view the syntax of referring to each Data Type within expressions.\n\n\nFunctions\n\n\nTo refer to a function within an expression, type the following:\n\n\nfx\n\n\n\nWhere \nx\n is the number of the Function (e.g. Function 1 = f1).\n\n\nThen wrap the input of the Function with (). The input can be any value or expression that is dependent on the independent variable.\n\n\nf3(x-5)\n\n\n\nData Sets\n\n\nTo refer to a Data Set within an expression, type the following:\n\n\ndx\n\n\n\nWhere \nx\n is the number of the Data Set (e.g. Data Set 2 = d2)\n\n\nColumns\n\n\nTo refer to a Column within an expression, type the following:\n\n\ndxcy\n\n\n\nWhere \nx\n is the number of the Data Set that the Column belongs to, and \ny\n is the number of the Column to be used (e.g. Data Set 2 Column 2 = d2c2).\n\n\nCurve Fits\n\n\nTo refer to a Curve Fit within an expression, type the following:\n\n\ncfx\n\n\n\nWhere \nx\n is the number of the Curve Fit. (e.g. Curve Fit 3 = cf3)\n\n\nThen wrap the input of the curve fit with () just like with Functions.\n\n\ncf5(x+1)",
-            "title": "Reference"
+            "title": "General Reference"
         },
         {
-            "location": "/reference/reference/#reference",
+            "location": "/references/reference/#reference",
             "text": "Here you can view the syntax of referring to each Data Type within expressions.",
             "title": "Reference"
         },
         {
-            "location": "/reference/reference/#functions",
+            "location": "/references/reference/#functions",
             "text": "To refer to a function within an expression, type the following:  fx  Where  x  is the number of the Function (e.g. Function 1 = f1).  Then wrap the input of the Function with (). The input can be any value or expression that is dependent on the independent variable.  f3(x-5)",
             "title": "Functions"
         },
         {
-            "location": "/reference/reference/#data-sets",
+            "location": "/references/reference/#data-sets",
             "text": "To refer to a Data Set within an expression, type the following:  dx  Where  x  is the number of the Data Set (e.g. Data Set 2 = d2)",
             "title": "Data Sets"
         },
         {
-            "location": "/reference/reference/#columns",
+            "location": "/references/reference/#columns",
             "text": "To refer to a Column within an expression, type the following:  dxcy  Where  x  is the number of the Data Set that the Column belongs to, and  y  is the number of the Column to be used (e.g. Data Set 2 Column 2 = d2c2).",
             "title": "Columns"
         },
         {
-            "location": "/reference/reference/#curve-fits",
+            "location": "/references/reference/#curve-fits",
             "text": "To refer to a Curve Fit within an expression, type the following:  cfx  Where  x  is the number of the Curve Fit. (e.g. Curve Fit 3 = cf3)  Then wrap the input of the curve fit with () just like with Functions.  cf5(x+1)",
             "title": "Curve Fits"
+        },
+        {
+            "location": "/references/data_storage/",
+            "text": "Data Storage",
+            "title": "Data Storage"
+        },
+        {
+            "location": "/references/data_storage/#data-storage",
+            "text": "",
+            "title": "Data Storage"
+        },
+        {
+            "location": "/references/calculated_columns/",
+            "text": "Using Calculated Columns\n\n\nCalculated Columns is a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry.  Another benefit of Calculated Columns is that they are updated dynamically, so you can make changes on the fly without having to manually recalculate anything.\nEach column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header.\n\n\nThe Calculated Column menu contains 3 items:\n\n\n\n\nThe expression field\n\n\nThe data selector\n\n\nThe enabled checkbox\n\n\n\n\nThe Expression Field\n\n\nThe expression field is what is used to generate the values of the column.  An example would be be \nd1c1 + 2*d2c1\n, which would make each value of the column be the sum of the cooresponding value in the first column of the first Data Set and twice the cooresponding value of the first column of the second Data Set.  You can also reference Functions or Curve Fits in your expressions.  For example, \nf3(d1c1) / 10\n would make each value of the column be 1/10th of the first column of the first Data Set run through the third function.  One thing to watch out for, however, is circular dependencies.  For example, you can't have d1c1 use d2c1 in its expression if d2c1 uses d3c1 and d3c1 uses d1c1, because of the circular dependencies. [more on this]\n\n\nThe Data Type Selector\n\n\nThe data selector provides an easy way to figure out which item it is that you want to use in your Calculated Column expression.  For example, if you wanted to use the Distance column from a Distance vs Time Data Set but didn't know its number, you could simply select it from the list then click \"Insert\", which will insert the proper text... [more on this]\n\n\nThe Enabled Checkbox\n\n\nThe enabled checkbox sets whether or not the Column should generate (or calculate) its values from the expression.\nCalculated Columns cells appear yellow and cannot be modified within the table editor like regular Columns can.",
+            "title": "Calculated Columns"
+        },
+        {
+            "location": "/references/calculated_columns/#using-calculated-columns",
+            "text": "Calculated Columns is a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry.  Another benefit of Calculated Columns is that they are updated dynamically, so you can make changes on the fly without having to manually recalculate anything.\nEach column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header.  The Calculated Column menu contains 3 items:   The expression field  The data selector  The enabled checkbox",
+            "title": "Using Calculated Columns"
+        },
+        {
+            "location": "/references/calculated_columns/#the-expression-field",
+            "text": "The expression field is what is used to generate the values of the column.  An example would be be  d1c1 + 2*d2c1 , which would make each value of the column be the sum of the cooresponding value in the first column of the first Data Set and twice the cooresponding value of the first column of the second Data Set.  You can also reference Functions or Curve Fits in your expressions.  For example,  f3(d1c1) / 10  would make each value of the column be 1/10th of the first column of the first Data Set run through the third function.  One thing to watch out for, however, is circular dependencies.  For example, you can't have d1c1 use d2c1 in its expression if d2c1 uses d3c1 and d3c1 uses d1c1, because of the circular dependencies. [more on this]",
+            "title": "The Expression Field"
+        },
+        {
+            "location": "/references/calculated_columns/#the-data-type-selector",
+            "text": "The data selector provides an easy way to figure out which item it is that you want to use in your Calculated Column expression.  For example, if you wanted to use the Distance column from a Distance vs Time Data Set but didn't know its number, you could simply select it from the list then click \"Insert\", which will insert the proper text... [more on this]",
+            "title": "The Data Type Selector"
+        },
+        {
+            "location": "/references/calculated_columns/#the-enabled-checkbox",
+            "text": "The enabled checkbox sets whether or not the Column should generate (or calculate) its values from the expression.\nCalculated Columns cells appear yellow and cannot be modified within the table editor like regular Columns can.",
+            "title": "The Enabled Checkbox"
         },
         {
             "location": "/about/",

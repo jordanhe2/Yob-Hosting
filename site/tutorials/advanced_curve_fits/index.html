@@ -9,7 +9,7 @@
 
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Getting Started - Yob User Manual</title>
+	<title>Advanced Curve Fits - Yob User Manual</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -62,8 +62,8 @@
                     <ul class="dropdown-menu">
 
 
-<li class="active">
-    <a href="./">Getting Started</a>
+<li >
+    <a href="../getting_started/">Getting Started</a>
 </li>
 
 
@@ -80,8 +80,8 @@
 
 
 
-<li >
-    <a href="../advanced_curve_fits/">Advanced Curve Fits</a>
+<li class="active">
+    <a href="./">Advanced Curve Fits</a>
 </li>
 
 
@@ -144,12 +144,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../..">
+                    <a rel="next" href="../advanced_data_sets/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../getting_familiar/">
+                    <a rel="prev" href="../labeling_and_sizing_your_graph/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -163,86 +163,14 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
 
-        <li class="main active"><a href="#getting-started">Getting Started</a></li>
-
-            <li><a href="#installation">Installation</a></li>
-
-            <li><a href="#the-home-screen">The Home Screen</a></li>
-
-            <li><a href="#plotting-data">Plotting Data</a></li>
-
-            <li><a href="#finding-the-projected-distance">Finding the Projected Distance</a></li>
-
-            <li><a href="#adding-the-finishing-touches">Adding the Finishing Touches</a></li>
-
-            <li><a href="#inserting-the-graph">Inserting the Graph</a></li>
-
-            <li><a href="#check-out-the-other-tutorials">Check Out the Other Tutorials</a></li>
+        <li class="main active"><a href="#advanced-curve-fits">Advanced Curve Fits</a></li>
 
 
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="getting-started">Getting Started</h1>
-<p>For this tutorial, we will demonstrate the basics of Yob by plotting the time and distance traveled of a ball rolling across the floor and determining its projected distance traveled as time goes on.</p>
-<hr />
-<h2 id="installation">Installation</h2>
-<p>First thing’s first.  If you don’t have Yob installed already, visit our <a href="https://chrome.google.com/webstore/detail/yob/doghjhjgnmiikbjphdcdeehhkfdembpf">Google Doc add-on store page</a> and click “Install.” In order to use Yob, you must be within a Google Doc.  You can launch the program from the Add-ons toolbar under Yob and select “Open Graph Editor”.</p>
-<hr />
-<h2 id="the-home-screen">The Home Screen</h2>
-<p>When you open the graph editor, you should see something like this:</p>
-<div class="centered"><img src="../../img/main_menu.png"/></div>
-
-<p>The home screen is organized into two sections:  the graph preview, and the main menu. The graph preview can be moved by clicking and dragging, and zoomed by scrolling the mouse wheel. The main menu contains several submenus for managing specific parts of your graph.  Let’s start with the Data Set menu.</p>
-<h2 id="plotting-data">Plotting Data</h2>
-<p>Click “Data Sets” from the main menu, then click the + icon to create a new Data Set. Locate the table editor at the bottom of the menu.  Here, we can enter the time-distance data from our ball experiment. Here is some sample data that we have supplied for you (you may simply copy and paste this data):</p>
-<table>
-    <thead>
-    <tr>
-        <th>Time (s)</th>
-        <th>Distance (cm)</th>
-    </tr>
-    </thead>
-    <tr>
-        <td>1</td>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>3.2</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>2.9</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>4.4</td>
-    </tr>
-</table>
-
-<p>Once entered into the table, the data can be viewed in the graph preview.</p>
-<p>Next, let’s put proper labels on our Data Set.  We will set the xLabel field to <strong>Time</strong> and the xUnit field to <strong>s</strong> for seconds, then the yLabel field to <strong>Distance</strong> and the yUnit field to <strong>cm</strong> for centimeters.</p>
-<p>Your graph should now look something like the following:</p>
-<div class="centered"><img src="../../img/sample_data.png"></div>
-
-<h2 id="finding-the-projected-distance">Finding the Projected Distance</h2>
-<p>Now that we have plotted the data, we can find the projected distance of the ball as time goes on. To accomplish this, we want to create a Curve Fit, which will calculate the line of best fit, given a Data Set and a model.</p>
-<p>Click “Back” to return to the main menu.  Then click the Curve Fits submenu, and click the + icon to create a new Curve Fit.</p>
-<p>Set the data source of the new Curve Fit to the Data Set we previously created:  Data Set 1. Then change the model type from none to linear. Viola! You should now see the line of best fit for this data on the graph.</p>
-<div class="centered"><img src="../../img/curvefit_example.png"></div>
-
-<h2 id="adding-the-finishing-touches">Adding the Finishing Touches</h2>
-<p>To introduce a little more color on this graph, let’s change the style of the Curve Fit line.  To accomplish this, click on the line preview icon near the top of the menu.  You will be presented with several styling options.  Let’s change the color blue and make the line dashed, like so:</p>
-<div class="centered"><img src="../../img/style_example.png"></div>
-
-<p>And what’s a graph without a title?  A title can be added to the graph back in the Labels submenu.  At the top of the menu, enter “Distance vs Time” in the Title field.</p>
-<h2 id="inserting-the-graph">Inserting the Graph</h2>
-<p>Now that our graph is complete, we can send it to the document. To do this, simply click “Insert” at the top of Yob, then select the size of the graph you want to insert. After the graph is added, you may notice that it has a link attached to it. <strong>Do not remove this link.</strong> This link is how Yob knows where the graph data is stored on your Google Drive account, so that you may edit the graph later if you wish.</p>
-<p>If you wish to learn more about how Yob stores graph data, view <a href="../../references/data_storage/">the data storage reference</a> where we explain in greater detail.</p>
-<h2 id="check-out-the-other-tutorials">Check Out the Other Tutorials</h2>
-<p>Yob is full of great features that are covered throughout our tutorial series. Click the “Next” button above to move on to the next tutorial.</p></div>
+<h1 id="advanced-curve-fits">Advanced Curve Fits</h1></div>
         </div>
 
         <footer class="col-md-12">
