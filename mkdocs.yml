@@ -5,5 +5,5 @@ pages:
 - Tutorials:
     - 'Getting Started': 'tutorials/getting_started.md'
     - 'Using Calculated Columns': 'tutorials/calculated_columns.md'
-- Reference: 'reference/reference.md'
+- Reference: 'reference.md'
 - About: 'about.md'
