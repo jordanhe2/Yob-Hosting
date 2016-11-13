@@ -1,5 +1,7 @@
 site_name: Yob User Manual
 theme: cosmo
+extra_css:
+  - css/extra.css
 pages:
 - Home: 'index.md'
 - Tutorials:
