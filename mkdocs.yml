@@ -7,5 +7,7 @@ pages:
 - Tutorials:
     - 'Getting Started': 'tutorials/getting_started.md'
     - 'Using Calculated Columns': 'tutorials/calculated_columns.md'
-- Reference: 'reference.md'
+- References:
+    - 'General Reference': 'references/reference.md'
+    - 'Data Storage': 'references/data_storage.md'
 - About: 'about.md'
