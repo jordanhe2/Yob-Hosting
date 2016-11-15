@@ -167,7 +167,7 @@
 
             <li><a href="#general-rules">General Rules</a></li>
 
-            <li><a href="#referencing-other-expressions">Referencing Other Expressions</a></li>
+            <li><a href="#referencing-other-items">Referencing Other Items</a></li>
 
             <li><a href="#built-in-functions">Built-in Functions</a></li>
 
@@ -190,30 +190,32 @@
 <li>All expressions should follow the general syntax of mathematics.  Order of operations applies.</li>
 <li>All operators need to be explicit.  For example, you cannot write <code>2x</code>; you would have to write <code>2*x</code> instead.</li>
 </ul>
+<h4 id="how-to-tell-when-an-expression-is-valid">How to Tell When an Expression is Valid</h4>
+<p>In all of the places that you can edit expressions within Yob, the text field will let you know when your expression is invalid by turning its border red:</p>
+<div class="centered"><img src="../../img/invalid_expression.png"></div>
+
 <hr />
-<h2 id="referencing-other-expressions">Referencing Other Expressions</h2>
-<p>A part of what makes expressions so effective is their ability to refer to other expressions.</p>
-<h3 id="functions">Functions</h3>
-<p>To refer to a function within an expression, type the following:</p>
-<pre><code>fx
-</code></pre>
-<p>Where <em>x</em> is the number of the Function (e.g. Function 1 = f1).</p>
-<p>Then wrap the input of the Function with (). The input can be any value or expression that is dependent on the independent variable.</p>
-<pre><code>f3(x-5)
-</code></pre>
-<h3 id="columns">Columns</h3>
-<p>To refer to a Column within an expression, type the following:</p>
-<pre><code>dxcy
-</code></pre>
-<p>Where <em>x</em> is the number of the Data Set that the Column belongs to, and <em>y</em> is the number of the Column to be used (e.g. Data Set 2 Column 2 = d2c2).</p>
-<h3 id="curve-fits">Curve Fits</h3>
-<p>To refer to a Curve Fit within an expression, type the following:</p>
-<pre><code>cfx
-</code></pre>
-<p>Where <em>x</em> is the number of the Curve Fit. (e.g. Curve Fit 3 = cf3)</p>
-<p>Then wrap the input of the curve fit with () just like with Functions.</p>
-<pre><code>cf5(x+1)
-</code></pre>
+<h2 id="referencing-other-items">Referencing Other Items</h2>
+<p>A part of what makes expressions so effective is their ability to refer to other items.  Accomplishing this is simple:</p>
+<ul>
+<li>
+<p>To reference a <strong>Function</strong>, simply use its name as you would when using sin(x) or abs(x).  For example, <code>f1(x + 2) + f2(x - 2)</code> would be a valid way to reference Functions in an expression.</p>
+</li>
+<li>
+<p>To reference a <strong>Curve Fit</strong>, the same principle applies but names are denoted with "cf" rather than "f".  For example, <code>cf1(x / 3) + sin(x)</code> would be a valid way to reference a Curve Fit in an expression.</p>
+</li>
+<li>
+<p>To reference a <strong>Data Set Column</strong>, use the Data Set name along with the column name.  For example, <code>d1c2</code> would reference the <em>second</em> column of the <em>first</em> Data Set.  However, only Calculated Column expression are allowed to reference Data Set Columns.  This is demonstrated in the <a href="../../tutorials/advanced_data_sets/">Advanced Data Sets</a> tutorial and explained in greater detail in the <a href="../calculated_columns/">Calculated Columns Reference</a>.</p>
+</li>
+</ul>
+<h3 id="maintaining-referential-integrity">Maintaining Referential Integrity</h3>
+<p>Allowing users to put references in their expressions gives them a lot of freedom, but doing to makes it necessary to impose a few restrictions to maintain referential integrity.  Essentially, this just means that if an expression refers to another item,</p>
+<ol>
+<li>the item <strong>needs to exist</strong>.  For example, <code>f3(x) + 4</code> is not a valid expression if there are only 2 Functions that exist.</li>
+<li>the reference <strong>cannot create circular dependencies</strong>. ...</li>
+</ol>
+<h3 id="deleting-items">Deleting Items</h3>
+<p>...</p>
 <hr />
 <h2 id="built-in-functions">Built-in Functions</h2>
 <p>Yob expressions can contain any of these built-in functions:</p>

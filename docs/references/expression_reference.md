@@ -12,41 +12,29 @@ Expressions are used extensively throughout Yob.  Calculated Columns, Functions,
 * All expressions should follow the general syntax of mathematics.  Order of operations applies.
 * All operators need to be explicit.  For example, you cannot write `2x`; you would have to write `2*x` instead.
 
+#### How to Tell When an Expression is Valid
+In all of the places that you can edit expressions within Yob, the text field will let you know when your expression is invalid by turning its border red:
+
+<div class="centered"><img src="../../img/invalid_expression.png"></div>
+
 ---
-## Referencing Other Expressions
-A part of what makes expressions so effective is their ability to refer to other expressions.
+## Referencing Other Items
+A part of what makes expressions so effective is their ability to refer to other items.  Accomplishing this is simple:
 
-### Functions
+* To reference a **Function**, simply use its name as you would when using sin(x) or abs(x).  For example, `f1(x + 2) + f2(x - 2)` would be a valid way to reference Functions in an expression.
 
-To refer to a function within an expression, type the following:
+* To reference a **Curve Fit**, the same principle applies but names are denoted with "cf" rather than "f".  For example, `cf1(x / 3) + sin(x)` would be a valid way to reference a Curve Fit in an expression.
 
-    fx
-    
-Where _x_ is the number of the Function (e.g. Function 1 = f1).
+* To reference a **Data Set Column**, use the Data Set name along with the column name.  For example, `d1c2` would reference the _second_ column of the _first_ Data Set.  However, only Calculated Column expression are allowed to reference Data Set Columns.  This is demonstrated in the [Advanced Data Sets](../tutorials/advanced_data_sets.md) tutorial and explained in greater detail in the [Calculated Columns Reference](./calculated_columns.md).
 
-Then wrap the input of the Function with (). The input can be any value or expression that is dependent on the independent variable.
+### Maintaining Referential Integrity
+Allowing users to put references in their expressions gives them a lot of freedom, but doing to makes it necessary to impose a few restrictions to maintain referential integrity.  Essentially, this just means that if an expression refers to another item,
 
-    f3(x-5)
+1.  the item **needs to exist**.  For example, `f3(x) + 4` is not a valid expression if there are only 2 Functions that exist.
+2.  the reference **cannot create circular dependencies**. ...
 
-### Columns
-  
-To refer to a Column within an expression, type the following:
-
-    dxcy
-    
-Where _x_ is the number of the Data Set that the Column belongs to, and _y_ is the number of the Column to be used (e.g. Data Set 2 Column 2 = d2c2).
-
-### Curve Fits
-
-To refer to a Curve Fit within an expression, type the following:
-
-    cfx
-    
-Where _x_ is the number of the Curve Fit. (e.g. Curve Fit 3 = cf3)
-
-Then wrap the input of the curve fit with () just like with Functions.
-
-    cf5(x+1)
+### Deleting Items
+...
 
 ---
 ## Built-in Functions
