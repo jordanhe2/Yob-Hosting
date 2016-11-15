@@ -1,4 +1,5 @@
 site_name: Yob User Manual
+copyright: 'Copyright © 2016 Tanner Nielsen, Jordan Hendrickson'
 theme: cosmo
 extra_css:
   - css/extra.css
