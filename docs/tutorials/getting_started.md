@@ -4,7 +4,7 @@ For this tutorial, we will demonstrate the basics of Yob by plotting the time an
 
 ---
 ## Installation
-First thing’s first.  If you don’t have Yob installed already, visit our [Google Doc add-on store page](https://chrome.google.com/webstore/detail/yob/doghjhjgnmiikbjphdcdeehhkfdembpf) and click “Install.”
+First thing’s first.  If you don’t have Yob installed already, visit our [Google Doc add-on store page](https://chrome.google.com/webstore/detail/yob/doghjhjgnmiikbjphdcdeehhkfdembpf).
 
 To start Yob, open a Google Doc and select **Add-ons** > **Yob** > **Open Editor**.
 

@@ -9,7 +9,7 @@ Yob is a **fast** and **simple** graphing tool that's geared towards performing 
 Making graphs in Yob is quick and easy, making it a great choice for users who just want to plot some data and stick the graph in a document.  However, Yob also comes with many advanced features such as **calculated columns** and **non-linear curve fitting**, making it a useful tool for more advanced users.
 
 ### Convenient
-Yob runs entirely within a Google Doc, so you never have to worry about transferring graphs between your computer and the document.  In fact, Yob **blurs the lines** between graph files and your document entirely.
+Yob runs entirely within a Google Doc, so you never have to worry about transferring graphs between your computer and the document.  In fact, Yob [blurs the lines](./references/data_storage.md) between graph files and your document entirely.
 
 ---
 ## Getting Started
