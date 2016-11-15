@@ -26,35 +26,23 @@ Click “Data Sets” from the main menu, then click the + icon to create a new 
 
 
 <table>
-	<thead>
-	<tr>
-		<th>Time (s)</th>
-		<th>Distance (cm)</th>
-	</tr>
-	</thead>
-	<tr>
-		<td>1</td>
-		<td>2</td>
-	</tr>
-	<tr>
-		<td>3</td>
-		<td>3.2</td>
-	</tr>
-	<tr>
-		<td>5</td>
-		<td>2.9</td>
-	</tr>
-	<tr>
-		<td>7</td>
-		<td>4.4</td>
-	</tr>
+	<thead><tr><th>Time (s)</th><th>Distance (m)</th></tr></thead>
+    <tr><td>1.0</td><td>1.5</td></tr>
+    <tr><td>1.5</td><td>1.8</td></tr>
+    <tr><td>2.0</td><td>2.3</td></tr>
+    <tr><td>2.5</td><td>2.6</td></tr>
+    <tr><td>3.0</td><td>3.5</td></tr>
+    <tr><td>3.5</td><td>3.7</td></tr>
+    <tr><td>4.0</td><td>4.2</td></tr>
+    <tr><td>4.5</td><td>4.9</td></tr>
+    <tr><td>5.0</td><td>5.3</td></tr>
 </table>
 
 
-Once entered into the table, the data can be viewed in the graph preview.
+Once entered into the table, the data can be viewed in the graph preview.  To automatically fit the window to show all of the data, select the **Auto Zoom** checkbox.
 
 
-Next, let’s put proper labels on our Data Set.  We will set the xLabel field to __Time__ and the xUnit field to __s__ for seconds, then the yLabel field to __Distance__ and the yUnit field to __cm__ for centimeters.
+Next, let’s put proper labels on our Data Set.  We will set the xLabel field to __Time__ and the xUnit field to __s__ for seconds, then the yLabel field to __Distance__ and the yUnit field to __m__ for meters.
 
 
 Your graph should now look something like the following:
@@ -83,7 +71,10 @@ To introduce a little more color on this graph, let’s change the style of the 
 <div class="centered"><img src="../../img/style_example.png"></div>
 
 
-And what’s a graph without a title?  A title can be added to the graph back in the Labels submenu.  At the top of the menu, enter “Distance vs Time” in the Title field.
+And what’s a graph without a title?  A title can be added to the graph back in the Labels submenu.  At the top of the menu, enter “Distance vs Time” in the Title field.  When you're done, you should have something like this:
+
+
+<div class="centered"><img src="../../img/complete_graph_example.png"></div>
 
 
 ## Inserting the Graph

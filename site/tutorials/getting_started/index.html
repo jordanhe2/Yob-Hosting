@@ -188,7 +188,7 @@
 <p>For this tutorial, we will demonstrate the basics of Yob by plotting the time and distance traveled of a ball rolling across the floor and determining its projected distance traveled as time goes on.</p>
 <hr />
 <h2 id="installation">Installation</h2>
-<p>First thing’s first.  If you don’t have Yob installed already, visit our <a href="https://chrome.google.com/webstore/detail/yob/doghjhjgnmiikbjphdcdeehhkfdembpf">Google Doc add-on store page</a> and click “Install.”</p>
+<p>First thing’s first.  If you don’t have Yob installed already, visit our <a href="https://chrome.google.com/webstore/detail/yob/doghjhjgnmiikbjphdcdeehhkfdembpf">Google Doc add-on store page</a>.</p>
 <p>To start Yob, open a Google Doc and select <strong>Add-ons</strong> &gt; <strong>Yob</strong> &gt; <strong>Open Editor</strong>.</p>
 <div class="centered"><img src="../../img/start_yob.png"/></div>
 
@@ -201,32 +201,20 @@
 <h2 id="plotting-data">Plotting Data</h2>
 <p>Click “Data Sets” from the main menu, then click the + icon to create a new Data Set. Locate the table editor at the bottom of the menu.  Here, we can enter the time-distance data from our ball experiment. Here is some sample data that we have supplied for you (you may simply copy and paste this data):</p>
 <table>
-    <thead>
-    <tr>
-        <th>Time (s)</th>
-        <th>Distance (cm)</th>
-    </tr>
-    </thead>
-    <tr>
-        <td>1</td>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>3.2</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>2.9</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>4.4</td>
-    </tr>
+    <thead><tr><th>Time (s)</th><th>Distance (m)</th></tr></thead>
+    <tr><td>1.0</td><td>1.5</td></tr>
+    <tr><td>1.5</td><td>1.8</td></tr>
+    <tr><td>2.0</td><td>2.3</td></tr>
+    <tr><td>2.5</td><td>2.6</td></tr>
+    <tr><td>3.0</td><td>3.5</td></tr>
+    <tr><td>3.5</td><td>3.7</td></tr>
+    <tr><td>4.0</td><td>4.2</td></tr>
+    <tr><td>4.5</td><td>4.9</td></tr>
+    <tr><td>5.0</td><td>5.3</td></tr>
 </table>
 
-<p>Once entered into the table, the data can be viewed in the graph preview.</p>
-<p>Next, let’s put proper labels on our Data Set.  We will set the xLabel field to <strong>Time</strong> and the xUnit field to <strong>s</strong> for seconds, then the yLabel field to <strong>Distance</strong> and the yUnit field to <strong>cm</strong> for centimeters.</p>
+<p>Once entered into the table, the data can be viewed in the graph preview.  To automatically fit the window to show all of the data, select the <strong>Auto Zoom</strong> checkbox.</p>
+<p>Next, let’s put proper labels on our Data Set.  We will set the xLabel field to <strong>Time</strong> and the xUnit field to <strong>s</strong> for seconds, then the yLabel field to <strong>Distance</strong> and the yUnit field to <strong>m</strong> for meters.</p>
 <p>Your graph should now look something like the following:</p>
 <div class="centered"><img src="../../img/sample_data.png"></div>
 
@@ -240,7 +228,9 @@
 <p>To introduce a little more color on this graph, let’s change the style of the Curve Fit line.  To accomplish this, click on the line preview icon near the top of the menu.  You will be presented with several styling options.  Let’s change the color blue and make the line dashed, like so:</p>
 <div class="centered"><img src="../../img/style_example.png"></div>
 
-<p>And what’s a graph without a title?  A title can be added to the graph back in the Labels submenu.  At the top of the menu, enter “Distance vs Time” in the Title field.</p>
+<p>And what’s a graph without a title?  A title can be added to the graph back in the Labels submenu.  At the top of the menu, enter “Distance vs Time” in the Title field.  When you're done, you should have something like this:</p>
+<div class="centered"><img src="../../img/complete_graph_example.png"></div>
+
 <h2 id="inserting-the-graph">Inserting the Graph</h2>
 <p>Now that our graph is complete, we can send it to the document. To do this, simply click “Insert” at the top of Yob, then select the size of the graph you want to insert. After the graph is added, you may notice that it has a link attached to it. <strong>Do not remove this link.</strong> This link is how Yob knows where the graph data is stored on your Google Drive account, so that you may edit the graph later if you wish.</p>
 <p>If you would like to learn more about how Yob stores graph data, view <a href="../../references/data_storage/">the data storage reference</a> where we explain this in greater detail.</p>
