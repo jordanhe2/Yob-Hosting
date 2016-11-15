@@ -12,7 +12,6 @@ pages:
     - 'Labeling and Sizing Your Graph': 'tutorials/labeling_and_sizing_your_graph.md'
     - 'Styling Your Graph': 'tutorials/styling_your_graph.md'
 - References:
-    - 'General Reference': 'references/reference.md'
     - 'Data Storage': 'references/data_storage.md'
     - 'Expression Reference': 'references/expression_reference.md'
     - 'Calculated Columns': 'references/calculated_columns.md'

@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
+
+
+
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>General Reference - Yob User Manual</title>
+	<title>Expression Reference - Yob User Manual</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -23,7 +23,7 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        
+
     </head>
 
     <body>
@@ -49,91 +49,91 @@
         <div class="navbar-collapse collapse">
             <!-- Main navigation -->
             <ul class="nav navbar-nav">
-            
-            
+
+
                 <li >
                     <a href="../..">Home</a>
                 </li>
-            
-            
-            
+
+
+
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                    
-                        
+
+
 <li >
     <a href="../../tutorials/getting_started/">Getting Started</a>
 </li>
 
-                    
-                        
+
+
 <li >
     <a href="../../tutorials/getting_familiar/">Getting Familar</a>
 </li>
 
-                    
-                        
+
+
 <li >
     <a href="../../tutorials/advanced_data_sets/">Advanced Data Sets</a>
 </li>
 
-                    
-                        
+
+
 <li >
     <a href="../../tutorials/advanced_curve_fits/">Advanced Curve Fits</a>
 </li>
 
-                    
-                        
+
+
 <li >
     <a href="../../tutorials/labeling_and_sizing_your_graph/">Labeling and Sizing Your Graph</a>
 </li>
 
-                    
-                        
+
+
 <li >
     <a href="../../tutorials/styling_your_graph/">Styling Your Graph</a>
 </li>
 
-                    
+
                     </ul>
                 </li>
-            
-            
-            
+
+
+
                 <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">References <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                    
-                        
-<li class="active">
-    <a href="./">General Reference</a>
-</li>
 
-                    
-                        
+
 <li >
     <a href="../data_storage/">Data Storage</a>
 </li>
 
-                    
-                        
+
+
+<li class="active">
+    <a href="./">Expression Reference</a>
+</li>
+
+
+
 <li >
     <a href="../calculated_columns/">Calculated Columns</a>
 </li>
 
-                    
+
                     </ul>
                 </li>
-            
-            
-            
+
+
+
                 <li >
                     <a href="../../about/">About</a>
                 </li>
-            
-            
+
+
             </ul>
 
             <!-- Search, Navigation and Repo links -->
@@ -144,16 +144,16 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../../tutorials/styling_your_graph/">
+                    <a rel="next" href="../data_storage/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../data_storage/">
+                    <a rel="prev" href="../calculated_columns/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
-                
+
             </ul>
         </div>
     </div>
@@ -162,24 +162,49 @@
         <div class="container">
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-    
-        <li class="main active"><a href="#reference">Reference</a></li>
-        
-            <li><a href="#functions">Functions</a></li>
-        
-            <li><a href="#data-sets">Data Sets</a></li>
-        
-            <li><a href="#columns">Columns</a></li>
-        
-            <li><a href="#curve-fits">Curve Fits</a></li>
-        
-    
+
+        <li class="main active"><a href="#expression-reference">Expression Reference</a></li>
+
+            <li><a href="#general-rules">General Rules</a></li>
+
+            <li><a href="#built-in-functions">Built-in Functions</a></li>
+
+            <li><a href="#referring-to-other-data">Referring to Other Data</a></li>
+
+
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="reference">Reference</h1>
-<p>Here you can view the syntax of referring to each Data Type within expressions.</p>
+<h1 id="expression-reference">Expression Reference</h1>
+<p>Expressions are used extensively throughout Yob.  Calculated Columns, Functions, and custom Curve Fits all make use of user-defined expressions.  This page is meant to serve as a reference for using expressions throughout the program.  If you are new to using expressions, you may want to check out one of the following tutorials first:</p>
+<ul>
+<li><a href="../../tutorials/advanced_curve_fits/">Advanced Curve Fits</a></li>
+<li><a href="../../tutorials/advanced_data_sets/">Advanced Data Sets</a></li>
+</ul>
+<hr />
+<h2 id="general-rules">General Rules</h2>
+<p>...</p>
+<hr />
+<h2 id="built-in-functions">Built-in Functions</h2>
+<p>Yob expressions can contain any of these built-in functions:</p>
+<table>
+    <thead>
+        <tr><th>Name</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>sin(x)</td><td>Sine of x (in radians)</td></tr>
+        <tr><td>cos(x)</td><td>Cosine of x (in radians)</td></tr>
+        <tr><td>tan(x)</td><td>Tangent of x (in radians)</td></tr>
+        <tr><td>csc(x)</td><td>Cosecant of x (in radians)</td></tr>
+        <tr><td>sec(x)</td><td>Secant of x (in radians)</td></tr>
+        <tr><td>cot(x)</td><td>Cotangent of x (in radians)</td></tr>
+        <!-- ... -->
+    </tbody>
+</table>
+
+<hr />
+<h2 id="referring-to-other-data">Referring to Other Data</h2>
 <h3 id="functions">Functions</h3>
 <p>To refer to a function within an expression, type the following:</p>
 <pre><code>fx
@@ -210,7 +235,7 @@
 
         <footer class="col-md-12">
             <hr>
-            
+
             <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
 

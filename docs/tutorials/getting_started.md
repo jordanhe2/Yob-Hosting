@@ -4,8 +4,11 @@ For this tutorial, we will demonstrate the basics of Yob by plotting the time an
 
 ---
 ## Installation
-First thing’s first.  If you don’t have Yob installed already, visit our [Google Doc add-on store page](https://chrome.google.com/webstore/detail/yob/doghjhjgnmiikbjphdcdeehhkfdembpf) and click “Install.” In order to use Yob, you must be within a Google Doc.  You can launch the program from the Add-ons toolbar under Yob and select “Open Graph Editor”.
+First thing’s first.  If you don’t have Yob installed already, visit our [Google Doc add-on store page](https://chrome.google.com/webstore/detail/yob/doghjhjgnmiikbjphdcdeehhkfdembpf) and click “Install.”
 
+In order to use Yob, you must be within a Google Doc.  You can launch the program from the Add-ons toolbar under Yob and select “Open Graph Editor”.
+
+<div class="centered"><img src="../../img/start_yob.png"/></div>
 
 ---
 ## The Home Screen
