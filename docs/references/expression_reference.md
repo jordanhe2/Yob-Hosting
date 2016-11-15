@@ -13,7 +13,8 @@ Expressions are used extensively throughout Yob.  Calculated Columns, Functions,
 * All operators need to be explicit.  For example, you cannot write `2x`; you would have to write `2*x` instead.
 
 ---
-## Referencing Other Data
+## Referencing Other Expressions
+A part of what makes expressions so effective is their ability to refer to other expressions.
 
 ### Functions
 
