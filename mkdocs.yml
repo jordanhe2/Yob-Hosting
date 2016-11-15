@@ -14,5 +14,6 @@ pages:
 - References:
     - 'General Reference': 'references/reference.md'
     - 'Data Storage': 'references/data_storage.md'
+    - 'Expression Reference': 'references/expression_reference.md'
     - 'Calculated Columns': 'references/calculated_columns.md'
 - About: 'about.md'

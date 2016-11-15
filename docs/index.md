@@ -15,6 +15,6 @@ Yob runs entirely within a Google Doc, so you never have to worry about transfer
 ## Getting Started
 Follow [this tutorial](./tutorials/getting_started.md) to familiarize yourself with the basics of Yob.  More advanced users can check out [the reference](./references/reference.md) to learn more.
 
-Keep in mind we are still building all of the docs for Yob, so if you click on a link only to find an empty page we apologize.
+Keep in mind we are still building the documentation for Yob, so if you click on a link and find an empty or incomplete page, we apologize.
 
 Thank you for using Yob!
