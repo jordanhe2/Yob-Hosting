@@ -8,7 +8,44 @@ Expressions are used extensively throughout Yob.  Calculated Columns, Functions,
 
 ---
 ## General Rules
-...
+[//]: # (Expand this section and provide examples)
+* All expressions should follow the general syntax of mathematics.  Order of operations applies.
+* All operators need to be explicit.  For example, you cannot write `2x`; you would have to write `2*x` instead.
+
+---
+## Referencing Other Data
+
+### Functions
+
+To refer to a function within an expression, type the following:
+
+    fx
+    
+Where _x_ is the number of the Function (e.g. Function 1 = f1).
+
+Then wrap the input of the Function with (). The input can be any value or expression that is dependent on the independent variable.
+
+    f3(x-5)
+
+### Columns
+  
+To refer to a Column within an expression, type the following:
+
+    dxcy
+    
+Where _x_ is the number of the Data Set that the Column belongs to, and _y_ is the number of the Column to be used (e.g. Data Set 2 Column 2 = d2c2).
+
+### Curve Fits
+
+To refer to a Curve Fit within an expression, type the following:
+
+    cfx
+    
+Where _x_ is the number of the Curve Fit. (e.g. Curve Fit 3 = cf3)
+
+Then wrap the input of the curve fit with () just like with Functions.
+
+    cf5(x+1)
 
 ---
 ## Built-in Functions
@@ -17,6 +54,15 @@ Yob expressions can contain any of these built-in functions:
 <table>
     <thead><tr><th>Name</th><th>Description</th></tr></thead>
     <tbody>
+        <tr><td>sqrt(x)</td><td>Square root of x</td></tr>
+        <tr><td>ln(x)</td><td>Natural log (base e) of x</td></tr>
+        <tr><td>log(x)</td><td>Log (base 10) of x</td></tr>
+        <tr><td>log10(x)</td><td>Log (base 10) of x (for those who wish to be explicit)</td></tr>
+        <tr><td>exp(x)</td><td>Base e raised to the x power</td></tr>
+        <tr><td>abs(x)</td><td>Absolute value of x</td></tr>
+        <tr><td>floor(x)</td><td>Floor of x (round down)</td></tr>
+        <tr><td>ceil(x)</td><td>Ceiling of x (round up)</td></tr>
+        <tr><td>round(x)</td><td>x rounded to the nearest integer</td></tr>
         <tr><td>sin(x)</td><td>Sine of x (in radians)</td></tr>
         <tr><td>cos(x)</td><td>Cosine of x (in radians)</td></tr>
         <tr><td>tan(x)</td><td>Tangent of x (in radians)</td></tr>
@@ -45,44 +91,15 @@ Yob expressions can contain any of these built-in functions:
 </table>
 
 ---
-## Referring to Other Data
+## Built-in Constants
+Yob expressions can contain any of these built-in constants:
 
-### Functions
-
-To refer to a function within an expression, type the following:
-
-    fx
-    
-Where _x_ is the number of the Function (e.g. Function 1 = f1).
-
-Then wrap the input of the Function with (). The input can be any value or expression that is dependent on the independent variable.
-
-    f3(x-5)
-
-### Data Sets
-
-To refer to a Data Set within an expression, type the following:
-
-    dx
-
-Where _x_ is the number of the Data Set (e.g. Data Set 2 = d2)
-
-### Columns
-  
-To refer to a Column within an expression, type the following:
-
-    dxcy
-    
-Where _x_ is the number of the Data Set that the Column belongs to, and _y_ is the number of the Column to be used (e.g. Data Set 2 Column 2 = d2c2).
-
-### Curve Fits
-
-To refer to a Curve Fit within an expression, type the following:
-
-    cfx
-    
-Where _x_ is the number of the Curve Fit. (e.g. Curve Fit 3 = cf3)
-
-Then wrap the input of the curve fit with () just like with Functions.
-
-    cf5(x+1)
+<table>
+    <thead><tr><th>Name</th><th>Numeric Value</th><th>Accepted Formats</th></tr></thead>
+    <tbody>
+        <tr><td>E</td><td>2.71828182846</td><td>E, e</td></tr>
+        <tr><td>Pi</td><td>3.14159265359</td><td>PI, pi, π</td></tr>
+        <tr><td>Tau</td><td>6.28318530718</td><td>TAU, tau, τ</td></tr>
+        <tr><td>Phi</td><td>1.61803398874</td><td>PHI, phi, φ, ϕ</td></tr>
+    </tbody>
+</table>

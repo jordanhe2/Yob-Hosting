@@ -167,9 +167,11 @@
 
             <li><a href="#general-rules">General Rules</a></li>
 
+            <li><a href="#referencing-other-data">Referencing Other Data</a></li>
+
             <li><a href="#built-in-functions">Built-in Functions</a></li>
 
-            <li><a href="#referring-to-other-data">Referring to Other Data</a></li>
+            <li><a href="#built-in-constants">Built-in Constants</a></li>
 
 
     </ul>
@@ -184,27 +186,12 @@
 </ul>
 <hr />
 <h2 id="general-rules">General Rules</h2>
-<p>...</p>
+<ul>
+<li>All expressions should follow the general syntax of mathematics.  Order of operations applies.</li>
+<li>All operators need to be explicit.  For example, you cannot write <code>2x</code>; you would have to write <code>2*x</code> instead.</li>
+</ul>
 <hr />
-<h2 id="built-in-functions">Built-in Functions</h2>
-<p>Yob expressions can contain any of these built-in functions:</p>
-<table>
-    <thead>
-        <tr><th>Name</th><th>Description</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>sin(x)</td><td>Sine of x (in radians)</td></tr>
-        <tr><td>cos(x)</td><td>Cosine of x (in radians)</td></tr>
-        <tr><td>tan(x)</td><td>Tangent of x (in radians)</td></tr>
-        <tr><td>csc(x)</td><td>Cosecant of x (in radians)</td></tr>
-        <tr><td>sec(x)</td><td>Secant of x (in radians)</td></tr>
-        <tr><td>cot(x)</td><td>Cotangent of x (in radians)</td></tr>
-        <!-- ... -->
-    </tbody>
-</table>
-
-<hr />
-<h2 id="referring-to-other-data">Referring to Other Data</h2>
+<h2 id="referencing-other-data">Referencing Other Data</h2>
 <h3 id="functions">Functions</h3>
 <p>To refer to a function within an expression, type the following:</p>
 <pre><code>fx
@@ -213,11 +200,6 @@
 <p>Then wrap the input of the Function with (). The input can be any value or expression that is dependent on the independent variable.</p>
 <pre><code>f3(x-5)
 </code></pre>
-<h3 id="data-sets">Data Sets</h3>
-<p>To refer to a Data Set within an expression, type the following:</p>
-<pre><code>dx
-</code></pre>
-<p>Where <em>x</em> is the number of the Data Set (e.g. Data Set 2 = d2)</p>
 <h3 id="columns">Columns</h3>
 <p>To refer to a Column within an expression, type the following:</p>
 <pre><code>dxcy
@@ -230,7 +212,61 @@
 <p>Where <em>x</em> is the number of the Curve Fit. (e.g. Curve Fit 3 = cf3)</p>
 <p>Then wrap the input of the curve fit with () just like with Functions.</p>
 <pre><code>cf5(x+1)
-</code></pre></div>
+</code></pre>
+<hr />
+<h2 id="built-in-functions">Built-in Functions</h2>
+<p>Yob expressions can contain any of these built-in functions:</p>
+<table>
+    <thead><tr><th>Name</th><th>Description</th></tr></thead>
+    <tbody>
+        <tr><td>sqrt(x)</td><td>Square root of x</td></tr>
+        <tr><td>ln(x)</td><td>Natural log (base e) of x</td></tr>
+        <tr><td>log(x)</td><td>Log (base 10) of x</td></tr>
+        <tr><td>log10(x)</td><td>Log (base 10) of x (for those who wish to be explicit)</td></tr>
+        <tr><td>exp(x)</td><td>Base e raised to the x power</td></tr>
+        <tr><td>abs(x)</td><td>Absolute value of x</td></tr>
+        <tr><td>floor(x)</td><td>Floor of x (round down)</td></tr>
+        <tr><td>ceil(x)</td><td>Ceiling of x (round up)</td></tr>
+        <tr><td>round(x)</td><td>x rounded to the nearest integer</td></tr>
+        <tr><td>sin(x)</td><td>Sine of x (in radians)</td></tr>
+        <tr><td>cos(x)</td><td>Cosine of x (in radians)</td></tr>
+        <tr><td>tan(x)</td><td>Tangent of x (in radians)</td></tr>
+        <tr><td>csc(x)</td><td>Cosecant of x (in radians)</td></tr>
+        <tr><td>sec(x)</td><td>Secant of x (in radians)</td></tr>
+        <tr><td>cot(x)</td><td>Cotangent of x (in radians)</td></tr>
+        <tr><td>asin(x)</td><td>Inverse Sine (or Arcsine) of x (in radians)</td></tr>
+        <tr><td>acos(x)</td><td>Inverse Cosine (or Arccosine) of x (in radians)</td></tr>
+        <tr><td>atan(x)</td><td>Inverse Tangent (or Arctangent) of x (in radians)</td></tr>
+        <tr><td>acsc(x)</td><td>Inverse Cosecant (or Arccosecant) of x (in radians)</td></tr>
+        <tr><td>asec(x)</td><td>Inverse Secant (or Arcsecant) of x (in radians)</td></tr>
+        <tr><td>acot(x)</td><td>Inverse Cotangent (or Arccotangent) of x (in radians)</td></tr>
+        <tr><td>sinh(x)</td><td>Hyperbolic Sine of x</td></tr>
+        <tr><td>cosh(x)</td><td>Hyperbolic Cosine of x</td></tr>
+        <tr><td>tanh(x)</td><td>Hyperbolic Tangent of x</td></tr>
+        <tr><td>csch(x)</td><td>Hyperbolic Cosecant of x</td></tr>
+        <tr><td>sech(x)</td><td>Hyperbolic Secant of x</td></tr>
+        <tr><td>coth(x)</td><td>Hyperbolic Cotangent of x</td></tr>
+        <tr><td>asinh(x)</td><td>Inverse Hyperbolic Sine of x</td></tr>
+        <tr><td>acosh(x)</td><td>Inverse Hyperbolic Cosine of x</td></tr>
+        <tr><td>atanh(x)</td><td>Inverse Hyperbolic Tangent of x</td></tr>
+        <tr><td>acsch(x)</td><td>Inverse Hyperbolic Cosecant of x</td></tr>
+        <tr><td>asech(x)</td><td>Inverse Hyperbolic Secant of x</td></tr>
+        <tr><td>acoth(x)</td><td>Inverse Hyperbolic Cotangent of x</td></tr>
+    </tbody>
+</table>
+
+<hr />
+<h2 id="built-in-constants">Built-in Constants</h2>
+<p>Yob expressions can contain any of these built-in constants:</p>
+<table>
+    <thead><tr><th>Name</th><th>Numeric Value</th><th>Accepted Formats</th></tr></thead>
+    <tbody>
+        <tr><td>E</td><td>2.71828182846</td><td>E, e</td></tr>
+        <tr><td>Pi</td><td>3.14159265359</td><td>PI, pi, π</td></tr>
+        <tr><td>Tau</td><td>6.28318530718</td><td>TAU, tau, τ</td></tr>
+        <tr><td>Phi</td><td>1.61803398874</td><td>PHI, phi, φ, ϕ</td></tr>
+    </tbody>
+</table></div>
         </div>
 
         <footer class="col-md-12">
