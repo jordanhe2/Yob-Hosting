@@ -5,7 +5,7 @@ Yob was a project started by **Tanner Nielsen** and **Jordan Hendrickson** in th
 ## Development
 Originally, we were developing in Java and our plans for the software were much more ambitious.  We weren't experienced developers, but we managed to hack together an account system and beginnings of an assignment editor by the end of the summer.  The old login screen looked like this:
 
-<div class="centered"><img src="../../img/original_yob.png"></div>
+<div class="centered"><img src="../img/original_yob.png"></div>
 
 To our surprise, the school decided to replace all of the lab laptops with Chromebooks that fall, which Java applications were not easily compatible with.  Moreover, all of the teachers had started using Google Classroom, which made our software largely irrelevant.
 
