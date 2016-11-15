@@ -15,9 +15,7 @@ Expressions are used extensively throughout Yob.  Calculated Columns, Functions,
 Yob expressions can contain any of these built-in functions:
 
 <table>
-    <thead>
-        <tr><th>Name</th><th>Description</th></tr>
-    </thead>
+    <thead><tr><th>Name</th><th>Description</th></tr></thead>
     <tbody>
         <tr><td>sin(x)</td><td>Sine of x (in radians)</td></tr>
         <tr><td>cos(x)</td><td>Cosine of x (in radians)</td></tr>
@@ -25,7 +23,24 @@ Yob expressions can contain any of these built-in functions:
         <tr><td>csc(x)</td><td>Cosecant of x (in radians)</td></tr>
         <tr><td>sec(x)</td><td>Secant of x (in radians)</td></tr>
         <tr><td>cot(x)</td><td>Cotangent of x (in radians)</td></tr>
-        <!-- ... -->
+        <tr><td>asin(x)</td><td>Inverse Sine (or Arcsine) of x (in radians)</td></tr>
+        <tr><td>acos(x)</td><td>Inverse Cosine (or Arccosine) of x (in radians)</td></tr>
+        <tr><td>atan(x)</td><td>Inverse Tangent (or Arctangent) of x (in radians)</td></tr>
+        <tr><td>acsc(x)</td><td>Inverse Cosecant (or Arccosecant) of x (in radians)</td></tr>
+        <tr><td>asec(x)</td><td>Inverse Secant (or Arcsecant) of x (in radians)</td></tr>
+        <tr><td>acot(x)</td><td>Inverse Cotangent (or Arccotangent) of x (in radians)</td></tr>
+        <tr><td>sinh(x)</td><td>Hyperbolic Sine of x</td></tr>
+        <tr><td>cosh(x)</td><td>Hyperbolic Cosine of x</td></tr>
+        <tr><td>tanh(x)</td><td>Hyperbolic Tangent of x</td></tr>
+        <tr><td>csch(x)</td><td>Hyperbolic Cosecant of x</td></tr>
+        <tr><td>sech(x)</td><td>Hyperbolic Secant of x</td></tr>
+        <tr><td>coth(x)</td><td>Hyperbolic Cotangent of x</td></tr>
+        <tr><td>asinh(x)</td><td>Inverse Hyperbolic Sine of x</td></tr>
+        <tr><td>acosh(x)</td><td>Inverse Hyperbolic Cosine of x</td></tr>
+        <tr><td>atanh(x)</td><td>Inverse Hyperbolic Tangent of x</td></tr>
+        <tr><td>acsch(x)</td><td>Inverse Hyperbolic Cosecant of x</td></tr>
+        <tr><td>asech(x)</td><td>Inverse Hyperbolic Secant of x</td></tr>
+        <tr><td>acoth(x)</td><td>Inverse Hyperbolic Cotangent of x</td></tr>
     </tbody>
 </table>
 
