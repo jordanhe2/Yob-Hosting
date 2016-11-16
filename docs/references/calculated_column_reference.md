@@ -1,4 +1,4 @@
-# Using Calculated Columns
+# Calculated Column Reference
 
 Calculated Columns is a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry.  Another benefit of Calculated Columns is that they are updated dynamically, so you can make changes on the fly without having to manually recalculate anything.
 Each column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header.

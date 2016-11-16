@@ -15,5 +15,6 @@ pages:
 - References:
     - 'Data Storage': 'references/data_storage.md'
     - 'Expression Reference': 'references/expression_reference.md'
-    - 'Calculated Columns': 'references/calculated_columns.md'
+    - 'Curve Fit Reference': 'references/curve_fit_reference.md'
+    - 'Calculated Column Reference': 'references/calculated_column_reference.md'
 - About: 'about.md'

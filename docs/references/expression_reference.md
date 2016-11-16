@@ -25,7 +25,7 @@ A part of what makes expressions so effective is their ability to refer to other
 
 * To reference a **Curve Fit**, the same principle applies but names are denoted with "cf" rather than "f".  For example, `cf1(x / 3) + sin(x)` would be a valid way to reference a Curve Fit in an expression.
 
-* To reference a **Data Set Column**, use the Data Set name along with the column name.  For example, `d1c2` would reference the _second_ column of the _first_ Data Set.  However, only Calculated Column expression are allowed to reference Data Set Columns.  This is demonstrated in the [Advanced Data Sets](../tutorials/advanced_data_sets.md) tutorial and explained in greater detail in the [Calculated Columns Reference](./calculated_columns.md).
+* To reference a **Data Set Column**, use the Data Set name along with the column name.  For example, `d1c2` would reference the _second_ column of the _first_ Data Set.  However, only Calculated Column expression are allowed to reference Data Set Columns.  This is demonstrated in the [Advanced Data Sets](../tutorials/advanced_data_sets.md) tutorial and explained in greater detail in the [Calculated Columns Reference](./calculated_column_reference.md).
 
 ### Maintaining Referential Integrity
 Allowing users to put references in their expressions gives them a lot of freedom, but doing to makes it necessary to impose a few restrictions to maintain referential integrity.  Essentially, this just means that if an expression refers to another item,

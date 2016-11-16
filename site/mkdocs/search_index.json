@@ -181,27 +181,62 @@
             "title": "Built-in Constants"
         },
         {
-            "location": "/references/calculated_columns/",
-            "text": "Using Calculated Columns\n\n\nCalculated Columns is a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry.  Another benefit of Calculated Columns is that they are updated dynamically, so you can make changes on the fly without having to manually recalculate anything.\nEach column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header.\n\n\nThe Calculated Column menu contains 3 items:\n\n\n\n\nThe expression field\n\n\nThe data selector\n\n\nThe enabled checkbox\n\n\n\n\nThe Expression Field\n\n\nThe expression field is what is used to generate the values of the column.  An example would be be \nd1c1 + 2*d2c1\n, which would make each value of the column be the sum of the cooresponding value in the first column of the first Data Set and twice the cooresponding value of the first column of the second Data Set.  You can also reference Functions or Curve Fits in your expressions.  For example, \nf3(d1c1) / 10\n would make each value of the column be 1/10th of the first column of the first Data Set run through the third function.  One thing to watch out for, however, is circular dependencies.  For example, you can't have d1c1 use d2c1 in its expression if d2c1 uses d3c1 and d3c1 uses d1c1, because of the circular dependencies. [more on this]\n\n\nThe Data Type Selector\n\n\nThe data selector provides an easy way to figure out which item it is that you want to use in your Calculated Column expression.  For example, if you wanted to use the Distance column from a Distance vs Time Data Set but didn't know its number, you could simply select it from the list then click \"Insert\", which will insert the proper text... [more on this]\n\n\nThe Enabled Checkbox\n\n\nThe enabled checkbox sets whether or not the Column should generate (or calculate) its values from the expression.\nCalculated Columns cells appear yellow and cannot be modified within the table editor like regular Columns can.",
-            "title": "Calculated Columns"
+            "location": "/references/curve_fit_reference/",
+            "text": "Curve Fit Reference\n\n\n...\n\n\n\n\nBuilt-in Models\n\n\nCurve Fits come with the following built-in models:\n\n\n\n    \nModel Name\nExpression\n\n    \n\n        \nConstant\ncf(x) = C\n\n        \nProportional\ncf(x) = A*x\n\n        \nLinear\ncf(x) = A*x + B\n\n        \nQuadratic\ncf(x) = A*x^2 + B*x + C\n\n        \nCubic\ncf(x) = A*x^3 + B*x^2 + C*x + D\n\n        \nQuartic\ncf(x) = A*x^5 + B*x^4 + C*x^3 + D*x^2 + F*x + G\n\n        \nPower\ncf(x) = A*x^B\n\n        \nInverse\ncf(x) = A / x\n\n        \nInverse Square\ncf(x) = A / (x^2)\n\n        \nSinusoid\ncf(x) = A*sin(B*x + C) + D\n\n        \nExponential\ncf(x) = A*B^x\n\n        \nNatural Exponential\ncf(x) = A*e^(B*x)\n\n        \nLogarithmic\ncf(x) = A + B*log(x)\n\n        \nNatural Logarithmic\ncf(x) = A + B*ln(x)\n\n        \nGaussian\ncf(x) = A*e^(-(x-B)^2 / C^2) + D\n\n        \nNormalized Gaussian\ncf(x) = (1 / (S*sqrt(2*\u03c0))) * e^(-(x-M)^2 / (2*S^2))\n\n        \nLogistic\ncf(x) = A / (1 + e^(-B*x + C))\n\n    \n\n\n\n\n\nCustom Models\n\n\nCurve Fits also support user-defined models.  Note that all the rules of Yob expressions apply.  See the \nExpression Reference\n for more details.\n\n\n\n\n\n\n\nRegression Methods\n\n\n...\n\n\n\n\nGuess Parameters\n\n\n...\n\n\n\n\nParameter Output\n\n\n...",
+            "title": "Curve Fit Reference"
         },
         {
-            "location": "/references/calculated_columns/#using-calculated-columns",
+            "location": "/references/curve_fit_reference/#curve-fit-reference",
+            "text": "...",
+            "title": "Curve Fit Reference"
+        },
+        {
+            "location": "/references/curve_fit_reference/#built-in-models",
+            "text": "Curve Fits come with the following built-in models:  \n     Model Name Expression \n     \n         Constant cf(x) = C \n         Proportional cf(x) = A*x \n         Linear cf(x) = A*x + B \n         Quadratic cf(x) = A*x^2 + B*x + C \n         Cubic cf(x) = A*x^3 + B*x^2 + C*x + D \n         Quartic cf(x) = A*x^5 + B*x^4 + C*x^3 + D*x^2 + F*x + G \n         Power cf(x) = A*x^B \n         Inverse cf(x) = A / x \n         Inverse Square cf(x) = A / (x^2) \n         Sinusoid cf(x) = A*sin(B*x + C) + D \n         Exponential cf(x) = A*B^x \n         Natural Exponential cf(x) = A*e^(B*x) \n         Logarithmic cf(x) = A + B*log(x) \n         Natural Logarithmic cf(x) = A + B*ln(x) \n         Gaussian cf(x) = A*e^(-(x-B)^2 / C^2) + D \n         Normalized Gaussian cf(x) = (1 / (S*sqrt(2*\u03c0))) * e^(-(x-M)^2 / (2*S^2)) \n         Logistic cf(x) = A / (1 + e^(-B*x + C))",
+            "title": "Built-in Models"
+        },
+        {
+            "location": "/references/curve_fit_reference/#custom-models",
+            "text": "Curve Fits also support user-defined models.  Note that all the rules of Yob expressions apply.  See the  Expression Reference  for more details.",
+            "title": "Custom Models"
+        },
+        {
+            "location": "/references/curve_fit_reference/#regression-methods",
+            "text": "...",
+            "title": "Regression Methods"
+        },
+        {
+            "location": "/references/curve_fit_reference/#guess-parameters",
+            "text": "...",
+            "title": "Guess Parameters"
+        },
+        {
+            "location": "/references/curve_fit_reference/#parameter-output",
+            "text": "...",
+            "title": "Parameter Output"
+        },
+        {
+            "location": "/references/calculated_column_reference/",
+            "text": "Calculated Column Reference\n\n\nCalculated Columns is a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry.  Another benefit of Calculated Columns is that they are updated dynamically, so you can make changes on the fly without having to manually recalculate anything.\nEach column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header.\n\n\nThe Calculated Column menu contains 3 items:\n\n\n\n\nThe expression field\n\n\nThe data selector\n\n\nThe enabled checkbox\n\n\n\n\nThe Expression Field\n\n\nThe expression field is what is used to generate the values of the column.  An example would be be \nd1c1 + 2*d2c1\n, which would make each value of the column be the sum of the cooresponding value in the first column of the first Data Set and twice the cooresponding value of the first column of the second Data Set.  You can also reference Functions or Curve Fits in your expressions.  For example, \nf3(d1c1) / 10\n would make each value of the column be 1/10th of the first column of the first Data Set run through the third function.  One thing to watch out for, however, is circular dependencies.  For example, you can't have d1c1 use d2c1 in its expression if d2c1 uses d3c1 and d3c1 uses d1c1, because of the circular dependencies. [more on this]\n\n\nThe Data Type Selector\n\n\nThe data selector provides an easy way to figure out which item it is that you want to use in your Calculated Column expression.  For example, if you wanted to use the Distance column from a Distance vs Time Data Set but didn't know its number, you could simply select it from the list then click \"Insert\", which will insert the proper text... [more on this]\n\n\nThe Enabled Checkbox\n\n\nThe enabled checkbox sets whether or not the Column should generate (or calculate) its values from the expression.\nCalculated Columns cells appear yellow and cannot be modified within the table editor like regular Columns can.",
+            "title": "Calculated Column Reference"
+        },
+        {
+            "location": "/references/calculated_column_reference/#calculated-column-reference",
             "text": "Calculated Columns is a powerful feature in Yob that allows you to generate new columns from other columns, saving you the time of manual data entry.  Another benefit of Calculated Columns is that they are updated dynamically, so you can make changes on the fly without having to manually recalculate anything.\nEach column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header.  The Calculated Column menu contains 3 items:   The expression field  The data selector  The enabled checkbox",
-            "title": "Using Calculated Columns"
+            "title": "Calculated Column Reference"
         },
         {
-            "location": "/references/calculated_columns/#the-expression-field",
+            "location": "/references/calculated_column_reference/#the-expression-field",
             "text": "The expression field is what is used to generate the values of the column.  An example would be be  d1c1 + 2*d2c1 , which would make each value of the column be the sum of the cooresponding value in the first column of the first Data Set and twice the cooresponding value of the first column of the second Data Set.  You can also reference Functions or Curve Fits in your expressions.  For example,  f3(d1c1) / 10  would make each value of the column be 1/10th of the first column of the first Data Set run through the third function.  One thing to watch out for, however, is circular dependencies.  For example, you can't have d1c1 use d2c1 in its expression if d2c1 uses d3c1 and d3c1 uses d1c1, because of the circular dependencies. [more on this]",
             "title": "The Expression Field"
         },
         {
-            "location": "/references/calculated_columns/#the-data-type-selector",
+            "location": "/references/calculated_column_reference/#the-data-type-selector",
             "text": "The data selector provides an easy way to figure out which item it is that you want to use in your Calculated Column expression.  For example, if you wanted to use the Distance column from a Distance vs Time Data Set but didn't know its number, you could simply select it from the list then click \"Insert\", which will insert the proper text... [more on this]",
             "title": "The Data Type Selector"
         },
         {
-            "location": "/references/calculated_columns/#the-enabled-checkbox",
+            "location": "/references/calculated_column_reference/#the-enabled-checkbox",
             "text": "The enabled checkbox sets whether or not the Column should generate (or calculate) its values from the expression.\nCalculated Columns cells appear yellow and cannot be modified within the table editor like regular Columns can.",
             "title": "The Enabled Checkbox"
         },
