@@ -1,5 +1,12 @@
 # Curve Fit Reference
-...
+Curve Fits are a key feature for Yob.  They are setup to work well "right out of the box," but they are also highly customizable.  This guide is meant to serve as a reference for using Curve Fits.  If you are new using Curve Fits, you may want to check out one of the following tutorials first:
+
+* [Getting Started - Finding Project Distance](../tutorials/getting_started.md#finding-the-projected-distance)
+* [Advanced Curve Fits](../tutorials/advanced_curve_fits.md)
+
+---
+## General Rules
+At a minimum, Curve Fits need to know which **Data Set** to use, and what type of **Model** to fit to the data.
 
 ---
 ## Built-in Models
@@ -13,7 +20,8 @@ Curve Fits come with the following built-in models:
         <tr><td>Linear</td><td>cf(x) = A*x + B</td></tr>
         <tr><td>Quadratic</td><td>cf(x) = A*x^2 + B*x + C</td></tr>
         <tr><td>Cubic</td><td>cf(x) = A*x^3 + B*x^2 + C*x + D</td></tr>
-        <tr><td>Quartic</td><td>cf(x) = A*x^5 + B*x^4 + C*x^3 + D*x^2 + F*x + G</td></tr>
+        <tr><td>Quartic</td><td>cf(x) = A*x^4 + B*x^3 + C*x^2 + D*x + F</td></tr>
+        <tr><td>Quintic</td><td>cf(x) = A*x^5 + B*x^4 + C*x^3 + D*x^2 + F*x + G</td></tr>
         <tr><td>Power</td><td>cf(x) = A*x^B</td></tr>
         <tr><td>Inverse</td><td>cf(x) = A / x</td></tr>
         <tr><td>Inverse Square</td><td>cf(x) = A / (x^2)</td></tr>
