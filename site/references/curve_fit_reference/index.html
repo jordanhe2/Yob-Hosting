@@ -171,6 +171,8 @@
 
         <li class="main active"><a href="#curve-fit-reference">Curve Fit Reference</a></li>
 
+            <li><a href="#general-rules">General Rules</a></li>
+
             <li><a href="#built-in-models">Built-in Models</a></li>
 
             <li><a href="#regression-methods">Regression Methods</a></li>
@@ -185,7 +187,17 @@
             <div class="col-md-9" role="main">
 
 <h1 id="curve-fit-reference">Curve Fit Reference</h1>
-<p>...</p>
+<p>Curve Fits are a key feature for Yob.  They are setup to work well "right out of the box," but they are also highly customizable.  This guide is meant to serve as a reference for using Curve Fits.  If you are new using Curve Fits, you may want to check out one of the following tutorials first:</p>
+<ul>
+<li><a href="../../tutorials/getting_started/#finding-the-projected-distance">Getting Started - Finding Project Distance</a></li>
+<li><a href="../../tutorials/advanced_curve_fits/">Advanced Curve Fits</a></li>
+</ul>
+<hr />
+<h2 id="general-rules">General Rules</h2>
+<ul>
+<li>At a minimum, Curve Fits need to know which <strong>Data Set</strong> to use, and what type of <strong>Model</strong> to fit to the data.</li>
+<li>Curve Fits need sufficient data to work properly.  In general, complex models need more data than simple models.</li>
+</ul>
 <hr />
 <h2 id="built-in-models">Built-in Models</h2>
 <p>Curve Fits come with the following built-in models:</p>
@@ -197,7 +209,8 @@
         <tr><td>Linear</td><td>cf(x) = A*x + B</td></tr>
         <tr><td>Quadratic</td><td>cf(x) = A*x^2 + B*x + C</td></tr>
         <tr><td>Cubic</td><td>cf(x) = A*x^3 + B*x^2 + C*x + D</td></tr>
-        <tr><td>Quartic</td><td>cf(x) = A*x^5 + B*x^4 + C*x^3 + D*x^2 + F*x + G</td></tr>
+        <tr><td>Quartic</td><td>cf(x) = A*x^4 + B*x^3 + C*x^2 + D*x + F</td></tr>
+        <tr><td>Quintic</td><td>cf(x) = A*x^5 + B*x^4 + C*x^3 + D*x^2 + F*x + G</td></tr>
         <tr><td>Power</td><td>cf(x) = A*x^B</td></tr>
         <tr><td>Inverse</td><td>cf(x) = A / x</td></tr>
         <tr><td>Inverse Square</td><td>cf(x) = A / (x^2)</td></tr>
@@ -218,7 +231,23 @@
 
 <hr />
 <h2 id="regression-methods">Regression Methods</h2>
-<p>...</p>
+<p>Curve fits attempt to find the best model parameters by minimizing the sum of the differences between the outputs and predicted outputs (residuals) in some form or another.</p>
+<div class="centered"><img src="../../img/residuals.png"></div>
+
+<p>Yob supports several different methods of solving this problem, but by far the most common (and default) is the Ordinary Least Squares (OLS) algorithm.  More details for each method are described below.</p>
+<h3 id="ols-ordinary-least-squares">OLS - Ordinary Least Squares</h3>
+<p>The <strong>Ordinary Least Squares</strong> algorithm is the most robust and general purpose algorithm, making it suitable for almost any data.  It finds the best model parameters by minimizing the sum of the <em>squared</em> residuals.  In mathematical terms, it tries to minimize <img alt="OLS Objective" src="../../img/ols_equation.png" />.  Since the residuals are squared, points that are further away from the curve are more harshly penalized than points that are close.</p>
+<h3 id="lad-least-absolute-deviations">LAD - Least Absolute Deviations</h3>
+<p>The <strong>Least Absolute Deviations</strong> algorithm attempts to minimize the sum of the absolute residuals, as opposed to the squared residuals like OLS.  In mathematical terms, it tries to minimize <img alt="LAD Objective" src="../../img/lad_equation.png" />.  Since the residuals are not squared, this algorithm can handle outliers marginally better than OLS, <strong>however</strong>, unlike OLS, there are some cases where multiple solutions exist which can cause <a href="https://en.wikipedia.org/wiki/Least_absolute_deviations#Other_properties">instability</a>.</p>
+<h3 id="wls_1y-weighted-least-squares-1-y">WLS_1Y - Weighted Least Squares, 1 / Y</h3>
+<p>Both OLS and LAD assume that error is distributed evenly throughout the data, which is not always the case.  Take a look at the following data for example:</p>
+<div class="centered"><img src="../../img/increasing_error.png"></div>
+
+<p>You can see that the error gets larger as Y gets larger.  The <strong>Weighted Least Squares</strong> algorithm is a variation on OLS that addresses this problem by weighting each residual so that it pays extra attention to data points that have small Y values, and pays less attention to points with large Y values, since it is assumed that they have greater amounts of error.  In mathematical terms, the algorithm tries to minimize <img alt="WLS Objective" src="../../img/wls_equation.png" />.  For this particular version of WLS, <img alt="Wi = 1/y" src="../../img/wls_1y_weight.png" />.  The use cases of this algorithm are more limited than OLS, but recoginzing when it's appropriate to apply it can make a big difference in your experiment.  This is demonstrated graphically in the next variation of WLS below.</p>
+<h3 id="wls_1y2-weighted-least-squares-1-y2">WLS_1Y2 - Weighted Least Squares, 1 / Y<sup>2</sup></h3>
+<p>This variation on WLS functions just like the previous one, the only difference being that <img alt="Wi = 1/y^2" src="../../img/wls_1y2_weight.png" />.  The graph below shows the differences between a line fitted with OLS and a line fitted with WLS, using the data from the previous example:</p>
+<div class="centered"><img src="../../img/ols_vs_wls.png"></div>
+
 <hr />
 <h2 id="guess-parameters">Guess Parameters</h2>
 <p>...</p>
