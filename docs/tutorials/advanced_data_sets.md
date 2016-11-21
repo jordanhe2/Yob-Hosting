@@ -7,9 +7,6 @@ If you haven’t done so already, you may want to check out the [Getting Started
 
 ---
 ## The Data
-Consider the following table.
-
-
 <table>
 	<tr>
 		<th>Time (s)</th>
@@ -76,5 +73,3 @@ After you paste the data, you can throw on some labels like so:
 
 ---
 ## Sharing Columns
-
-
