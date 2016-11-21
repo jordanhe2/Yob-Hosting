@@ -87,13 +87,28 @@
         },
         {
             "location": "/tutorials/advanced_data_sets/",
-            "text": "Advanced Data Sets",
+            "text": "Advanced Data Sets\n\n\nIn this tutorial, we will demonstrate how to take advantage of the full capabilities of Data Sets to maximize efficiency in a more complicated experiment:  Plotting the 2D coordinates of a ball rolling down a bumpy hill.\n\n\nIf you haven\u2019t done so already, you may want to check out the \nGetting Started tutorial\n before you continue.\n\n\n\n\nThe Data\n\n\n\n    \n\n        \nTime (s)\n\n        \n0.0\n\n        \n0.5\n\n        \n1.0\n\n        \n1.5\n\n        \n2.0\n\n        \n2.5\n\n        \n3.0\n\n        \n3.5\n\n        \n4.0\n\n        \n4.5\n\n        \n5.0\n\n        \n5.5\n\n        \n6.0\n\n\n\n    \n\n        \nX-Coordinate (m)\n\n        \n0.00\n\n        \n0.03\n\n        \n0.10\n\n        \n0.22\n\n        \n0.40\n\n        \n0.62\n\n        \n0.90\n\n        \n1.22\n\n        \n1.60\n\n        \n2.02\n\n        \n2.50\n\n        \n3.02\n\n        \n3.60\n\n\n\n    \n\n        \nY-Coordinate (m)\n\n        \n0.00\n\n        \n0.47\n\n        \n0.84\n\n        \n0.99\n\n        \n0.90\n\n        \n0.59\n\n        \n0.14\n\n        \n-0.35\n\n        \n-0.75\n\n        \n-0.97\n\n        \n-0.95\n\n        \n-0.70\n\n        \n-0.27\n\n\n\n\n\n\nWe have tracked the X and Y coordinates of a ball as it rolls down a bumpy surface over time.  Let\u2019s start with making a Data Set comparing \nTime\n and the \nX-Coordinate\n.  To do this, create a new Data Set, then simply copy each row and paste them into their respective columns in the table editor. \n\n\nYob will automatically detect that you have copied a row, and rotate the data to fill the selected column.\n\n\nAfter you paste the data, you can throw on some labels like so:\n\n\n\n\n\n\n\nSharing Columns\n\n\n...\n\n\n\n\nGenerating Columns\n\n\n...",
             "title": "Advanced Data Sets"
         },
         {
             "location": "/tutorials/advanced_data_sets/#advanced-data-sets",
-            "text": "",
+            "text": "In this tutorial, we will demonstrate how to take advantage of the full capabilities of Data Sets to maximize efficiency in a more complicated experiment:  Plotting the 2D coordinates of a ball rolling down a bumpy hill.  If you haven\u2019t done so already, you may want to check out the  Getting Started tutorial  before you continue.",
             "title": "Advanced Data Sets"
+        },
+        {
+            "location": "/tutorials/advanced_data_sets/#the-data",
+            "text": "Time (s) \n         0.0 \n         0.5 \n         1.0 \n         1.5 \n         2.0 \n         2.5 \n         3.0 \n         3.5 \n         4.0 \n         4.5 \n         5.0 \n         5.5 \n         6.0  \n     \n         X-Coordinate (m) \n         0.00 \n         0.03 \n         0.10 \n         0.22 \n         0.40 \n         0.62 \n         0.90 \n         1.22 \n         1.60 \n         2.02 \n         2.50 \n         3.02 \n         3.60  \n     \n         Y-Coordinate (m) \n         0.00 \n         0.47 \n         0.84 \n         0.99 \n         0.90 \n         0.59 \n         0.14 \n         -0.35 \n         -0.75 \n         -0.97 \n         -0.95 \n         -0.70 \n         -0.27    We have tracked the X and Y coordinates of a ball as it rolls down a bumpy surface over time.  Let\u2019s start with making a Data Set comparing  Time  and the  X-Coordinate .  To do this, create a new Data Set, then simply copy each row and paste them into their respective columns in the table editor.   Yob will automatically detect that you have copied a row, and rotate the data to fill the selected column.  After you paste the data, you can throw on some labels like so:",
+            "title": "The Data"
+        },
+        {
+            "location": "/tutorials/advanced_data_sets/#sharing-columns",
+            "text": "...",
+            "title": "Sharing Columns"
+        },
+        {
+            "location": "/tutorials/advanced_data_sets/#generating-columns",
+            "text": "...",
+            "title": "Generating Columns"
         },
         {
             "location": "/tutorials/advanced_curve_fits/",

@@ -73,3 +73,8 @@ After you paste the data, you can throw on some labels like so:
 
 ---
 ## Sharing Columns
+...
+
+---
+## Generating Columns
+...
