@@ -1,8 +1,11 @@
+theme: readthedocs
+extra_css:
+    - css/extra.css
+markdown_extensions:
+    - admonition
+
 site_name: Yob User Manual
 copyright: 'Copyright © 2016 Tanner Nielsen, Jordan Hendrickson'
-theme: cosmo
-extra_css:
-  - css/extra.css
 pages:
 - Home: 'index.md'
 - Tutorials:

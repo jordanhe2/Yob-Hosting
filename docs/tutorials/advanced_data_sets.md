@@ -1,5 +1,5 @@
 # Advanced Data Sets
-In this tutorial, we will demonstrate how to take advantage of the full capabilities of Data Sets to maximize efficiency in a more complicated experiment:  Plotting the 2D coordinates of a ball rolling down a bumpy hill.
+In this tutorial, we will demonstrate how to take advantage of the full capabilities of Data Sets to maximize efficiency in a more complicated experiment.  For this experiment, we will be plotting the 2D coordinates of a ball rolling down a bumpy hill and generating other data from the coordinate information.
 
 
 If you haven’t done so already, you may want to check out the [Getting Started tutorial](../tutorials/getting_started.md) before you continue.
@@ -62,7 +62,8 @@ If you haven’t done so already, you may want to check out the [Getting Started
 We have tracked the X and Y coordinates of a ball as it rolls down a bumpy surface over time.  Let’s start with making a Data Set comparing **Time** and the **X-Coordinate**.  To do this, create a new Data Set, then simply copy each row and paste them into their respective columns in the table editor. 
 
 
-_Yob will automatically detect that you have copied a row, and rotate the data to fill the selected column._
+!!! note "Note"
+    Yob will automatically detect that you have copied a row, and rotate the data to fill the selected column.
 
 
 After you paste the data, you can throw on some labels like so:
