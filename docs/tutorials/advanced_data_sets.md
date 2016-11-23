@@ -62,7 +62,7 @@ If you haven’t done so already, you may want to check out the [Getting Started
 We have tracked the X and Y coordinates of a ball as it rolls down a bumpy surface over time.  Let’s start with making a Data Set comparing **Time** and the **X-Coordinate**.  To do this, create a new Data Set, then simply copy each row and paste them into their respective columns in the table editor. 
 
 
-!!! note "Note"
+!!! info "Note"
     Yob will automatically detect that you have copied a row, and rotate the data to fill the selected column.
 
 

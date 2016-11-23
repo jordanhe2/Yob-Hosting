@@ -1,4 +1,4 @@
-theme: readthedocs
+theme: cosmo
 extra_css:
     - css/extra.css
 markdown_extensions:
