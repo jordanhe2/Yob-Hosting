@@ -52,7 +52,7 @@
     
         
     <url>
-     <loc>/references/data_storage/</loc>
+     <loc>/references/storage_and_loading_reference/</loc>
      <lastmod>2016-11-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -68,7 +68,7 @@
      <lastmod>2016-11-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-
+        
     <url>
      <loc>/references/calculated_column_reference/</loc>
      <lastmod>2016-11-22</lastmod>

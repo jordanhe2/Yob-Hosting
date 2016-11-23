@@ -16,7 +16,7 @@ pages:
     - 'Labeling and Sizing Your Graph': 'tutorials/labeling_and_sizing_your_graph.md'
     - 'Styling Your Graph': 'tutorials/styling_your_graph.md'
 - References:
-    - 'Data Storage': 'references/data_storage.md'
+    - 'Storage and Loading Reference': 'references/storage_and_loading_reference.md'
     - 'Expression Reference': 'references/expression_reference.md'
     - 'Curve Fit Reference': 'references/curve_fit_reference.md'
     - 'Calculated Column Reference': 'references/calculated_column_reference.md'
