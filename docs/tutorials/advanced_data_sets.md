@@ -1,9 +1,7 @@
 # Advanced Data Sets
-In this tutorial, we will demonstrate how to take advantage of the full capabilities of Data Sets to maximize efficiency in a more complicated experiment.  For this experiment, we will be plotting the 2D coordinates of a ball rolling down a bumpy hill and generating other data from the coordinate information.
-
+In this tutorial, we will demonstrate how to take full advantage of Data Sets to maximize efficiency in a more complicated experiment.  For this experiment, we will be plotting the 2D coordinates of a ball rolling down a bumpy hill and generating other data from the coordinate information.
 
 If you haven’t done so already, you may want to check out the [Getting Started tutorial](../tutorials/getting_started.md) before you continue.
-
 
 ---
 ## The Data
@@ -58,23 +56,19 @@ If you haven’t done so already, you may want to check out the [Getting Started
 </tr>
 </table>
 
-
-We have tracked the X and Y coordinates of a ball as it rolls down a bumpy surface over time.  Let’s start with making a Data Set comparing **Time** and the **X-Coordinate**.  To do this, create a new Data Set, then simply copy each row and paste them into their respective columns in the table editor. 
-
+Above, we have collected the X and Y coordinates of a ball as it rolls down a bumpy surface over time.  Let’s start with making a Data Set to plot how the **X-Coordinate** changes with **Time**.  To do this, create a new Data Set, then simply copy the Time and X-Coordinate rows and paste them into their respective columns in the table editor. 
 
 !!! info "Note"
-    Yob will automatically detect that you have copied a row, and rotate the data to fill the selected column.
-
+    Yob will automatically detect when you have copied a row, and will rotate your data to fill the column you're trying to paste to.
+    <div class="centered"><img src="../../img/advanced_data_sets/row_rotation.png"></div>
 
 After you paste the data, you can throw on some labels like so:
 
-
 <div class="centered"><img src="../../img/advanced_data_sets/x-coordinates.png"></div>
-
 
 ---
 ## Sharing Columns
-...
+Suppose now that we want to overlay a second Data Set comparing the **Y-Coordinate** with Time. ...
 
 ---
 ## Generating Columns
