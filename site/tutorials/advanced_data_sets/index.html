@@ -177,6 +177,8 @@
         
             <li><a href="#generating-columns">Generating Columns</a></li>
 
+            <li><a href="#learn-more">Learn More</a></li>
+
     
     </ul>
 </div></div>
@@ -256,11 +258,11 @@
 <div class="centered"><img src="../../img/advanced_data_sets/open_calc_col.png"></div>
 
 <p>Every column can be configured to calculate its values from the values of other columns.  In this case, we want the column to simply mirror the values from Time column of the first Data Set.</p>
-<p>To do this, select <strong>Data Set 1 - Time (d1c1)</strong> from the dropdown menu and click <strong>Insert</strong>.  Every column has a code name for simple referencing, so when you see <code>d2c1 = d1c1</code>, that means that the values from column 1 of Data Set 2 should equal the values from column 1 of Data Set 1.  Recognizing how easy it is to lose track of these code names, we included the dropdown menu to make it easier to get the name of the column you're looking for.</p>
+<p>To do this, select <strong>Data Set 1 - Time (d1c1)</strong> from the dropdown menu and click <strong>Insert</strong>.  Every column has a code name for simple referencing, so when you see <code>d2c1 = d1c1</code>, that means that the values from column 1 of Data Set 2 should equal the values from column 1 of Data Set 1.  You can use the dropdown menu to find the name of the column you're looking for.</p>
 <p>Check the <strong>Enabled</strong> check box to make the calculations take effect.  Now all of the Time values should have automatically filled the column:</p>
 <div class="centered"><img src="../../img/advanced_data_sets/calc_col.png"></div>
 
-<div class="admonition info">
+<div class="admonition warning">
 <p class="admonition-title">Note</p>
 <p>Calculated columns cannot be edited since they are generated from other columns.  They are turned yellow to remind you of this:</p>
 </div>
@@ -274,7 +276,29 @@
 <div class="centered"><img src="../../img/advanced_data_sets/progress.png"></div>
 
 <p>Now suppose that we want to overlay a third Data Set showing the total distance between the ball and the origin.  We can calculate the values easily using the Euclidean distance forumla, <img alt="Euclidean distance forumula" src="../../img/advanced_data_sets/euclid_dist.png" />, but crunching all of the numbers by hand is tedious.  This would be another great place to make use of Calculated Columns.</p>
-<p>[More to come...]</p></div>
+<p>Let's start by making another Data Set and using the same technique we used above to copy the Time data into the first column:  First, create a new Data Set, then click the calculator icon in the top right of the first column.  Select <strong>Data Set 1 - Time (d1c1)</strong> from the dropdown menu, click <strong>Insert</strong>, then check the <strong>Enabled</strong> check box:</p>
+<div class="centered"><img src="../../img/advanced_data_sets/dist_plot_time.png"></div>
+
+<p>Before we continue, let's put some labels on this Data Set like so:</p>
+<div class="centered"><img src="../../img/advanced_data_sets/d3_labels.png"></div>
+
+<p>Now let's go ahead and fill our distance column.  If we were doing this by hand, we'd have to manually put each value from the X and Y columns through the <img alt="Euclidean distance forumula" src="../../img/advanced_data_sets/euclid_dist.png" /> formula to get the values for distance.  With Calculated Columns, we can simply plug in this formula, and all the values will be calculated automatically:</p>
+<p>Click on the calculator icon in the top right of the distance column, and enter <code>sqrt((d1c2)^2 + (d2c2)^2)</code> into the expression field.  This expression is saying that we want each value of the column to be the square root of the cooresponding <strong>X</strong> value (Data Set 1, Column 2) squared, and the cooresponding <strong>Y</strong> value (Data Set2, Column 2) squared.</p>
+<div class="admonition info">
+<p class="admonition-title">Tip</p>
+<p>If you are struggling to get column names right, you can always use the drop down menu to locate and insert the names that you looking for.
+<div class="centered"><img src="../../img/advanced_data_sets/dropdown_example.png"></div></p>
+</div>
+<p>Lastly, check the <strong>Enabled</strong> check box.  If you have done everything correctly, your graph should look like the following:</p>
+<div class="centered"><img src="../../img/advanced_data_sets/progress2.png"></div>
+
+<hr />
+<h2 id="learn-more">Learn More</h2>
+<p>If you would like to learn more about Calculated Columns and expressions, check out these references:</p>
+<ul>
+<li><a href="../../references/calculated_column_reference/">Calculated Column Reference</a></li>
+<li><a href="../../references/expression_reference/">Expression Reference</a></li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
