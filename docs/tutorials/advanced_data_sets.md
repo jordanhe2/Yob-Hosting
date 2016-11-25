@@ -80,13 +80,13 @@ Next, click the calculator icon in the top right of the first column.  You will 
 
 Every column can be configured to calculate its values from the values of other columns.  In this case, we want the column to simply mirror the values from Time column of the first Data Set.
 
-To do this, select **Data Set 1 - Time (d1c1)** from the dropdown menu and click **Insert**.  Every column has a code name for simple referencing, so when you see `d2c1 = d1c1`, that means that the values from column 1 of Data Set 2 should equal the values from column 1 of Data Set 1.  Recognizing how easy it is to lose track of these code names, we included the dropdown menu to make it easier to get the name of the column you're looking for.
+To do this, select **Data Set 1 - Time (d1c1)** from the dropdown menu and click **Insert**.  Every column has a code name for simple referencing, so when you see `d2c1 = d1c1`, that means that the values from column 1 of Data Set 2 should equal the values from column 1 of Data Set 1.  You can use the dropdown menu to find the name of the column you're looking for.
 
 Check the **Enabled** check box to make the calculations take effect.  Now all of the Time values should have automatically filled the column:
 
 <div class="centered"><img src="../../img/advanced_data_sets/calc_col.png"></div>
 
-!!! info "Note"
+!!! warning "Note"
     Calculated columns cannot be edited since they are generated from other columns.  They are turned yellow to remind you of this:
 
 ### Benefits
@@ -104,4 +104,29 @@ If all has gone well thus far, your graph should look something like this:
 
 Now suppose that we want to overlay a third Data Set showing the total distance between the ball and the origin.  We can calculate the values easily using the Euclidean distance forumla, ![Euclidean distance forumula](../img/advanced_data_sets/euclid_dist.png), but crunching all of the numbers by hand is tedious.  This would be another great place to make use of Calculated Columns.
 
-[More to come...]
+Let's start by making another Data Set and using the same technique we used above to copy the Time data into the first column:  First, create a new Data Set, then click the calculator icon in the top right of the first column.  Select **Data Set 1 - Time (d1c1)** from the dropdown menu, click **Insert**, then check the **Enabled** check box:
+
+<div class="centered"><img src="../../img/advanced_data_sets/dist_plot_time.png"></div>
+
+Before we continue, let's put some labels on this Data Set like so:
+
+<div class="centered"><img src="../../img/advanced_data_sets/d3_labels.png"></div>
+
+Now let's go ahead and fill our distance column.  If we were doing this by hand, we'd have to manually put each value from the X and Y columns through the ![Euclidean distance forumula](../img/advanced_data_sets/euclid_dist.png) formula to get the values for distance.  With Calculated Columns, we can simply plug in this formula, and all the values will be calculated automatically:
+
+Click on the calculator icon in the top right of the distance column, and enter `sqrt((d1c2)^2 + (d2c2)^2)` into the expression field.  This expression is saying that we want each value of the column to be the square root of the cooresponding **X** value (Data Set 1, Column 2) squared, and the cooresponding **Y** value (Data Set2, Column 2) squared.
+
+!!! info "Tip"
+    If you are struggling to get column names right, you can always use the drop down menu to locate and insert the names that you looking for.
+    <div class="centered"><img src="../../img/advanced_data_sets/dropdown_example.png"></div>
+    
+Lastly, check the **Enabled** check box.  If you have done everything correctly, your graph should look like the following:
+
+<div class="centered"><img src="../../img/advanced_data_sets/progress2.png"></div>
+
+---
+## Learn More
+If you would like to learn more about Calculated Columns and expressions, check out these references:
+
+* [Calculated Column Reference](../references/calculated_column_reference.md)
+* [Expression Reference](../references/expression_reference.md)
