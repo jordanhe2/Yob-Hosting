@@ -78,8 +78,30 @@ Next, click the calculator icon in the top right of the first column.  You will 
 
 <div class="centered"><img src="../../img/advanced_data_sets/open_calc_col.png"></div>
 
-By default, all columns just accept the values that are typed into them, but each column has the option to have its values be calculated from the values of another column. [More to come]
+Every column can be configured to calculate its values from the values of other columns.  In this case, we want the column to simply mirror the values from Time column of the first Data Set.
+
+To do this, select **Data Set 1 - Time (d1c1)** from the dropdown menu and click **Insert**.  Every column has a code name for simple referencing, so when you see `d2c1 = d1c1`, that means that the values from column 1 of Data Set 2 should equal the values from column 1 of Data Set 1.  Recognizing how easy it is to lose track of these code names, we included the dropdown menu to make it easier to get the name of the column you're looking for.
+
+Check the **Enabled** check box to make the calculations take effect.  Now all of the Time values should have automatically filled the column:
+
+<div class="centered"><img src="../../img/advanced_data_sets/calc_col.png"></div>
+
+!!! info "Note"
+    Calculated columns cannot be edited since they are generated from other columns.  They are turned yellow to remind you of this:
+
+### Benefits
+You may be wondering why we took this round-about way of getting the time values into a second column.  What's wrong with copying and pasting?
+
+Well, in this experiment it wouldn't have been so bad to simply copy and paste, but imagine an experiement where you were plotting **ten different dependent variables** against the same independent variable.  Not only would you have to copy and paste the same data ten times, but if you ever discovered a mistake, you would have to correct it in **ten different places**.
+
+When you are using Calculated Columns, changes to the source column will propagate out to all the columns that depend on it, saving you time and mistakes.
 
 ---
 ## Generating Columns
-...
+If all has gone well thus far, your graph should look something like this:
+
+<div class="centered"><img src="../../img/advanced_data_sets/progress.png"></div>
+
+Now suppose that we want to overlay a third Data Set showing the total distance between the ball and the origin.  We can calculate the values easily using the Euclidean distance forumla, ![Euclidean distance forumula](../img/advanced_data_sets/euclid_dist.png), but crunching all of the numbers by hand is tedious.  This would be another great place to make use of Calculated Columns.
+
+[More to come...]
