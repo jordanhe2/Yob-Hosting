@@ -171,12 +171,65 @@
     
         <li class="main active"><a href="#advanced-curve-fits">Advanced Curve Fits</a></li>
 
+            <li><a href="#the-data">The Data</a></li>
+
+            <li><a href="#fitting-a-curve">Fitting a Curve</a></li>
+
+            <li><a href="#using-a-custom-model">Using a Custom Model</a></li>
+
+            <li><a href="#alternative-fitting-methods">Alternative Fitting Methods</a></li>
+
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="advanced-curve-fits">Advanced Curve Fits</h1></div>
+<h1 id="advanced-curve-fits">Advanced Curve Fits</h1>
+<p>In this tutorial, we will cover some of the more advanced features of Yob's Curve Fitting.  Our example will determine the apex of a football's trajectory using sparse data.</p>
+<hr />
+<h2 id="the-data">The Data</h2>
+<p><table>
+    <thead>
+        <tr><th>Time (s)</th><th>Height (m)</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>0.0</td><td>1.885</td></tr>
+        <tr><td>0.5</td><td>16.435</td></tr>
+        <tr><td>1.0</td><td>22.49</td></tr>
+        <tr><td>1.5</td><td>24.092</td></tr>
+        <tr><td>2.0</td><td>22.289</td></tr>
+        <tr><td>2.5</td><td>19.084</td></tr>
+        <tr><td>3.0</td><td>5.375</td></tr>
+    </tbody>
+</table></p>
+<p>Copy this data into a new Data Set and set the appropriate labels.  If you don't know how do this, you may want to take a look at our <a href="../getting_started/#plotting-data">Getting Started tutorial</a> to learn how.  If all goes well, you should have something like this:</p>
+<div class="centered"><img src="../../img/advanced_curve_fits/loaded_data.png"></div>
+
+<hr />
+<h2 id="fitting-a-curve">Fitting a Curve</h2>
+<p>Now, let's go ahead create a new Curve Fit from the Curve Fit menu.  First, we will select the Data Set we just created from the Data Source selector since this is the data we want to fit.  Then, within the Model submenu, we want select <strong>quadratic</strong> for the type, which has the form <code>A*x^2 + B*x + C</code>.  After doing this, you should see that a curve has been fit to the data:</p>
+<div class="centered"><img src="../../img/advanced_curve_fits/initial_fit.png"></div>
+
+<p>If you scroll down to the Parameter Output section, you should see the estimated values for A, B, and C.  In this model, A represents the vertical acceleration of the football (i.e. acceleration of gravity), B represents the inital velocity of the football, and C represents the inital height.</p>
+<hr />
+<h2 id="using-a-custom-model">Using a Custom Model</h2>
+<p>Since we were trying to find the apex of the football's trajectory, the variables from the default quadratic model don't really help us.  To better represent this problem, we need a different version of the quadratic model.  The vertex form, or <code>A*(x - H)^2 + K</code> is what we are looking for.  Yob doesn't support this model by default, but we can create a custom model to represent the vertex form.</p>
+<p>First, select <strong>Custom</strong> for the model type, then enter <code>A*(x - H)^2 + K</code> into the expression field like so:</p>
+<div class="centered"><img src="../../img/advanced_curve_fits/custom_expression.png"></div>
+
+<p>Now the value of H should represent the time that the football reaches the apex of its trajectory, while K represents the height of the apex.</p>
+<div class="admonition warning">
+<p class="admonition-title">Guess Parameters</p>
+<p>It is possible that the Curve Fit didn't quite fit the data as expected, as the following graph illustrates:</p>
+<p><div class="centered"><img src="../../img/advanced_curve_fits/crappy_fit.png"></div></p>
+<p>Without going into too much detail, custom models generally need good inital parameter guesses to fit data well.  You can set better guesses by checking the <strong>Manual Guess</strong> check box within the <strong>Guess Parameters</strong> section, then changing the parameter values below.  For this data, we recommend setting A to -9.8, H to 1.5, and K to 25.  (You might not even need to finish entering the guesses before the curve snaps into place.)  To learn more about guess parameters, check out the section on it <a href="../../references/curve_fit_reference/#guess-parameters">here</a> in the <a href="../../references/curve_fit_reference/">Curve Fit Reference</a>.</p>
+</div>
+<hr />
+<h2 id="alternative-fitting-methods">Alternative Fitting Methods</h2>
+<p>Up until this point, we've largely ignored the <strong>Method</strong> selector in the Curve Fit menu.  For most data sets you will encounter, the default OLS, or <strong>Ordinary Least Squares</strong> method will work just fine.  However, there are some situations where an alternative method would be preferred.  Consider the following data for example:</p>
+<div class="centered"><img src="../../img/advanced_curve_fits/alternative_method_motivation.png"></div>
+
+<p>This is a good example of data that is better fit by WLS, or <strong>Weighted Least Squares</strong>.  WLS makes the assumption that error increases with the dependent variable, where as OLS assumes that overall error remains constant.  Recognizing when to use alternative methods like this can make a big difference.  For more information on the different fitting methods, check out the <a href="../../references/curve_fit_reference/#regression-methods">Curve Fit Reference - Regression Methods</a>.</p></div>
         </div>
 
         <footer class="col-md-12">
