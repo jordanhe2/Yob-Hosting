@@ -152,23 +152,28 @@
         },
         {
             "location": "/references/storage_and_loading_reference/",
-            "text": "Loading and Storage Reference\n\n\nYob utilizes your Google Drive account to store graph information so that it is able to read your graph back into Yob\n whenever you want to edit it again. In this reference, we will breakdown the process by which data is stored and how\n you can best manage it.\n\n\n\n\nWhat is a Yob Graph?\n\n\nYob recognizes a graph as an image on the current Google Doc with a sharable link to a valid Yob file in someone's Google Drive.\n\n\nLet's go over a few examples of valid and invalid graphs.\n\n\n\n\nThis is indeed a graph, it is an image and contains the sharable link to a valid Yob file.\n\n\nPICTURE OF KITTEN - NO\n\n\nPICTURE OF KITTEN AND FILE URL - YES\n\n\n\n\nHow Data is Stored\n\n\nWhenever you click the 'Insert' button to insert a graph, Yob begins the data storage process.\n\n\nMAYBE INSERT INFOGRAPHIC HERE\n\n\nFirst, Yob calculates the size of the 'yob' folder and then if the new graph is small enough to fit within the allotted \nspace set by the user, it gets stored into the 'graphs' folder within the 'yob' folder.",
+            "text": "Storage and Loading Reference\n\n\nYob utilizes your Google Drive account to store graph information so that it is able to read your graph back into Yob\n whenever you want to edit it again. In this reference, we learn how to best manage graph data and will breakdown the \n process by which data is stored and loaded.\n\n\n\n\nWhat is a Yob Graph?\n\n\nYob recognizes a graph as an image on the current Google Doc with a sharable link to a valid Yob file in someone's Google Drive attached to it.\n\n\nLet's go over a few examples of valid and invalid graphs.\n\n\n\n\n\nThis is indeed a Yob graph, it is an image and contains the sharable link to a valid Yob file.\n\n\n\n\n\nThis obviously is not an example of a Yob graph, it is a picture of a kitten stuck in a tree and that is all.\n\n\n\n\n\nSurprisingly, this is considered a Yob graph. Since it is an image and contains a link to a valid Yob file, Yob will\n load the graph data from the link. Keep in mind, it matters not that the image is of a graph, what matters is that is an image and \n contains a valid link.\n\n\nSo now that we know what a Yob graph is, lets see how the data is saved to your Google Drive account.\n\n\n\n\nHow Data is Stored\n\n\nWhenever you click the 'Insert' button to insert a graph, Yob begins the data storage process.\n\n\nMAYBE INSERT INFOGRAPHIC HERE\n\n\nFirst, Yob calculates the size of the 'yob' folder and then if the new graph data is small enough to fit within the allotted \nspace set by the user, it gets stored into the 'graphs' folder within the 'yob' folder.\n\n\nNext, \n\n\n\n\nManaging Your Data\n\n\nIt was mentioned earlier that Yob checks how much space is currently being used by Yob whenever a graph is inserted.\n This is one step of Yob's larger process of storage management.\n\n\nThe",
             "title": "Storage and Loading Reference"
         },
         {
-            "location": "/references/storage_and_loading_reference/#loading-and-storage-reference",
-            "text": "Yob utilizes your Google Drive account to store graph information so that it is able to read your graph back into Yob\n whenever you want to edit it again. In this reference, we will breakdown the process by which data is stored and how\n you can best manage it.",
-            "title": "Loading and Storage Reference"
+            "location": "/references/storage_and_loading_reference/#storage-and-loading-reference",
+            "text": "Yob utilizes your Google Drive account to store graph information so that it is able to read your graph back into Yob\n whenever you want to edit it again. In this reference, we learn how to best manage graph data and will breakdown the \n process by which data is stored and loaded.",
+            "title": "Storage and Loading Reference"
         },
         {
             "location": "/references/storage_and_loading_reference/#what-is-a-yob-graph",
-            "text": "Yob recognizes a graph as an image on the current Google Doc with a sharable link to a valid Yob file in someone's Google Drive.  Let's go over a few examples of valid and invalid graphs.   This is indeed a graph, it is an image and contains the sharable link to a valid Yob file.  PICTURE OF KITTEN - NO  PICTURE OF KITTEN AND FILE URL - YES",
+            "text": "Yob recognizes a graph as an image on the current Google Doc with a sharable link to a valid Yob file in someone's Google Drive attached to it.  Let's go over a few examples of valid and invalid graphs.   This is indeed a Yob graph, it is an image and contains the sharable link to a valid Yob file.   This obviously is not an example of a Yob graph, it is a picture of a kitten stuck in a tree and that is all.   Surprisingly, this is considered a Yob graph. Since it is an image and contains a link to a valid Yob file, Yob will\n load the graph data from the link. Keep in mind, it matters not that the image is of a graph, what matters is that is an image and \n contains a valid link.  So now that we know what a Yob graph is, lets see how the data is saved to your Google Drive account.",
             "title": "What is a Yob Graph?"
         },
         {
             "location": "/references/storage_and_loading_reference/#how-data-is-stored",
-            "text": "Whenever you click the 'Insert' button to insert a graph, Yob begins the data storage process.  MAYBE INSERT INFOGRAPHIC HERE  First, Yob calculates the size of the 'yob' folder and then if the new graph is small enough to fit within the allotted \nspace set by the user, it gets stored into the 'graphs' folder within the 'yob' folder.",
+            "text": "Whenever you click the 'Insert' button to insert a graph, Yob begins the data storage process.  MAYBE INSERT INFOGRAPHIC HERE  First, Yob calculates the size of the 'yob' folder and then if the new graph data is small enough to fit within the allotted \nspace set by the user, it gets stored into the 'graphs' folder within the 'yob' folder.  Next,",
             "title": "How Data is Stored"
+        },
+        {
+            "location": "/references/storage_and_loading_reference/#managing-your-data",
+            "text": "It was mentioned earlier that Yob checks how much space is currently being used by Yob whenever a graph is inserted.\n This is one step of Yob's larger process of storage management.  The",
+            "title": "Managing Your Data"
         },
         {
             "location": "/references/expression_reference/",

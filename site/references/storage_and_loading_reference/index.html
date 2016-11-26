@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
+        
+        
+        
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
 	<title>Storage and Loading Reference - Yob User Manual</title>
@@ -49,97 +49,97 @@
         <div class="navbar-collapse collapse">
             <!-- Main navigation -->
             <ul class="nav navbar-nav">
-
+            
             
                 <li >
                     <a href="../..">Home</a>
                 </li>
-
-
+            
+            
             
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-
-
+                    
+                        
 <li >
     <a href="../../tutorials/getting_started/">Getting Started</a>
 </li>
 
-
-
+                    
+                        
 <li >
     <a href="../../tutorials/getting_familiar/">Getting Familar</a>
 </li>
 
-
-
+                    
+                        
 <li >
     <a href="../../tutorials/advanced_data_sets/">Advanced Data Sets</a>
 </li>
 
-
-
+                    
+                        
 <li >
     <a href="../../tutorials/advanced_curve_fits/">Advanced Curve Fits</a>
 </li>
 
-
-
+                    
+                        
 <li >
     <a href="../../tutorials/labeling_and_sizing_your_graph/">Labeling and Sizing Your Graph</a>
 </li>
 
-
-
+                    
+                        
 <li >
     <a href="../../tutorials/styling_your_graph/">Styling Your Graph</a>
 </li>
 
-
+                    
                     </ul>
                 </li>
-
-
+            
+            
             
                 <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">References <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-
-
+                    
+                        
 <li class="active">
     <a href="./">Storage and Loading Reference</a>
 </li>
 
-
-
+                    
+                        
 <li >
     <a href="../expression_reference/">Expression Reference</a>
 </li>
 
-
-
+                    
+                        
 <li >
     <a href="../curve_fit_reference/">Curve Fit Reference</a>
 </li>
 
-
-
+                    
+                        
 <li >
     <a href="../calculated_column_reference/">Calculated Column Reference</a>
 </li>
 
-
+                    
                     </ul>
                 </li>
-
-
-
+            
+            
+            
                 <li >
                     <a href="../../about/">About</a>
                 </li>
-
-
+            
+            
             </ul>
 
             <!-- Search, Navigation and Repo links -->
@@ -159,7 +159,7 @@
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
-
+                
             </ul>
         </div>
     </div>
@@ -169,42 +169,58 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#loading-and-storage-reference">Loading and Storage Reference</a></li>
+        <li class="main active"><a href="#storage-and-loading-reference">Storage and Loading Reference</a></li>
         
             <li><a href="#what-is-a-yob-graph">What is a Yob Graph?</a></li>
-
+        
             <li><a href="#how-data-is-stored">How Data is Stored</a></li>
-
+        
+            <li><a href="#managing-your-data">Managing Your Data</a></li>
+        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="loading-and-storage-reference">Loading and Storage Reference</h1>
+<h1 id="storage-and-loading-reference">Storage and Loading Reference</h1>
 <p>Yob utilizes your Google Drive account to store graph information so that it is able to read your graph back into Yob
- whenever you want to edit it again. In this reference, we will breakdown the process by which data is stored and how
- you can best manage it.</p>
+ whenever you want to edit it again. In this reference, we learn how to best manage graph data and will breakdown the 
+ process by which data is stored and loaded.</p>
 <hr />
 <h2 id="what-is-a-yob-graph">What is a Yob Graph?</h2>
-<p>Yob recognizes a graph as an image on the current Google Doc with a sharable link to a valid Yob file in someone's Google Drive.</p>
+<p>Yob recognizes a graph as an image on the current Google Doc with a sharable link to a valid Yob file in someone's Google Drive attached to it.</p>
 <p>Let's go over a few examples of valid and invalid graphs.</p>
-<p><div class="centered"><img src="../../img/graph_storage_and_loading/graph example1.png"/></div></p>
-<p>This is indeed a graph, it is an image and contains the sharable link to a valid Yob file.</p>
-<p>PICTURE OF KITTEN - NO</p>
-<p>PICTURE OF KITTEN AND FILE URL - YES</p>
+<div class="centered"><img src="../../img/graph_storage_and_loading/graph_good.png"/></div>
+
+<p>This is indeed a Yob graph, it is an image and contains the sharable link to a valid Yob file.</p>
+<div class="centered"><img src="../../img/graph_storage_and_loading/kitten_bad.png"/></div>
+
+<p>This obviously is not an example of a Yob graph, it is a picture of a kitten stuck in a tree and that is all.</p>
+<div class="centered"><img src="../../img/graph_storage_and_loading/kitten_good.png"/></div>
+
+<p>Surprisingly, this is considered a Yob graph. Since it is an image and contains a link to a valid Yob file, Yob will
+ load the graph data from the link. Keep in mind, it matters not that the image is of a graph, what matters is that is an image and 
+ contains a valid link.</p>
+<p>So now that we know what a Yob graph is, lets see how the data is saved to your Google Drive account.</p>
 <hr />
 <h2 id="how-data-is-stored">How Data is Stored</h2>
 <p>Whenever you click the 'Insert' button to insert a graph, Yob begins the data storage process.</p>
 <p>MAYBE INSERT INFOGRAPHIC HERE</p>
-<p>First, Yob calculates the size of the 'yob' folder and then if the new graph is small enough to fit within the allotted 
-space set by the user, it gets stored into the 'graphs' folder within the 'yob' folder.</p></div>
+<p>First, Yob calculates the size of the 'yob' folder and then if the new graph data is small enough to fit within the allotted 
+space set by the user, it gets stored into the 'graphs' folder within the 'yob' folder.</p>
+<p>Next, </p>
+<hr />
+<h2 id="managing-your-data">Managing Your Data</h2>
+<p>It was mentioned earlier that Yob checks how much space is currently being used by Yob whenever a graph is inserted.
+ This is one step of Yob's larger process of storage management.</p>
+<p>The </p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-
+            
                 <center>Copyright © 2016 Tanner Nielsen, Jordan Hendrickson</center>
-
+            
             <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
 
