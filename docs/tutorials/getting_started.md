@@ -81,7 +81,7 @@ And what’s a graph without a title?  A title can be added to the graph back in
 Now that our graph is complete, we can send it to the document. To do this, simply click “Insert” at the top of Yob, then select the size of the graph you want to insert. After the graph is added, you may notice that it has a link attached to it. **Do not remove this link.** This link is how Yob knows where the graph data is stored on your Google Drive account, so that you may edit the graph later if you wish.
 
 
-If you would like to learn more about how Yob stores graph data, view [the data storage reference](../references/data_storage.md) where we explain this in greater detail.
+If you would like to learn more about how Yob stores graph data, view [the data storage reference](../references/storage_and_loading_reference.md) where we explain this in greater detail.
 
 
 ## Check Out the Other Tutorials
