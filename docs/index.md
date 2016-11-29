@@ -1,7 +1,6 @@
 # ![Yob](https://rawgit.com/jordanhe2/Yob-Hosting/master/img/logo.png) Yob User Manual
 
 ---
-
 ## Overview
 Yob is a **fast** and **simple** graphing tool that's geared towards performing graphical analysis within Google Docs.
 
@@ -13,7 +12,7 @@ Yob runs entirely within a Google Doc, so you never have to worry about transfer
 
 ---
 ## Getting Started
-Follow [this tutorial](./tutorials/getting_started.md) to familiarize yourself with the basics of Yob.  More advanced users can check out [the reference](./references/reference.md) to learn more.
+Follow [this tutorial](./tutorials/getting_started.md) to familiarize yourself with the basics of Yob.  More advanced users can check out the references to learn more.
 
 Keep in mind we are still building the documentation for Yob, so if you click on a link and find an empty or incomplete page, we apologize.
 
