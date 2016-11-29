@@ -24,7 +24,7 @@ TODO:
 
 * Add labels and talk about jquery+backbone+underscore, graph.js, apps script, etc.
 
-<div class="centered"><img src="../img/about/ui_breakdown_2.png"></div>
+<div class="centered"><img src="../img/about/ui_breakdown_3.png"></div>
 
 ---
 ## Acknowledgements
