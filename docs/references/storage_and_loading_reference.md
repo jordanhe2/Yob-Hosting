@@ -5,23 +5,21 @@ Yob utilizes your Google Drive account to store graph information so that it is 
  
 ---
 ## What is a Yob Graph?
-Yob recognizes a graph as an image on the current Google Doc with a sharable link to a valid Yob file in someone's Google Drive attached to it.
- 
-Let's go over a few examples of valid and invalid graphs.
+Yob recognizes a graph as an image on the current Google Doc with a sharable link to a valid Yob file in someone's Google Drive attached to it.  Let's go over a few examples of valid and invalid graphs.
+
+The image below **is** indeed a Yob graph.  It is an image and it contains the sharable link to a valid Yob file.
 
 <div class="centered"><img src="../../img/graph_storage_and_loading/graph_good.png"/></div>
 
-This is indeed a Yob graph, it is an image and contains the sharable link to a valid Yob file.
+The next image obviously **is not** a Yob graph. It is an image of a kitten stuck in a tree and that is all.
 
 <div class="centered"><img src="../../img/graph_storage_and_loading/kitten_bad.png"/></div>
 
-This obviously is not an example of a Yob graph, it is a picture of a kitten stuck in a tree and that is all.
+Surprisingly, this last image **is** considered a Yob graph. Since it is an image and it contains a link to a valid Yob file, Yob will
+ load the graph data from the link. Keep in mind, the content of the image matters not to Yob.  What matters is that is that the image
+ contains a valid link.
 
 <div class="centered"><img src="../../img/graph_storage_and_loading/kitten_good.png"/></div>
-
-Surprisingly, this is considered a Yob graph. Since it is an image and contains a link to a valid Yob file, Yob will
- load the graph data from the link. Keep in mind, it matters not that the image is of a graph, what matters is that is an image and 
- contains a valid link.
 
 So now that we know what a Yob graph is, lets see how the data is saved to your Google Drive account.
  
