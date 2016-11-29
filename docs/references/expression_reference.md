@@ -47,7 +47,6 @@ Yob expressions can contain any of these built-in functions:
         <tr><td>ln(x)</td><td>Natural log (base e) of x</td></tr>
         <tr><td>log(x)</td><td>Log (base 10) of x</td></tr>
         <tr><td>log10(x)</td><td>Log (base 10) of x (for those who wish to be explicit)</td></tr>
-        <tr><td>exp(x)</td><td>Base e raised to the x power</td></tr>
         <tr><td>abs(x)</td><td>Absolute value of x</td></tr>
         <tr><td>floor(x)</td><td>Floor of x (round down)</td></tr>
         <tr><td>ceil(x)</td><td>Ceiling of x (round up)</td></tr>
