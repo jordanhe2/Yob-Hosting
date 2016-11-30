@@ -30,8 +30,8 @@ A part of what makes expressions so effective is their ability to refer to other
 ### Maintaining Referential Integrity
 Allowing users to put references in their expressions gives them a lot of freedom, but doing to makes it necessary to impose a few restrictions to maintain referential integrity.  Essentially, this just means that if an expression refers to another item,
 
-1.  the item **needs to exist**.  For example, `f3(x) + 4` is not a valid expression if there are only 2 Functions that exist.
-2.  the reference **cannot create circular dependencies**.  For example, consider the following function definitions:  `f1(x) = f2(x) + 1`, `f2(x) = f1(x) - 1`  If you look closely, you can probably see that 
+1.  **the item needs to exist**.  For example, `f3(x) + 4` is not a valid expression if there are only 2 Functions that exist.  Yob will recognize when this condition is not met and will consider it an [invalid expression](#how-to-tell-when-an-expression-is-valid).
+2.  **the reference cannot create circular dependencies**.  For example, consider the following function definitions:  `f1(x) = f2(x) + 1`, `f2(x) = f1(x) - 1`  If you look closely, you can probably see that trying to evaluate one of these functions would be rather unproductive.  Yob will also recognize when this condition is not met and will consider it an [invalid expression](#how-to-tell-when-an-expression-is-valid).
 
 ### Deleting Items
 ...
