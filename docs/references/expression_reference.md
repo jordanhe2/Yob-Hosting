@@ -31,10 +31,25 @@ A part of what makes expressions so effective is their ability to refer to other
 Allowing users to put references in their expressions gives them a lot of freedom, but doing to makes it necessary to impose a few restrictions to maintain referential integrity.  Essentially, this just means that if an expression refers to another item,
 
 1.  the item **needs to exist**.  For example, `f3(x) + 4` is not a valid expression if there are only 2 Functions that exist.
-2.  the reference **cannot create circular dependencies**. ...
+2.  the reference **cannot create circular dependencies**.  For example, consider the following function definitions:  `f1(x) = f2(x) + 1`, `f2(x) = f1(x) - 1`  If you look closely, you can probably see that 
 
 ### Deleting Items
 ...
+
+---
+## Built-in Operators
+Yob expressions can contain any of these built-in operators:
+
+<table>
+    <thead><tr><th>Operator</th><th>Description</th></tr></thead>
+    <tbody>
+        <tr><td>+</td><td>Addition</td></tr>
+        <tr><td>-</td><td>Subtraction</td></tr>
+        <tr><td>*</td><td>Multiplication</td></tr>
+        <tr><td>/</td><td>Division</td></tr>
+        <tr><td>^</td><td>Exponentiation</td></tr>
+    </tbody>
+</table>
 
 ---
 ## Built-in Functions
