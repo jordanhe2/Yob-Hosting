@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2016-11-27</lastmod>
+     <lastmod>2016-11-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,37 +13,31 @@
         
     <url>
      <loc>/tutorials/getting_started/</loc>
-     <lastmod>2016-11-27</lastmod>
+     <lastmod>2016-11-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/tutorials/getting_familiar/</loc>
-     <lastmod>2016-11-27</lastmod>
+     <lastmod>2016-11-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/tutorials/advanced_data_sets/</loc>
-     <lastmod>2016-11-27</lastmod>
+     <lastmod>2016-11-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/tutorials/advanced_curve_fits/</loc>
-     <lastmod>2016-11-27</lastmod>
+     <lastmod>2016-11-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/tutorials/labeling_and_sizing_your_graph/</loc>
-     <lastmod>2016-11-27</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/tutorials/styling_your_graph/</loc>
-     <lastmod>2016-11-27</lastmod>
+     <loc>/tutorials/labeling_and_styling_your_graph/</loc>
+     <lastmod>2016-11-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -53,25 +47,25 @@
         
     <url>
      <loc>/references/storage_and_loading_reference/</loc>
-     <lastmod>2016-11-27</lastmod>
+     <lastmod>2016-11-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/references/expression_reference/</loc>
-     <lastmod>2016-11-27</lastmod>
+     <lastmod>2016-11-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/references/curve_fit_reference/</loc>
-     <lastmod>2016-11-27</lastmod>
+     <lastmod>2016-11-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/references/calculated_column_reference/</loc>
-     <lastmod>2016-11-27</lastmod>
+     <lastmod>2016-11-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -80,7 +74,7 @@
     
     <url>
      <loc>/about/</loc>
-     <lastmod>2016-11-27</lastmod>
+     <lastmod>2016-11-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

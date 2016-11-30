@@ -87,13 +87,7 @@
 
 
 <li >
-    <a href="../../tutorials/labeling_and_sizing_your_graph/">Labeling and Sizing Your Graph</a>
-</li>
-
-
-
-<li >
-    <a href="../../tutorials/styling_your_graph/">Styling Your Graph</a>
+    <a href="../../tutorials/labeling_and_styling_your_graph/">Labeling and Styling Your Graph</a>
 </li>
 
 
@@ -175,6 +169,8 @@
 
             <li><a href="#referencing-other-items">Referencing Other Items</a></li>
         
+            <li><a href="#built-in-operators">Built-in Operators</a></li>
+
             <li><a href="#built-in-functions">Built-in Functions</a></li>
 
             <li><a href="#built-in-constants">Built-in Constants</a></li>
@@ -217,11 +213,25 @@
 <h3 id="maintaining-referential-integrity">Maintaining Referential Integrity</h3>
 <p>Allowing users to put references in their expressions gives them a lot of freedom, but doing to makes it necessary to impose a few restrictions to maintain referential integrity.  Essentially, this just means that if an expression refers to another item,</p>
 <ol>
-<li>the item <strong>needs to exist</strong>.  For example, <code>f3(x) + 4</code> is not a valid expression if there are only 2 Functions that exist.</li>
-<li>the reference <strong>cannot create circular dependencies</strong>. ...</li>
+<li><strong>the item needs to exist</strong>.  For example, <code>f3(x) + 4</code> is not a valid expression if there are only 2 Functions that exist.  Yob will recognize when this condition is not met and will consider it an <a href="#how-to-tell-when-an-expression-is-valid">invalid expression</a>.</li>
+<li><strong>the reference cannot create circular dependencies</strong>.  For example, consider the following function definitions:  <code>f1(x) = f2(x) + 1</code>, <code>f2(x) = f1(x) - 1</code>  If you look closely, you can probably see that trying to evaluate one of these functions would be rather unproductive.  Yob will also recognize when this condition is not met and will consider it an <a href="#how-to-tell-when-an-expression-is-valid">invalid expression</a>.</li>
 </ol>
 <h3 id="deleting-items">Deleting Items</h3>
 <p>...</p>
+<hr />
+<h2 id="built-in-operators">Built-in Operators</h2>
+<p>Yob expressions can contain any of these built-in operators:</p>
+<table>
+    <thead><tr><th>Operator</th><th>Description</th></tr></thead>
+    <tbody>
+        <tr><td>+</td><td>Addition</td></tr>
+        <tr><td>-</td><td>Subtraction</td></tr>
+        <tr><td>*</td><td>Multiplication</td></tr>
+        <tr><td>/</td><td>Division</td></tr>
+        <tr><td>^</td><td>Exponentiation</td></tr>
+    </tbody>
+</table>
+
 <hr />
 <h2 id="built-in-functions">Built-in Functions</h2>
 <p>Yob expressions can contain any of these built-in functions:</p>
@@ -232,7 +242,6 @@
         <tr><td>ln(x)</td><td>Natural log (base e) of x</td></tr>
         <tr><td>log(x)</td><td>Log (base 10) of x</td></tr>
         <tr><td>log10(x)</td><td>Log (base 10) of x (for those who wish to be explicit)</td></tr>
-        <tr><td>exp(x)</td><td>Base e raised to the x power</td></tr>
         <tr><td>abs(x)</td><td>Absolute value of x</td></tr>
         <tr><td>floor(x)</td><td>Floor of x (round down)</td></tr>
         <tr><td>ceil(x)</td><td>Ceiling of x (round up)</td></tr>
