@@ -5,9 +5,13 @@ Yob utilizes your Google Drive account to store graph information so that it is 
  
 ---
 ## How Yob Uses Your Google Drive
-All of Yob's content is stored in the **Yob** folder.
+All of Yob's content is stored in the **Yob** folder, which contains the files Yob needs to store on you Google Drive
+and all of Yob's other folders.
 
 Yob stores its graph files (.yob files) in the **graphs** folder.
+
+!!! warning "Caution"
+    It is advised that you do not attempt to store any of your personal files within Yob folders, as they will be at the mercy of Yob and could be potentially trashed.
 
 ---
 ## What is a Yob Graph?
@@ -43,6 +47,10 @@ MAYBE INSERT INFOGRAPHIC HERE
 First, Yob calculates the size of the 'yob' folder and then if the new graph data is small enough to fit within the allotted 
 space set by the user, it gets stored into the 'graphs' folder within the 'yob' folder.
 
+!!! info "Note"
+    Yob does not attempt to keep track of all of the graphs that link back to any one specific graph file. So each graph file
+     will stay in the graphs folder until it's reached the maximum storage capacity, then the oldest graph files will be trashed.
+
 Then an image of the graph is stored into the document at the location of the cursor or replaces the selected content if
 there is a selection. A link to the newly saved graph file is attached then attached to the image.
 
@@ -64,7 +72,7 @@ To access the Yob settings, select **Add-ons** > **Yob** > **Open Settings**. On
 
 <div class="centered"><img src="../../img/graph_storage_and_loading/settings_dialog.jpg"/></div>
 
-The **Max storage capacity** field is where you can adjust how much Yob is allowed to use. 
+The **Max storage capacity** field is where you can adjust how much Yob is allowed to use.
 
 It is very unlikely that you will ever reach 100 MB of graph data.
 A graph with three functions, three data sets with moderate amounts of data, and three curve fits comes out to 3 KB.
