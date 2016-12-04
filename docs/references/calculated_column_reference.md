@@ -10,4 +10,4 @@ If you are new to Calculated Columns, you may want to check the [Advanced Data S
 Each column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header. When you do so, you should see the following dialog:
 
 
-<div class="centered"><img src="../../img/calculated_columns/calc_col_menu.jpg"/></div>
+<div class="centered"><img src="../../img/calculated_column/calc_col_menu.jpg"/></div>
