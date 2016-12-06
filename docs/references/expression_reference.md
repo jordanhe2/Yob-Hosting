@@ -1,9 +1,7 @@
-[//]: # (This document will be a mess for a little while until we figure out the best way to structure it)
-
 # Expression Reference
 Expressions are used extensively throughout Yob.  Calculated Columns, Functions, and custom Curve Fits all make use of user-defined expressions.  This page is meant to serve as a reference for using expressions throughout the program.  If you are new to using expressions, you may want to check out one of the following tutorials first:
 
-* [Advanced Curve Fits](../tutorials/advanced_curve_fits.md)
+* [Advanced Curve Fits - Custom Models](../tutorials/advanced_curve_fits.md#using-a-custom-model)
 * [Advanced Data Sets](../tutorials/advanced_data_sets.md)
 
 ---
@@ -12,28 +10,34 @@ Expressions are used extensively throughout Yob.  Calculated Columns, Functions,
 * All expressions should follow the general syntax of mathematics.  Order of operations applies.
 * All operators need to be explicit.  For example, you cannot write `2x`; you would have to write `2*x` instead.
 
-#### How to Tell When an Expression is Valid
-In all of the places that you can edit expressions within Yob, the text field will let you know when your expression is invalid by turning its border red:
-
-<div class="centered"><img src="../../img/invalid_expression.png"></div>
+!!! info "How to Tell When an Expression is Valid"
+    In all of the places that you can edit expressions within Yob, the text field will let you know when your expression is invalid by turning its border red:
+    
+    <div class="centered"><img src="../../img/invalid_expression.png"></div>
 
 ---
 ## Referencing Other Items
-A part of what makes expressions so effective is their ability to refer to other items.  Accomplishing this is simple:
+Part of what makes expressions so effective is their ability to refer to other items.  Accomplishing this is simple:
 
-* To reference a **Function**, simply use its name as you would when using sin(x) or abs(x).  For example, `f1(x + 2) + f2(x - 2)` would be a valid way to reference Functions in an expression.
+* To reference a **Function**, simply use its name as you would when using [built-in functions](#built-in-functions) like sin(x) or abs(x).  For example, `f1(x + 2) + f2(x - 2)` would be a valid way to reference Functions in an expression.
 
 * To reference a **Curve Fit**, the same principle applies but names are denoted with "cf" rather than "f".  For example, `cf1(x / 3) + sin(x)` would be a valid way to reference a Curve Fit in an expression.
 
-* To reference a **Data Set Column**, use the Data Set name along with the column name.  For example, `d1c2` would reference the _second_ column of the _first_ Data Set.  However, only Calculated Column expression are allowed to reference Data Set Columns.  This is demonstrated in the [Advanced Data Sets](../tutorials/advanced_data_sets.md) tutorial and explained in greater detail in the [Calculated Columns Reference](./calculated_column_reference.md).
+* To reference a **Data Set Column**, use the Data Set name along with the column name.  For example, `d1c2` would reference the _second_ column of the _first_ Data Set.  However, only Calculated Column expressions are allowed to reference Data Set Columns.  This is demonstrated in the [Advanced Data Sets](../tutorials/advanced_data_sets.md) tutorial and explained in greater detail in the [Calculated Columns Reference](./calculated_column_reference.md).
 
 ### Maintaining Referential Integrity
 Allowing users to put references in their expressions gives them a lot of freedom, but doing to makes it necessary to impose a few restrictions to maintain referential integrity.  Essentially, this just means that if an expression refers to another item,
 
-1.  **the item needs to exist**.  For example, `f3(x) + 4` is not a valid expression if there are only 2 Functions that exist.  Yob will recognize when this condition is not met and will consider it an [invalid expression](#how-to-tell-when-an-expression-is-valid).
-2.  **the reference cannot create circular dependencies**.  For example, consider the following function definitions:  `f1(x) = f2(x) + 1`, `f2(x) = f1(x) - 1`  If you look closely, you can probably see that trying to evaluate one of these functions would be rather unproductive.  Yob will also recognize when this condition is not met and will consider it an [invalid expression](#how-to-tell-when-an-expression-is-valid).
+1.  **the item needs to exist**.  For example, `f3(x) + 4` is not a valid expression if there are only 2 Functions that exist.  Yob will recognize when this condition is not met and will consider it an [invalid expression](#general-rules).
+2.  **the reference cannot create circular dependencies**.  For example, consider the following function definitions:  `f1(x) = f2(x) + 1`, `f2(x) = f1(x) - 1`  If you look closely, you can probably see that trying to evaluate one of these functions would be rather unproductive.  Yob will also recognize when this condition is not met and will consider it an [invalid expression](#general-rules).
 
 ### Deleting Items
+When you have several items that depend on each other, it can be problematic to delete one of them.  Luckily, Yob automatically intelligently adapts the remaining items upon deleting an item to keep your intent in tact.
+
+#### Index Shifting
+...
+
+#### Substitution
 ...
 
 ---
