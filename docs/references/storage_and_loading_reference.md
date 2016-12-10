@@ -10,7 +10,7 @@ and all of Yob's other folders.
 
 Yob stores its graph files (.yob files) in the **graphs** folder.
 
-!!! warning "Do Not Yob's Files Mix With Your Own"
+!!! danger "Do Not Mix Yob's Files With Your Own"
     It is advised that you do not attempt to store any of your personal files within Yob folders, as they will be at the mercy of Yob and could be potentially trashed.
 
 ---
