@@ -69,12 +69,6 @@
                     
                         
 <li >
-    <a href="../../tutorials/getting_familiar/">Getting Familar</a>
-</li>
-
-                    
-                        
-<li >
     <a href="../../tutorials/advanced_data_sets/">Advanced Data Sets</a>
 </li>
 
@@ -82,12 +76,6 @@
                         
 <li >
     <a href="../../tutorials/advanced_curve_fits/">Advanced Curve Fits</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../tutorials/labeling_and_styling_your_graph/">Labeling and Styling Your Graph</a>
 </li>
 
                     
@@ -144,7 +132,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../../tutorials/labeling_and_styling_your_graph/">
+                    <a rel="next" href="../../tutorials/advanced_curve_fits/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
@@ -184,8 +172,13 @@
  process by which data is stored and loaded.</p>
 <hr />
 <h2 id="how-yob-uses-your-google-drive">How Yob Uses Your Google Drive</h2>
-<p>All of Yob's content is stored in the <strong>Yob</strong> folder.</p>
+<p>All of Yob's content is stored in the <strong>Yob</strong> folder, which contains the files Yob needs to store on you Google Drive
+and all of Yob's other folders.</p>
 <p>Yob stores its graph files (.yob files) in the <strong>graphs</strong> folder.</p>
+<div class="admonition warning">
+<p class="admonition-title">Do Not Yob's Files Mix With Your Own</p>
+<p>It is advised that you do not attempt to store any of your personal files within Yob folders, as they will be at the mercy of Yob and could be potentially trashed.</p>
+</div>
 <hr />
 <h2 id="what-is-a-yob-graph">What is a Yob Graph?</h2>
 <p>Yob recognizes a graph as an image on the current Google Doc with a sharable link to a valid Yob graph file in someone's Google Drive attached to it.
@@ -202,19 +195,25 @@ Let's go over a few examples of valid and invalid graphs.</p>
 <div class="centered"><img src="../../img/graph_storage_and_loading/kitten_good.png"/></div>
 
 <div class="admonition warning">
-<p class="admonition-title">Caution</p>
-<p>The Yob graph files in your google drive need to be shared so that <strong>Anyone with the link can view</strong>.
-If they are not, Yob cannot load your graphs. </p>
+<p class="admonition-title">Graph Files Must be Sharable by Link</p>
+<p>Yob graph files created by Yob are automatically shared so that <strong>Anyone with the link can view</strong>.
+If a graph file is not this way, Yob cannot load that graph. </p>
 </div>
 <p>So now that we know what a Yob graph is, lets see how the data is saved to your Google Drive account.</p>
 <hr />
 <h2 id="how-data-is-stored">How Data is Stored</h2>
 <p>Whenever you click the 'Insert' button to insert a graph, Yob begins the data storage process.</p>
-<p>MAYBE INSERT INFOGRAPHIC HERE</p>
-<p>First, Yob calculates the size of the 'yob' folder and then if the new graph data is small enough to fit within the allotted 
-space set by the user, it gets stored into the 'graphs' folder within the 'yob' folder.</p>
+<div class="centered"><img src="../../img/graph_storage_and_loading/diagram.jpg"/></div>
+
+<p>First, Yob calculates the size of the 'graphs' folder and then if the new graph data is small enough to fit within the allotted 
+space set by the user, it gets stored into the 'graphs' folder.</p>
 <p>Then an image of the graph is stored into the document at the location of the cursor or replaces the selected content if
 there is a selection. A link to the newly saved graph file is attached then attached to the image.</p>
+<div class="admonition info">
+<p class="admonition-title">Yob Does Not Keep Track of Graphs</p>
+<p>Yob does not attempt to keep track of all of the graphs on a document that link back to any one specific graph file. So each graph file
+ will stay in the graphs folder until it's reached the maximum storage capacity, then the oldest graph files will be trashed.</p>
+</div>
 <hr />
 <h2 id="managing-your-data">Managing Your Data</h2>
 <p>It was mentioned earlier that Yob checks how much space is currently being used by Yob whenever a graph is inserted.
@@ -222,7 +221,7 @@ there is a selection. A link to the newly saved graph file is attached then atta
 <p>As stated above, Yob checks to see if the graph being inserted can fit within the allotted storage space that you have given Yob.
 Once this allotted has been used, Yob will begin to trash the oldest graph files until enough room is made for the new graph.</p>
 <div class="admonition info">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Trashed Graphs Can Still be Loaded</p>
 <p>Though Yob puts the oldest graph files into the trash, the files still exist on your drive and therefore Yob can still load them.
 It is only when the trash is emptied from you Google Drive account that any graphs with the specific graph file cannot be loaded.</p>
 </div>
@@ -230,7 +229,7 @@ It is only when the trash is emptied from you Google Drive account that any grap
 <p>To access the Yob settings, select <strong>Add-ons</strong> &gt; <strong>Yob</strong> &gt; <strong>Open Settings</strong>. Once you do a dialog should pop up that looks like this:</p>
 <div class="centered"><img src="../../img/graph_storage_and_loading/settings_dialog.jpg"/></div>
 
-<p>The <strong>Max storage capacity</strong> field is where you can adjust how much Yob is allowed to use. </p>
+<p>The <strong>Max storage capacity</strong> field is where you can adjust how much Yob is allowed to use.</p>
 <p>It is very unlikely that you will ever reach 100 MB of graph data.
 A graph with three functions, three data sets with moderate amounts of data, and three curve fits comes out to 3 KB.
 Assuming all graphs you make are this size, you would need to create 34134 graphs to reach 100 MB.</p>

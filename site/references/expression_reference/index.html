@@ -69,12 +69,6 @@
                     
                         
 <li >
-    <a href="../../tutorials/getting_familiar/">Getting Familar</a>
-</li>
-
-                    
-                        
-<li >
     <a href="../../tutorials/advanced_data_sets/">Advanced Data Sets</a>
 </li>
 
@@ -82,12 +76,6 @@
                         
 <li >
     <a href="../../tutorials/advanced_curve_fits/">Advanced Curve Fits</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../tutorials/labeling_and_styling_your_graph/">Labeling and Styling Your Graph</a>
 </li>
 
                     
@@ -183,7 +171,7 @@
 <h1 id="expression-reference">Expression Reference</h1>
 <p>Expressions are used extensively throughout Yob.  Calculated Columns, Functions, and custom Curve Fits all make use of user-defined expressions.  This page is meant to serve as a reference for using expressions throughout the program.  If you are new to using expressions, you may want to check out one of the following tutorials first:</p>
 <ul>
-<li><a href="../../tutorials/advanced_curve_fits/">Advanced Curve Fits</a></li>
+<li><a href="../../tutorials/advanced_curve_fits/#using-a-custom-model">Advanced Curve Fits - Custom Models</a></li>
 <li><a href="../../tutorials/advanced_data_sets/">Advanced Data Sets</a></li>
 </ul>
 <hr />
@@ -192,31 +180,36 @@
 <li>All expressions should follow the general syntax of mathematics.  Order of operations applies.</li>
 <li>All operators need to be explicit.  For example, you cannot write <code>2x</code>; you would have to write <code>2*x</code> instead.</li>
 </ul>
-<h4 id="how-to-tell-when-an-expression-is-valid">How to Tell When an Expression is Valid</h4>
+<div class="admonition info">
+<p class="admonition-title">How to Tell When an Expression is Valid</p>
 <p>In all of the places that you can edit expressions within Yob, the text field will let you know when your expression is invalid by turning its border red:</p>
-<div class="centered"><img src="../../img/invalid_expression.png"></div>
-
+<p><div class="centered"><img src="../../img/invalid_expression.png"></div></p>
+</div>
 <hr />
 <h2 id="referencing-other-items">Referencing Other Items</h2>
-<p>A part of what makes expressions so effective is their ability to refer to other items.  Accomplishing this is simple:</p>
+<p>Part of what makes expressions so effective is their ability to refer to other items.  Accomplishing this is simple:</p>
 <ul>
 <li>
-<p>To reference a <strong>Function</strong>, simply use its name as you would when using sin(x) or abs(x).  For example, <code>f1(x + 2) + f2(x - 2)</code> would be a valid way to reference Functions in an expression.</p>
+<p>To reference a <strong>Function</strong>, simply use its name as you would when using <a href="#built-in-functions">built-in functions</a> like sin(x) or abs(x).  For example, <code>f1(x + 2) + f2(x - 2)</code> would be a valid way to reference Functions in an expression.</p>
 </li>
 <li>
 <p>To reference a <strong>Curve Fit</strong>, the same principle applies but names are denoted with "cf" rather than "f".  For example, <code>cf1(x / 3) + sin(x)</code> would be a valid way to reference a Curve Fit in an expression.</p>
 </li>
 <li>
-<p>To reference a <strong>Data Set Column</strong>, use the Data Set name along with the column name.  For example, <code>d1c2</code> would reference the <em>second</em> column of the <em>first</em> Data Set.  However, only Calculated Column expression are allowed to reference Data Set Columns.  This is demonstrated in the <a href="../../tutorials/advanced_data_sets/">Advanced Data Sets</a> tutorial and explained in greater detail in the <a href="../calculated_column_reference/">Calculated Columns Reference</a>.</p>
+<p>To reference a <strong>Data Set Column</strong>, use the Data Set name along with the column name.  For example, <code>d1c2</code> would reference the <em>second</em> column of the <em>first</em> Data Set.  However, only Calculated Column expressions are allowed to reference Data Set Columns.  This is demonstrated in the <a href="../../tutorials/advanced_data_sets/">Advanced Data Sets</a> tutorial and explained in greater detail in the <a href="../calculated_column_reference/">Calculated Columns Reference</a>.</p>
 </li>
 </ul>
 <h3 id="maintaining-referential-integrity">Maintaining Referential Integrity</h3>
 <p>Allowing users to put references in their expressions gives them a lot of freedom, but doing to makes it necessary to impose a few restrictions to maintain referential integrity.  Essentially, this just means that if an expression refers to another item,</p>
 <ol>
-<li><strong>the item needs to exist</strong>.  For example, <code>f3(x) + 4</code> is not a valid expression if there are only 2 Functions that exist.  Yob will recognize when this condition is not met and will consider it an <a href="#how-to-tell-when-an-expression-is-valid">invalid expression</a>.</li>
-<li><strong>the reference cannot create circular dependencies</strong>.  For example, consider the following function definitions:  <code>f1(x) = f2(x) + 1</code>, <code>f2(x) = f1(x) - 1</code>  If you look closely, you can probably see that trying to evaluate one of these functions would be rather unproductive.  Yob will also recognize when this condition is not met and will consider it an <a href="#how-to-tell-when-an-expression-is-valid">invalid expression</a>.</li>
+<li><strong>the item needs to exist</strong>.  For example, <code>f3(x) + 4</code> is not a valid expression if there are only 2 Functions that exist.  Yob will recognize when this condition is not met and will consider it an <a href="#general-rules">invalid expression</a>.</li>
+<li><strong>the reference cannot create circular dependencies</strong>.  For example, consider the following function definitions:  <code>f1(x) = f2(x) + 1</code>, <code>f2(x) = f1(x) - 1</code>  If you look closely, you can probably see that trying to evaluate one of these functions would be rather unproductive.  Yob will also recognize when this condition is not met and will consider it an <a href="#general-rules">invalid expression</a>.</li>
 </ol>
 <h3 id="deleting-items">Deleting Items</h3>
+<p>When you have several items that depend on each other, it can be problematic to delete one of them.  Luckily, Yob automatically intelligently adapts the remaining items upon deleting an item to keep your intent in tact.</p>
+<h4 id="index-shifting">Index Shifting</h4>
+<p>...</p>
+<h4 id="substitution">Substitution</h4>
 <p>...</p>
 <hr />
 <h2 id="built-in-operators">Built-in Operators</h2>
