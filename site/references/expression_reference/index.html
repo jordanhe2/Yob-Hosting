@@ -206,7 +206,7 @@
 <li><strong>the reference cannot create circular dependencies</strong>.  For example, consider the following function definitions:  <code>f1(x) = f2(x) + 1</code>, <code>f2(x) = f1(x) - 1</code>  If you look closely, you can probably see that trying to evaluate one of these functions would be rather unproductive.  Yob will also recognize when this condition is not met and will consider it an <a href="#general-rules">invalid expression</a>.</li>
 </ol>
 <h3 id="deleting-items">Deleting Items</h3>
-<p>When you have several items that depend on each other, it can be problematic to delete one of them.  Luckily, Yob automatically intelligently adapts the remaining items upon deleting an item to keep your intent in tact.</p>
+<p>When you have several items that depend on each other, it can be problematic to delete one of them.  Luckily, Yob automatically intelligently adapts the remaining items upon deleting an item to keep your intent in tact:</p>
 <h4 id="index-shifting">Index Shifting</h4>
 <p>...</p>
 <h4 id="substitution">Substitution</h4>

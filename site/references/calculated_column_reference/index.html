@@ -155,6 +155,8 @@
         
             <li><a href="#making-a-calculated-column">Making a Calculated Column</a></li>
         
+            <li><a href="#how-columns-are-calculated">How Columns are Calculated</a></li>
+
     
     </ul>
 </div></div>
@@ -166,7 +168,22 @@
 <hr />
 <h2 id="making-a-calculated-column">Making a Calculated Column</h2>
 <p>Each column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header. When you do so, you should see the following dialog:</p>
-<div class="centered"><img src="../../img/calculated_column/calc_col_menu.jpg"/></div></div>
+<div class="centered"><img src="../../img/calculated_column/calc_col_menu.jpg"/></div>
+
+<p>The menu is composed of three components:
+...
+...
+...</p>
+<hr />
+<h2 id="how-columns-are-calculated">How Columns are Calculated</h2>
+<p>When columns are being calculated, the values are copied over one by one.  For example, if you had a column <code>d2c2</code> set to 1/10th the values of <code>d1c2</code>, (<code>d2c2 = d1c2/10</code> in other words), this is how the data would be transferred:</p>
+<div class="centered"><img src="../../img/calculated_column/transfer_one.png"/></div>
+
+<p>If you have a column that depends on multiple columns, the same process is used:</p>
+<div class="centered"><img src="../../img/calculated_column/transfer_mult.png"/></div>
+
+<h3 id="columns-with-bad-or-missing-values">Columns with Bad or Missing Values</h3>
+<p>…</p></div>
         </div>
 
         <footer class="col-md-12">
