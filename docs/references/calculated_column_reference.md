@@ -16,13 +16,19 @@ The menu is composed of three components:
 
 ---
 ## How Columns are Calculated
-When columns are being calculated, the values are copied over one by one.  For example, if you had a column `d2c2` set to 1/10th the values of `d1c2`, (`d2c2 = d1c2/10` in other words), this is how the data would be transferred:
+When columns are being calculated, the values are copied over **row by row**.  For example, if you had a column expression, `d2c2 = d1c2/10`, this is how the data would be transferred:
 
 <div class="centered"><img src="../../img/calculated_column/transfer_one.png"/></div>
 
-If you have a column that depends on multiple columns, the same process is used:
+In situations where the calculated column depends on multiple columns, the same **row by row** process is used:
 
 <div class="centered"><img src="../../img/calculated_column/transfer_mult.png"/></div>
 
-### Columns with Bad or Missing Values
-…
+!!! warning "Columns with Conflicting Values"
+    Because of the freedom we allow users in our table editor, it is possible to create columns with differing lengths or missing/nonsense values.  Yob will do its best to copy the data over in the same **row by row** fashion, but if it doesn't know what to do for a particular cell, the calculated value will be "NaN", for "Not a Number".
+    
+    <div class="centered"><img src="../../img/calculated_column/transfer_bad.png"/></div>
+    
+---
+## ...
+...

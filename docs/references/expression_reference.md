@@ -6,7 +6,6 @@ Expressions are used extensively throughout Yob.  Calculated Columns, Functions,
 
 ---
 ## General Rules
-[//]: # (Expand this section and provide examples)
 * All expressions should follow the general syntax of mathematics.  Order of operations applies.
 * All operators need to be explicit.  For example, you cannot write `2x`; you would have to write `2*x` instead.
 
