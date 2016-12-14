@@ -287,7 +287,7 @@
         },
         {
             "location": "/references/calculated_column_reference/",
-            "text": "Calculated Column Reference\n\n\nCalculated Columns allow you to generate new columns from other columns, saving you the time of manual data entry.  This reference will discuss all that you need to know in order to make use of this powerful feature.\n\n\nIf you are new to Calculated Columns, you may want to check the \nAdvanced Data Sets tutorial\n to see them in action.\n\n\n\n\nMaking a Calculated Column\n\n\nEach column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header. When you do so, you should see the following dialog:\n\n\n\n\n\nThe menu is composed of three components:\n...\n...\n...\n\n\n\n\nHow Columns are Calculated\n\n\nWhen columns are being calculated, the values are copied over one by one.  For example, if you had a column \nd2c2\n set to 1/10th the values of \nd1c2\n, (\nd2c2 = d1c2/10\n in other words), this is how the data would be transferred:\n\n\n\n\n\nIf you have a column that depends on multiple columns, the same process is used:\n\n\n\n\n\nColumns with Bad or Missing Values\n\n\n\u2026",
+            "text": "Calculated Column Reference\n\n\nCalculated Columns allow you to generate new columns from other columns, saving you the time of manual data entry.  This reference will discuss all that you need to know in order to make use of this powerful feature.\n\n\nIf you are new to Calculated Columns, you may want to check the \nAdvanced Data Sets tutorial\n to see them in action.\n\n\n\n\nMaking a Calculated Column\n\n\nEach column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header. When you do so, you should see the following dialog:\n\n\n\n\n\nThe menu is composed of three components:\n...\n...\n...\n\n\n\n\nHow Columns are Calculated\n\n\nWhen columns are being calculated, the values are copied over \nrow by row\n.  For example, if you had a column expression, \nd2c2 = d1c2/10\n, this is how the data would be transferred:\n\n\n\n\n\nIn situations where the calculated column depends on multiple columns, the same \nrow by row\n process is used:\n\n\n\n\n\n\n\nColumns with Conflicting Values\n\n\nBecause of the freedom we allow users in our table editor, it is possible to create columns with differing lengths or missing/nonsense values.  Yob will do its best to copy the data over in the same \nrow by row\n fashion, but if it doesn't know what to do for a particular cell, the calculated value will be \"NaN\", for \"Not a Number\".\n\n\n\n\n\n\n\n\n...\n\n\n...",
             "title": "Calculated Column Reference"
         },
         {
@@ -302,13 +302,13 @@
         },
         {
             "location": "/references/calculated_column_reference/#how-columns-are-calculated",
-            "text": "When columns are being calculated, the values are copied over one by one.  For example, if you had a column  d2c2  set to 1/10th the values of  d1c2 , ( d2c2 = d1c2/10  in other words), this is how the data would be transferred:   If you have a column that depends on multiple columns, the same process is used:",
+            "text": "When columns are being calculated, the values are copied over  row by row .  For example, if you had a column expression,  d2c2 = d1c2/10 , this is how the data would be transferred:   In situations where the calculated column depends on multiple columns, the same  row by row  process is used:    Columns with Conflicting Values  Because of the freedom we allow users in our table editor, it is possible to create columns with differing lengths or missing/nonsense values.  Yob will do its best to copy the data over in the same  row by row  fashion, but if it doesn't know what to do for a particular cell, the calculated value will be \"NaN\", for \"Not a Number\".",
             "title": "How Columns are Calculated"
         },
         {
-            "location": "/references/calculated_column_reference/#columns-with-bad-or-missing-values",
-            "text": "\u2026",
-            "title": "Columns with Bad or Missing Values"
+            "location": "/references/calculated_column_reference/#_1",
+            "text": "...",
+            "title": "..."
         },
         {
             "location": "/about/",

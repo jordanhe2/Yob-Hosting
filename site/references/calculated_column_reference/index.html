@@ -157,6 +157,8 @@
         
             <li><a href="#how-columns-are-calculated">How Columns are Calculated</a></li>
 
+            <li><a href="#_1">...</a></li>
+
     
     </ul>
 </div></div>
@@ -176,14 +178,20 @@
 ...</p>
 <hr />
 <h2 id="how-columns-are-calculated">How Columns are Calculated</h2>
-<p>When columns are being calculated, the values are copied over one by one.  For example, if you had a column <code>d2c2</code> set to 1/10th the values of <code>d1c2</code>, (<code>d2c2 = d1c2/10</code> in other words), this is how the data would be transferred:</p>
+<p>When columns are being calculated, the values are copied over <strong>row by row</strong>.  For example, if you had a column expression, <code>d2c2 = d1c2/10</code>, this is how the data would be transferred:</p>
 <div class="centered"><img src="../../img/calculated_column/transfer_one.png"/></div>
 
-<p>If you have a column that depends on multiple columns, the same process is used:</p>
+<p>In situations where the calculated column depends on multiple columns, the same <strong>row by row</strong> process is used:</p>
 <div class="centered"><img src="../../img/calculated_column/transfer_mult.png"/></div>
 
-<h3 id="columns-with-bad-or-missing-values">Columns with Bad or Missing Values</h3>
-<p>…</p></div>
+<div class="admonition warning">
+<p class="admonition-title">Columns with Conflicting Values</p>
+<p>Because of the freedom we allow users in our table editor, it is possible to create columns with differing lengths or missing/nonsense values.  Yob will do its best to copy the data over in the same <strong>row by row</strong> fashion, but if it doesn't know what to do for a particular cell, the calculated value will be "NaN", for "Not a Number".</p>
+<p><div class="centered"><img src="../../img/calculated_column/transfer_bad.png"/></div></p>
+</div>
+<hr />
+<h2 id="_1">...</h2>
+<p>...</p></div>
         </div>
 
         <footer class="col-md-12">
