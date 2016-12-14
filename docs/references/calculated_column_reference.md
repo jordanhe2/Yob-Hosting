@@ -24,11 +24,11 @@ In situations where the calculated column depends on multiple columns, the same 
 
 <div class="centered"><img src="../../img/calculated_column/transfer_mult.png"/></div>
 
-!!! warning "Columns with Conflicting Values"
-    Because of the freedom we allow users in our table editor, it is possible to create columns with differing lengths or missing/nonsense values.  Yob will do its best to copy the data over in the same **row by row** fashion, but if it doesn't know what to do for a particular cell, the calculated value will be "NaN", for "Not a Number".
+!!! warning "Columns with Bad Values"
+    Because of the freedom we allow users in our table editor, it is possible to create columns with different lengths or missing/nonsense values.  Yob will do its best to copy the data over in the same **row by row** fashion, but if it doesn't know what to do for a particular cell, the calculated value will be "NaN", for "Not a Number".
     
     <div class="centered"><img src="../../img/calculated_column/transfer_bad.png"/></div>
     
 ---
-## ...
-...
+## Examples
+Calculated Columns are best understood through examples.  Check out the [Advanced Data Sets tutorial](../tutorials/advanced_data_sets.md) to see them in action.
