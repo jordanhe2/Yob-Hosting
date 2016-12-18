@@ -31,12 +31,17 @@ Allowing users to put references in their expressions gives them a lot of freedo
 2.  **the reference cannot create circular dependencies**.  For example, consider the following function definitions:  `f1(x) = f2(x) + 1`, `f2(x) = f1(x) - 1`  If you look closely, you can probably see that trying to evaluate one of these functions would be rather unproductive.  Yob will also recognize when this condition is not met and will consider it an [invalid expression](#general-rules).
 
 ### Deleting Items
-When you have several items that depend on each other, it can be problematic to delete one of them.  Luckily, Yob automatically intelligently adapts the remaining items upon deleting an item to keep your intent in tact:
+When you have several items that depend on each other, it can be problematic to delete one of them.  Luckily, Yob automatically intelligently adapts the remaining items upon deletion to keep your intent in tact:
+
+[Talk about the dialog that shows up when this happens]
 
 #### Index Shifting
 ...
 
-#### Substitution
+#### Function Substitution
+...
+
+#### Dependency Removal (Calculated Columns Only)
 ...
 
 ---
