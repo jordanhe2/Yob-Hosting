@@ -1,6 +1,8 @@
 # Advanced Curve Fits
 In this tutorial, we will cover some of the more advanced features of Yob's Curve Fitting.  Our example will determine the apex of a football's trajectory using sparse data.
 
+If you haven’t done so already, you may want to check out the [Getting Started tutorial](./getting_started.md) before you continue.
+
 ---
 ## The Data
 <table>

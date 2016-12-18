@@ -1,7 +1,7 @@
 # Advanced Data Sets
 In this tutorial, we will demonstrate how to take full advantage of Data Sets to maximize efficiency in a more complicated experiment.  For this experiment, we will be plotting the 2D coordinates of a ball rolling down a bumpy hill and generating other data from the coordinate information.
 
-If you haven’t done so already, you may want to check out the [Getting Started tutorial](../tutorials/getting_started.md) before you continue.
+If you haven’t done so already, you may want to check out the [Getting Started tutorial](./getting_started.md) before you continue.
 
 ---
 ## The Data
