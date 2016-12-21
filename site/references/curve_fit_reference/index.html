@@ -232,7 +232,19 @@
 
 <hr />
 <h2 id="guess-parameters">Guess Parameters</h2>
-<p>...</p>
+<p>The curve fitting algorithms in Yob work by taking an intial set of parameters (or guess parameters) for a model, and iteratively improving them until the optimal parameters are found.  The following example illustrates this concept:</p>
+<p>Suppose we have some data that we are trying to fit a sinusoid model to.  The sinusoid model is expressed by <code>A*sin(B*x + C) + D</code>, which means that the model parameters are A, B, C, and D.  If we pick a few reasonable values for these parameters we might get a curve like the green dashed line below.  Using this starting point, Yob will repeatedly try new values for the parameters that are in the neighborhood of the intial values.  If the new values result in a curve that better fits the data, Yob will use those values as the new starting point and continue searching for better ones.</p>
+<p>When Yob can no longer improve the model, Yob will display the fitted model in the graph preview (here it is the solid blue line), and display the optimal parameter values in the <a href="#parameter-output">Parameter Output section</a>.</p>
+<div class="centered"><img src="../../img/curve_fit_reference/initial_guesses.png"></div>
+
+<h3 id="manual-vs-automatic">Manual vs Automatic</h3>
+<p>By default, Curve Fits automatically generate guess parameters for you.  However, if you wish to supply your own guess parameters, you can check the <strong>Manual Guess</strong> check box and edit the number fields below it:</p>
+<div class="centered"><img src="../../img/curve_fit_reference/manual_guess.png"></div>
+
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>For all of the built-in models, you shouldn't have to worry about picking guess parameters since Yob automatically picks good guesses for them.  <strong>However</strong>, since picking guess parameters requires extra knowlege about the behavior of the model, Yob cannot automatically pick guess parameters for <strong>custom models</strong>.  (At least, not good ones.)</p>
+</div>
 <hr />
 <h2 id="parameter-output">Parameter Output</h2>
 <p>...</p></div>
