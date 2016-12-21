@@ -1,4 +1,4 @@
-# ![Yob](https://rawgit.com/jordanhe2/Yob-Hosting/master/img/logo.png) Yob User Manual
+# ![Yob](https://rawgit.com/jordanhe2/Yob-Hosting/master/img/logo.png) Yob Documentation
 
 ---
 ## Overview

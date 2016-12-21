@@ -4,7 +4,7 @@ extra_css:
 markdown_extensions:
     - admonition
 
-site_name: Yob User Manual
+site_name: Yob Documentation
 copyright: 'Copyright © 2016 Tanner Nielsen, Jordan Hendrickson'
 pages:
 - Home: 'index.md'
