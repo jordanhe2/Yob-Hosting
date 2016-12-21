@@ -70,7 +70,15 @@ This variation on WLS functions just like the previous one, the only difference 
 
 ---
 ## Guess Parameters
+The curve fitting algorithms in Yob work by iteratively improving model parameters.  In layman's terms, Yob needs a ballpark estimate of what you think the best values for the model parameters should be so that it knows where to look for them.
+
+<div class="centered"><img src="../../img/curve_fit_reference/initial_guesses.png"></div>
+
+### Manual vs Automatic
 ...
+
+!!! info "Note"
+    For all of the built-in models, you shouldn't have to worry about picking guess parameters since Yob automatically picks good guesses for them.  However, since picking guess parameters requires extra knowlege about the behavior of the model, Yob cannot automatically pick guess parameters for **custom models**.
 
 ---
 ## Parameter Output
