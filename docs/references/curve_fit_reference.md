@@ -70,15 +70,21 @@ This variation on WLS functions just like the previous one, the only difference 
 
 ---
 ## Guess Parameters
-The curve fitting algorithms in Yob work by iteratively improving model parameters.  In layman's terms, Yob needs a ballpark estimate of what you think the best values for the model parameters should be so that it knows where to look for them.
+The curve fitting algorithms in Yob work by taking an intial set of parameters (or guess parameters) for a model, and iteratively improving them until the optimal parameters are found.  The following example illustrates this concept:
+
+Suppose we have some data that we are trying to fit a sinusoid model to.  The sinusoid model is expressed by `A*sin(B*x + C) + D`, which means that the model parameters are A, B, C, and D.  If we pick a few reasonable values for these parameters we might get a curve like the green dashed line below.  Using this starting point, Yob will repeatedly try new values for the parameters that are in the neighborhood of the intial values.  If the new values result in a curve that better fits the data, Yob will use those values as the new starting point and continue searching for better ones.
+
+When Yob can no longer improve the model, Yob will display the fitted model in the graph preview (here it is the solid blue line), and display the optimal parameter values in the [Parameter Output section](#parameter-output).
 
 <div class="centered"><img src="../../img/curve_fit_reference/initial_guesses.png"></div>
 
 ### Manual vs Automatic
-...
+By default, Curve Fits automatically generate guess parameters for you.  However, if you wish to supply your own guess parameters, you can check the **Manual Guess** check box and edit the number fields below it:
+
+<div class="centered"><img src="../../img/curve_fit_reference/manual_guess.png"></div>
 
 !!! info "Note"
-    For all of the built-in models, you shouldn't have to worry about picking guess parameters since Yob automatically picks good guesses for them.  However, since picking guess parameters requires extra knowlege about the behavior of the model, Yob cannot automatically pick guess parameters for **custom models**.
+    For all of the built-in models, you shouldn't have to worry about picking guess parameters since Yob automatically picks good guesses for them.  **However**, since picking guess parameters requires extra knowlege about the behavior of the model, Yob cannot automatically pick guess parameters for **custom models**.  (At least, not good ones.)
 
 ---
 ## Parameter Output
