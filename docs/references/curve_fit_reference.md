@@ -88,4 +88,8 @@ By default, Curve Fits automatically generate guess parameters for you.  However
 
 ---
 ## Parameter Output
-...
+The fitted parameters of a Curve Fit can be found in the Parameter Output section.  The example below shows the parameters for a quadratic model:
+
+<div class="centered"><img src="../../img/curve_fit_reference/parameter_output.png"></div>
+
+Along with the fitted parameters, various metrics for goodness of fit are presented, including the **Root Mean Square Error** (RMSE), the **Coefficient of Determination** (R<sup>2</sup>), and the **Correlation Coefficient** (R).
