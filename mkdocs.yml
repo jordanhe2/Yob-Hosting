@@ -17,4 +17,6 @@ pages:
     - 'Expression Reference': 'references/expression_reference.md'
     - 'Curve Fit Reference': 'references/curve_fit_reference.md'
     - 'Calculated Column Reference': 'references/calculated_column_reference.md'
-- About: 'about.md'
+- About:
+    - 'Known Issues': 'about/known_issues.md'
+    - 'About': 'about/about.md'
