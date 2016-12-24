@@ -12,7 +12,7 @@ Expressions are used extensively throughout Yob.  Calculated Columns, Functions,
 !!! info "How to Tell When an Expression is Valid"
     In all of the places that you can edit expressions within Yob, the text field will let you know when your expression is invalid by turning its border red:
     
-    <div class="centered"><img src="../../img/invalid_expression.png"></div>
+    <div class="centered"><img src="../../img/expression_reference/invalid_expression.png"></div>
 
 ---
 ## Referencing Other Items
@@ -27,22 +27,32 @@ Part of what makes expressions so effective is their ability to refer to other i
 ### Maintaining Referential Integrity
 Allowing users to put references in their expressions gives them a lot of freedom, but doing to makes it necessary to impose a few restrictions to maintain referential integrity.  Essentially, this just means that if an expression refers to another item,
 
-1.  **the item needs to exist**.  For example, `f3(x) + 4` is not a valid expression if there are only 2 Functions that exist.  Yob will recognize when this condition is not met and will consider it an [invalid expression](#general-rules).
-2.  **the reference cannot create circular dependencies**.  For example, consider the following function definitions:  `f1(x) = f2(x) + 1`, `f2(x) = f1(x) - 1`  If you look closely, you can probably see that trying to evaluate one of these functions would be rather unproductive.  Yob will also recognize when this condition is not met and will consider it an [invalid expression](#general-rules).
+1.  **The item needs to exist**.  For example, `f3(x) + 4` is not a valid expression if there are only 2 Functions that exist.  Yob will recognize when this condition is not met and will consider it an [invalid expression](#general-rules).
+2.  **The reference cannot create circular dependencies**.  For example, consider the following function definitions:  `f1(x) = f2(x) + 1`, `f2(x) = f1(x) - 1`  If you look closely, you can probably see that trying to evaluate one of these functions would be rather unproductive.  Yob will also recognize when this condition is not met and will consider it an [invalid expression](#general-rules).
 
-### Deleting Items
-When you have several items that depend on each other, it can be problematic to delete one of them.  Luckily, Yob automatically intelligently adapts the remaining items upon deletion to keep your intent in tact:
+### Removing Items
+When you have several items that depend on each other, it can be problematic to remove one of them.  Luckily, Yob automatically adapts the remaining items upon deletion to keep your intent in tact.  Before it does so however, Yob will alert you if the item you're deleting is referenced in other expressions:
 
-[Talk about the dialog that shows up when this happens]
+<div class="centered"><img src="../../img/expression_reference/dependents.png"></div>
 
-#### Index Shifting
-...
+**Ok** will proceed with the deletion and make any necessary adaptions, and **Cancel** will abort the deletion.  To resolve dependencies with the items that reference the deleted item, Yob will adapt your data in several ways:
 
-#### Function Substitution
-...
+#### Index Shifting (Applies to All Items)
+Since all items are numbered, removing an item can affect the numbering of other items.  Here's an example of how Yob would resolve an applicable situation:
+
+<div class="centered"><img src="../../img/expression_reference/index_shifting.png"></div>
+
+Here, if we simply removed `f2`, there would be a gap between `f1` and `f3`.  To fix this, Yob simply shifts the indices of any functions after `f2` (in this case, only `f3`) down by one.  This causes `f3` to now be `f2`, but `f1`'s expression depended on `f3` rather than `f2`.  Yob corrects this by modifying `f1`'s expression, as you can see in the image above.
+
+#### Function Substitution (Functions and Curve Fits Only)
+When a Function or Curve Fit is removed, and another expression depends upon it directly, Yob will replace all references to it with the contents of its expression.
+
+<div class="centered"><img src="../../img/expression_reference/function_sub.png"></div>
+
+In the example above, `cf1`'s expression happened to be `0.485*x + 3.071`.
 
 #### Dependency Removal (Calculated Columns Only)
-...
+When a Data Set is removed, and a Calculated Column expression references one of its columns, nothing can be done to sensibly retain the expression.  Yob will disable the Calculated Column and clear its expression.  This leaves the data untouched, but the values will no longer be calculated.
 
 ---
 ## Built-in Operators
