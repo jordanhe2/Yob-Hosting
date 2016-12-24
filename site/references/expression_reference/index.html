@@ -198,7 +198,7 @@
 <div class="admonition info">
 <p class="admonition-title">How to Tell When an Expression is Valid</p>
 <p>In all of the places that you can edit expressions within Yob, the text field will let you know when your expression is invalid by turning its border red:</p>
-<p><div class="centered"><img src="../../img/invalid_expression.png"></div></p>
+<p><div class="centered"><img src="../../img/expression_reference/invalid_expression.png"></div></p>
 </div>
 <hr />
 <h2 id="referencing-other-items">Referencing Other Items</h2>
@@ -217,18 +217,26 @@
 <h3 id="maintaining-referential-integrity">Maintaining Referential Integrity</h3>
 <p>Allowing users to put references in their expressions gives them a lot of freedom, but doing to makes it necessary to impose a few restrictions to maintain referential integrity.  Essentially, this just means that if an expression refers to another item,</p>
 <ol>
-<li><strong>the item needs to exist</strong>.  For example, <code>f3(x) + 4</code> is not a valid expression if there are only 2 Functions that exist.  Yob will recognize when this condition is not met and will consider it an <a href="#general-rules">invalid expression</a>.</li>
-<li><strong>the reference cannot create circular dependencies</strong>.  For example, consider the following function definitions:  <code>f1(x) = f2(x) + 1</code>, <code>f2(x) = f1(x) - 1</code>  If you look closely, you can probably see that trying to evaluate one of these functions would be rather unproductive.  Yob will also recognize when this condition is not met and will consider it an <a href="#general-rules">invalid expression</a>.</li>
+<li><strong>The item needs to exist</strong>.  For example, <code>f3(x) + 4</code> is not a valid expression if there are only 2 Functions that exist.  Yob will recognize when this condition is not met and will consider it an <a href="#general-rules">invalid expression</a>.</li>
+<li><strong>The reference cannot create circular dependencies</strong>.  For example, consider the following function definitions:  <code>f1(x) = f2(x) + 1</code>, <code>f2(x) = f1(x) - 1</code>  If you look closely, you can probably see that trying to evaluate one of these functions would be rather unproductive.  Yob will also recognize when this condition is not met and will consider it an <a href="#general-rules">invalid expression</a>.</li>
 </ol>
-<h3 id="deleting-items">Deleting Items</h3>
-<p>When you have several items that depend on each other, it can be problematic to delete one of them.  Luckily, Yob automatically intelligently adapts the remaining items upon deletion to keep your intent in tact:</p>
-<p>[Talk about the dialog that shows up when this happens]</p>
-<h4 id="index-shifting">Index Shifting</h4>
-<p>...</p>
-<h4 id="function-substitution">Function Substitution</h4>
-<p>...</p>
+<h3 id="removing-items">Removing Items</h3>
+<p>When you have several items that depend on each other, it can be problematic to remove one of them.  Luckily, Yob automatically adapts the remaining items upon deletion to keep your intent in tact.  Before it does so however, Yob will alert you if the item you're deleting is referenced in other expressions:</p>
+<div class="centered"><img src="../../img/expression_reference/dependents.png"></div>
+
+<p><strong>Ok</strong> will proceed with the deletion and make any necessary adaptions, and <strong>Cancel</strong> will abort the deletion.  To resolve dependencies with the items that reference the deleted item, Yob will adapt your data in several ways:</p>
+<h4 id="index-shifting-applies-to-all-items">Index Shifting (Applies to All Items)</h4>
+<p>Since all items are numbered, removing an item can affect the numbering of other items.  Here's an example of how Yob would resolve an applicable situation:</p>
+<div class="centered"><img src="../../img/expression_reference/index_shifting.png"></div>
+
+<p>Here, if we simply removed <code>f2</code>, there would be a gap between <code>f1</code> and <code>f3</code>.  To fix this, Yob simply shifts the indices of any functions after <code>f2</code> (in this case, only <code>f3</code>) down by one.  This causes <code>f3</code> to now be <code>f2</code>, but <code>f1</code>'s expression depended on <code>f3</code> rather than <code>f2</code>.  Yob corrects this by modifying <code>f1</code>'s expression, as you can see in the image above.</p>
+<h4 id="function-substitution-functions-and-curve-fits-only">Function Substitution (Functions and Curve Fits Only)</h4>
+<p>When a Function or Curve Fit is removed, and another expression depends upon it directly, Yob will replace all references to it with the contents of its expression.</p>
+<div class="centered"><img src="../../img/expression_reference/function_sub.png"></div>
+
+<p>In the example above, <code>cf1</code>'s expression happened to be <code>0.485*x + 3.071</code>.</p>
 <h4 id="dependency-removal-calculated-columns-only">Dependency Removal (Calculated Columns Only)</h4>
-<p>...</p>
+<p>When a Data Set is removed, and a Calculated Column expression references one of its columns, nothing can be done to sensibly retain the expression.  Yob will disable the Calculated Column and clear its expression.  This leaves the data untouched, but the values will no longer be calculated.</p>
 <hr />
 <h2 id="built-in-operators">Built-in Operators</h2>
 <p>Yob expressions can contain any of these built-in operators:</p>
