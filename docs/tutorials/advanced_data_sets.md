@@ -68,9 +68,9 @@ After you paste the data, you can throw on some labels like so:
 
 ---
 ## Sharing Columns
-Now suppose that we want to overlay a second Data Set comparing the **Y** with Time.  You may be thinking that we just need to create a new Data Set and copy over the Y and Time data, and you wouldn't be wrong, but there are a few issues with that approach.  Allow us to show you a slightly different way, and then we'll explain why it's beneficial.
+Now suppose that we want to overlay a second Data Set comparing **Y** with Time.  You may be thinking that we just need to create a new Data Set and copy over the Y and Time data, and you wouldn't be wrong, but there are a few issues with that approach.  Allow us to show you a slightly different way, and then we'll explain why it's beneficial.
 
-First, create a new Data Set and copy just the **Y** row into the second column.  We're going to leave the first column empty for now.  Label the columns similarly to the first Data Set like so:
+First, create a new Data Set and copy just the **Y** values into the second column.  We're going to leave the first column empty for now.  Label the columns similarly to the first Data Set like so:
 
 <div class="centered"><img src="../../img/advanced_data_sets/y-coordinates.png"></div>
 
@@ -78,9 +78,9 @@ Next, click the calculator icon in the top right of the first column.  You will 
 
 <div class="centered"><img src="../../img/advanced_data_sets/open_calc_col.png"></div>
 
-Every column can be configured to calculate its values from the values of other columns.  In this case, we want the column to simply mirror the values from Time column of the first Data Set.
+Every column can be configured to calculate its values from the values of other columns.  (See the [Calculated Column Reference](../references/calculated_column_reference.md) for more details.)  In this case, we want the column to simply mirror the values from Time column of the first Data Set.
 
-To do this, select **Data Set 1 - Time (d1c1)** from the dropdown menu and click **Insert**.  Every column has a code name for simple referencing, so when you see `d2c1 = d1c1`, that means that the values from column 1 of Data Set 2 should equal the values from column 1 of Data Set 1.  You can use the dropdown menu to find the name of the column you're looking for.
+To do this, select **Data Set 1 - Time (d1c1)** from the dropdown menu and click **Insert**.  Every column has a [reference name](../references/expression_reference.md#referencing-other-items), so when you see `d2c1 = d1c1`, that means that the values from column 1 of Data Set 2 should equal the values from column 1 of Data Set 1.  You can use the dropdown menu to find the name of the column you're looking for.
 
 Check the **Enabled** check box to make the calculations take effect.  Now all of the Time values should have automatically filled the column:
 
@@ -94,7 +94,7 @@ You may be wondering why we took this round-about way of getting the time values
 
 Well, in this experiment it wouldn't have been so bad to simply copy and paste, but imagine an experiement where you were plotting **ten different dependent variables** against the same independent variable.  Not only would you have to copy and paste the same data ten times, but if you ever discovered a mistake, you would have to correct it in **ten different places**.
 
-When you are using Calculated Columns, changes to the source column will propagate out to all the columns that depend on it, saving you time and mistakes.
+When you are using Calculated Columns, changes to the source column will propagate out to all the columns that depend on it, saving you time and errors.
 
 ---
 ## Generating Columns

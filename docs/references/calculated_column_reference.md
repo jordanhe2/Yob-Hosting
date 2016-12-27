@@ -9,10 +9,16 @@ Each column of a Data Set has a calculated column menu that can be opened by cli
 
 <div class="centered"><img src="../../img/calculated_column/calc_col_menu.jpg"/></div>
 
-The menu is composed of three components:
-...
-...
-...
+This is the Calculated Column menu.  It is composed of three components.  Going from top to bottom:
+
+### Item Selector
+The Item Selector allows you to search for items by their human-readable names in the dropdown menu, and inserts their cooresponding reference name into the Calculated Column Expression using the **Insert** button.  If you're interested in learning how these reference names work, visit the [Referencing Other Items](./expression_reference#referencing-other-items) section of the [Expression Reference](./expression_reference).
+
+### Calculated Column Expression
+If you're comfortable typing the reference names yourself, you can edit the Calculated Column Expression directly.  This expression deterimines how the values of the column should be calculated. The [How Columns are Calulated](#how-columns-are-calculated) section explains this in greater detail.
+
+### Enabled Toggle
+Enabling a Calculated Column automatically fills the column with values according to the Calculated Column Expression, and disables manual data entry.  The Enabled Toggle turns this feature on or off.  When it is on, the column's background will turn yellow and its values gray, to remind you that you cannot edit it manually.
 
 ---
 ## How Columns are Calculated

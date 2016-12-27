@@ -8,5 +8,6 @@ Yob, being new software, has yet to go through extensive testing on different br
 ---
 ## Known Issues
 * Zooming in to extremely small viewing windows may crash your browser
-* At certain render resolutions, Functions and Curve Fits may render oddly.
+* At certain graph sizes, Functions and Curve Fits may render incorrectly:  it will look as though another function is passing through it and the area between is filled.
 * Loading Curve Fits from a saved graph will automatically make models custom.
+* Graphs will occasionally load the wrong window if auto zoom is enabled.

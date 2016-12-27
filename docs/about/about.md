@@ -1,5 +1,5 @@
 # About
-Yob was a project started by **Tanner Nielsen** and **Jordan Hendrickson** in the spring of 2014, motivated by our appreciation for the teacher of our high school physics class, as well as the dislike for the graphing software he had us use.
+Yob was a project started by **Tanner Nielsen** and **Jordan Hendrickson** in the spring of 2014 when we were in high school.  It was motivated by our appreciation for the teacher of our physics class, as well as the dislike for the graphing software he had us use.
 
 ---
 ## Development
