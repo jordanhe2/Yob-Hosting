@@ -48,7 +48,7 @@ Now that we have plotted the data, we can find the projected distance of the bal
 
 Click “Back” to return to the main menu.  Then click the Curve Fits submenu, and click the + icon to create a new Curve Fit.
 
-Set the data source of the new Curve Fit to the Data Set we previously created:  Data Set 1. Then change the model type from none to linear. Viola! You should now see the line of best fit for this data on the graph.
+Set the data source of the new Curve Fit to the Data Set we previously created:  Data Set 1. Then change the model type from none to linear. Voilà! You should now see the line of best fit for this data on the graph.
 
 <div class="centered"><img src="../../img/curvefit_example.png"></div>
 
