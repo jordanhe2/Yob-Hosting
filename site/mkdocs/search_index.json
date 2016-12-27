@@ -374,6 +374,16 @@
             "location": "/about/about/#acknowledgements",
             "text": "We owe a great debt of gratitude to  Mr. Dean Roush , the Physics teacher at Luck High School, for helping us test and shape the software.  This project would have never gotten off the ground without his patience and trust, would have never progressed so far without his willingness to test our software as it developed.",
             "title": "Acknowledgements"
+        },
+        {
+            "location": "/thankyou/",
+            "text": "Thank you!\n\n\nThank you so much for donating to Yob!  Your contribution will allow us to continue developing cool stuff!\n\n\nIf you have any feedback, issues, or feature requests, do not hesitate to contact us at \ntheyobteam@gmail.com\n.",
+            "title": "    "
+        },
+        {
+            "location": "/thankyou/#thank-you",
+            "text": "Thank you so much for donating to Yob!  Your contribution will allow us to continue developing cool stuff!  If you have any feedback, issues, or feature requests, do not hesitate to contact us at  theyobteam@gmail.com .",
+            "title": "Thank you!"
         }
     ]
 }
