@@ -187,10 +187,13 @@
 <p>Each column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header. When you do so, you should see the following dialog:</p>
 <div class="centered"><img src="../../img/calculated_column/calc_col_menu.jpg"/></div>
 
-<p>The menu is composed of three components:
-...
-...
-...</p>
+<p>This is the Calculated Column menu.  It is composed of three components.  Going from top to bottom:</p>
+<h3 id="item-selector">Item Selector</h3>
+<p>The Item Selector allows you to search for items by their human-readable names in the dropdown menu, and inserts their cooresponding reference name into the Calculated Column Expression using the <strong>Insert</strong> button.  If you're interested in learning how these reference names work, visit the <a href="../expression_reference#referencing-other-items">Referencing Other Items</a> section of the <a href="../expression_reference">Expression Reference</a>.</p>
+<h3 id="calculated-column-expression">Calculated Column Expression</h3>
+<p>If you're comfortable typing the reference names yourself, you can edit the Calculated Column Expression directly.  This expression deterimines how the values of the column should be calculated. The <a href="#how-columns-are-calculated">How Columns are Calulated</a> section explains this in greater detail.</p>
+<h3 id="enabled-toggle">Enabled Toggle</h3>
+<p>Enabling a Calculated Column automatically fills the column with values according to the Calculated Column Expression, and disables manual data entry.  The Enabled Toggle turns this feature on or off.  When it is on, the column's background will turn yellow and its values gray, to remind you that you cannot edit it manually.</p>
 <hr />
 <h2 id="how-columns-are-calculated">How Columns are Calculated</h2>
 <p>When columns are being calculated, the values are copied over <strong>row by row</strong>.  For example, if you had a column expression, <code>d2c2 = d1c2/10</code>, this is how the data would be transferred:</p>

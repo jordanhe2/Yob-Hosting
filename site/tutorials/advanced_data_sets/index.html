@@ -247,15 +247,15 @@
 
 <hr />
 <h2 id="sharing-columns">Sharing Columns</h2>
-<p>Now suppose that we want to overlay a second Data Set comparing the <strong>Y</strong> with Time.  You may be thinking that we just need to create a new Data Set and copy over the Y and Time data, and you wouldn't be wrong, but there are a few issues with that approach.  Allow us to show you a slightly different way, and then we'll explain why it's beneficial.</p>
-<p>First, create a new Data Set and copy just the <strong>Y</strong> row into the second column.  We're going to leave the first column empty for now.  Label the columns similarly to the first Data Set like so:</p>
+<p>Now suppose that we want to overlay a second Data Set comparing <strong>Y</strong> with Time.  You may be thinking that we just need to create a new Data Set and copy over the Y and Time data, and you wouldn't be wrong, but there are a few issues with that approach.  Allow us to show you a slightly different way, and then we'll explain why it's beneficial.</p>
+<p>First, create a new Data Set and copy just the <strong>Y</strong> values into the second column.  We're going to leave the first column empty for now.  Label the columns similarly to the first Data Set like so:</p>
 <div class="centered"><img src="../../img/advanced_data_sets/y-coordinates.png"></div>
 
 <p>Next, click the calculator icon in the top right of the first column.  You will be presented with the following dialog:</p>
 <div class="centered"><img src="../../img/advanced_data_sets/open_calc_col.png"></div>
 
-<p>Every column can be configured to calculate its values from the values of other columns.  In this case, we want the column to simply mirror the values from Time column of the first Data Set.</p>
-<p>To do this, select <strong>Data Set 1 - Time (d1c1)</strong> from the dropdown menu and click <strong>Insert</strong>.  Every column has a code name for simple referencing, so when you see <code>d2c1 = d1c1</code>, that means that the values from column 1 of Data Set 2 should equal the values from column 1 of Data Set 1.  You can use the dropdown menu to find the name of the column you're looking for.</p>
+<p>Every column can be configured to calculate its values from the values of other columns.  (See the <a href="../../references/calculated_column_reference/">Calculated Column Reference</a> for more details.)  In this case, we want the column to simply mirror the values from Time column of the first Data Set.</p>
+<p>To do this, select <strong>Data Set 1 - Time (d1c1)</strong> from the dropdown menu and click <strong>Insert</strong>.  Every column has a <a href="../../references/expression_reference/#referencing-other-items">reference name</a>, so when you see <code>d2c1 = d1c1</code>, that means that the values from column 1 of Data Set 2 should equal the values from column 1 of Data Set 1.  You can use the dropdown menu to find the name of the column you're looking for.</p>
 <p>Check the <strong>Enabled</strong> check box to make the calculations take effect.  Now all of the Time values should have automatically filled the column:</p>
 <div class="centered"><img src="../../img/advanced_data_sets/calc_col.png"></div>
 
@@ -266,7 +266,7 @@
 <h3 id="benefits">Benefits</h3>
 <p>You may be wondering why we took this round-about way of getting the time values into a second column.  What's wrong with copying and pasting?</p>
 <p>Well, in this experiment it wouldn't have been so bad to simply copy and paste, but imagine an experiement where you were plotting <strong>ten different dependent variables</strong> against the same independent variable.  Not only would you have to copy and paste the same data ten times, but if you ever discovered a mistake, you would have to correct it in <strong>ten different places</strong>.</p>
-<p>When you are using Calculated Columns, changes to the source column will propagate out to all the columns that depend on it, saving you time and mistakes.</p>
+<p>When you are using Calculated Columns, changes to the source column will propagate out to all the columns that depend on it, saving you time and errors.</p>
 <hr />
 <h2 id="generating-columns">Generating Columns</h2>
 <p>If all has gone well thus far, your graph should look something like this:</p>
