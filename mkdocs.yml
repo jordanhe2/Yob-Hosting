@@ -19,6 +19,7 @@ pages:
     - 'Expression Reference': 'references/expression_reference.md'
     - 'Curve Fit Reference': 'references/curve_fit_reference.md'
     - 'Calculated Column Reference': 'references/calculated_column_reference.md'
+    - 'Styling and Labeling Reference': 'references/styling_and_labeling_reference.md'
 - About:
     - 'Known Issues': 'about/known_issues.md'
     - 'About': 'about/about.md'
