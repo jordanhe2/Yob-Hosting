@@ -336,8 +336,33 @@
             "title": "Examples"
         },
         {
+            "location": "/references/styling_and_labeling_reference/",
+            "text": "Styling and Labeling Reference\n\n\nWhenever you make a graph, you want to make sure that the information is clearly labeled and presented in an appropriate style.  In this reference, we will cover everything you need to know about styling and labeling your graphs.\n\n\n\n\nWarning\n\n\nThis reference is currently under construction.\n\n\n\n\n\n\nStyling Specific Items\n\n\n...\n\n\n\n\nGraph Themes\n\n\n...\n\n\n\n\nAxis Labels\n\n\n...",
+            "title": "Styling and Labeling Reference"
+        },
+        {
+            "location": "/references/styling_and_labeling_reference/#styling-and-labeling-reference",
+            "text": "Whenever you make a graph, you want to make sure that the information is clearly labeled and presented in an appropriate style.  In this reference, we will cover everything you need to know about styling and labeling your graphs.   Warning  This reference is currently under construction.",
+            "title": "Styling and Labeling Reference"
+        },
+        {
+            "location": "/references/styling_and_labeling_reference/#styling-specific-items",
+            "text": "...",
+            "title": "Styling Specific Items"
+        },
+        {
+            "location": "/references/styling_and_labeling_reference/#graph-themes",
+            "text": "...",
+            "title": "Graph Themes"
+        },
+        {
+            "location": "/references/styling_and_labeling_reference/#axis-labels",
+            "text": "...",
+            "title": "Axis Labels"
+        },
+        {
             "location": "/about/known_issues/",
-            "text": "Known Issues\n\n\nThis page is dedicated to keeping you updated on any bugs that have been encountered with Yob.\n\n\n\n\nBrowser Support\n\n\nYob, being new software, has yet to go through extensive testing on different browsers.  Currently, \nGoogle Chrome\n is our only officially supported browser.  Yob will still work for the most part in other browsers, but we \ncannot guarantee\n that it will be fully functional.  If we gain enough users, we will expand our offical support to other browsers such as FireFox.\n\n\n\n\nKnown Issues\n\n\n\n\nZooming in to extremely small viewing windows may crash your browser\n\n\nAt certain graph sizes, Functions and Curve Fits may render incorrectly:  it will look as though another function is passing through it and the area between is filled.\n\n\nLoading Curve Fits from a saved graph will automatically make models custom.\n\n\nGraphs will occasionally load the wrong window if auto zoom is enabled.",
+            "text": "Known Issues\n\n\nThis page is dedicated to keeping you updated on any bugs that have been encountered with Yob.\n\n\n\n\nBrowser Support\n\n\nYob, being new software, has yet to go through extensive testing on different browsers.  Currently, \nGoogle Chrome\n is our only officially supported browser.  Yob will still work for the most part in other browsers, but we \ncannot guarantee\n that it will be fully functional.  If we gain enough users, we will expand our offical support to other browsers such as Firefox.\n\n\n\n\nKnown Issues\n\n\n\n\nSome business and school accounts may have security restrictions that prevent you from inserting graphs into the document.\n  This is our top priority issue, but until we get is resolved, you can right click on the graph preview, click \"Save as image\", then manually upload the graph to your document.\n\n\nZooming in to extremely small viewing windows may crash your browser\n\n\nAt certain graph sizes, Functions and Curve Fits may render incorrectly:  it will look as though another function is passing through it and the area between is filled.\n\n\nLoading Curve Fits from a saved graph will automatically make models custom.\n\n\nGraphs will occasionally load the wrong window if auto zoom is enabled.",
             "title": "Known Issues"
         },
         {
@@ -347,12 +372,12 @@
         },
         {
             "location": "/about/known_issues/#browser-support",
-            "text": "Yob, being new software, has yet to go through extensive testing on different browsers.  Currently,  Google Chrome  is our only officially supported browser.  Yob will still work for the most part in other browsers, but we  cannot guarantee  that it will be fully functional.  If we gain enough users, we will expand our offical support to other browsers such as FireFox.",
+            "text": "Yob, being new software, has yet to go through extensive testing on different browsers.  Currently,  Google Chrome  is our only officially supported browser.  Yob will still work for the most part in other browsers, but we  cannot guarantee  that it will be fully functional.  If we gain enough users, we will expand our offical support to other browsers such as Firefox.",
             "title": "Browser Support"
         },
         {
             "location": "/about/known_issues/#known-issues_1",
-            "text": "Zooming in to extremely small viewing windows may crash your browser  At certain graph sizes, Functions and Curve Fits may render incorrectly:  it will look as though another function is passing through it and the area between is filled.  Loading Curve Fits from a saved graph will automatically make models custom.  Graphs will occasionally load the wrong window if auto zoom is enabled.",
+            "text": "Some business and school accounts may have security restrictions that prevent you from inserting graphs into the document.   This is our top priority issue, but until we get is resolved, you can right click on the graph preview, click \"Save as image\", then manually upload the graph to your document.  Zooming in to extremely small viewing windows may crash your browser  At certain graph sizes, Functions and Curve Fits may render incorrectly:  it will look as though another function is passing through it and the area between is filled.  Loading Curve Fits from a saved graph will automatically make models custom.  Graphs will occasionally load the wrong window if auto zoom is enabled.",
             "title": "Known Issues"
         },
         {

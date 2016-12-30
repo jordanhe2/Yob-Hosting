@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
+
+
+
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Calculated Column Reference - Yob Documentation</title>
+	<title>Styling and Labeling Reference - Yob Documentation</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -23,7 +23,7 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        
+
     </head>
 
     <body>
@@ -49,80 +49,80 @@
         <div class="navbar-collapse collapse">
             <!-- Main navigation -->
             <ul class="nav navbar-nav">
-            
-            
+
+
                 <li >
                     <a href="../..">Home</a>
                 </li>
-            
-            
-            
+
+
+
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                    
-                        
+
+
 <li >
     <a href="../../tutorials/getting_started/">Getting Started</a>
 </li>
 
-                    
-                        
+
+
 <li >
     <a href="../../tutorials/advanced_data_sets/">Advanced Data Sets</a>
 </li>
 
-                    
-                        
+
+
 <li >
     <a href="../../tutorials/advanced_curve_fits/">Advanced Curve Fits</a>
 </li>
 
-                    
+
                     </ul>
                 </li>
-            
-            
-            
+
+
+
                 <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">References <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                    
-                        
+
+
 <li >
     <a href="../storage_and_loading_reference/">Storage and Loading Reference</a>
 </li>
 
-                    
-                        
+
+
 <li >
     <a href="../expression_reference/">Expression Reference</a>
 </li>
 
-                    
-                        
+
+
 <li >
     <a href="../curve_fit_reference/">Curve Fit Reference</a>
 </li>
 
-                    
-                        
-<li class="active">
-    <a href="./">Calculated Column Reference</a>
-</li>
 
-                    
 
 <li >
-    <a href="../styling_and_labeling_reference/">Styling and Labeling Reference</a>
+    <a href="../calculated_column_reference/">Calculated Column Reference</a>
+</li>
+
+
+
+<li class="active">
+    <a href="./">Styling and Labeling Reference</a>
 </li>
 
 
                     </ul>
                 </li>
-            
-            
-            
+
+
+
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -141,8 +141,8 @@
 
                     </ul>
                 </li>
-            
-            
+
+
 
                 <li >
                     <a href="../../thankyou/">    </a>
@@ -159,16 +159,16 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../curve_fit_reference/">
+                    <a rel="next" href="../calculated_column_reference/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../styling_and_labeling_reference/">
+                    <a rel="prev" href="../../about/known_issues/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
-                
+
             </ul>
         </div>
     </div>
@@ -177,58 +177,42 @@
         <div class="container">
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-    
-        <li class="main active"><a href="#calculated-column-reference">Calculated Column Reference</a></li>
-        
-            <li><a href="#making-a-calculated-column">Making a Calculated Column</a></li>
-        
-            <li><a href="#how-columns-are-calculated">How Columns are Calculated</a></li>
 
-            <li><a href="#examples">Examples</a></li>
+        <li class="main active"><a href="#styling-and-labeling-reference">Styling and Labeling Reference</a></li>
 
-    
+            <li><a href="#styling-specific-items">Styling Specific Items</a></li>
+
+            <li><a href="#graph-themes">Graph Themes</a></li>
+
+            <li><a href="#axis-labels">Axis Labels</a></li>
+
+
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="calculated-column-reference">Calculated Column Reference</h1>
-<p>Calculated Columns allow you to generate new columns from other columns, saving you the time of manual data entry.  This reference will discuss all that you need to know in order to make use of this powerful feature.</p>
-<p>If you are new to Calculated Columns, you may want to check the <a href="../../tutorials/advanced_data_sets/">Advanced Data Sets tutorial</a> to see them in action.</p>
-<hr />
-<h2 id="making-a-calculated-column">Making a Calculated Column</h2>
-<p>Each column of a Data Set has a calculated column menu that can be opened by clicking on the calculator icon in the top right of the column header. When you do so, you should see the following dialog:</p>
-<div class="centered"><img src="../../img/calculated_column/calc_col_menu.jpg"/></div>
-
-<p>This is the Calculated Column menu.  It is composed of three components.  Going from top to bottom:</p>
-<h3 id="item-selector">Item Selector</h3>
-<p>The Item Selector allows you to search for items by their human-readable names in the dropdown menu, and inserts their cooresponding reference name into the Calculated Column Expression using the <strong>Insert</strong> button.  If you're interested in learning how these reference names work, visit the <a href="../expression_reference#referencing-other-items">Referencing Other Items</a> section of the <a href="../expression_reference">Expression Reference</a>.</p>
-<h3 id="calculated-column-expression">Calculated Column Expression</h3>
-<p>If you're comfortable typing the reference names yourself, you can edit the Calculated Column Expression directly.  This expression deterimines how the values of the column should be calculated. The <a href="#how-columns-are-calculated">How Columns are Calulated</a> section explains this in greater detail.</p>
-<h3 id="enabled-toggle">Enabled Toggle</h3>
-<p>Enabling a Calculated Column automatically fills the column with values according to the Calculated Column Expression, and disables manual data entry.  The Enabled Toggle turns this feature on or off.  When it is on, the column's background will turn yellow and its values gray, to remind you that you cannot edit it manually.</p>
-<hr />
-<h2 id="how-columns-are-calculated">How Columns are Calculated</h2>
-<p>When columns are being calculated, the values are copied over <strong>row by row</strong>.  For example, if you had a column expression, <code>d2c2 = d1c2/10</code>, this is how the data would be transferred:</p>
-<div class="centered"><img src="../../img/calculated_column/transfer_one.png"/></div>
-
-<p>In situations where the calculated column depends on multiple columns, the same <strong>row by row</strong> process is used:</p>
-<div class="centered"><img src="../../img/calculated_column/transfer_mult.png"/></div>
-
-<div class="admonition warning">
-<p class="admonition-title">Columns with Bad Values</p>
-<p>Because of the freedom we allow users in our table editor, it is possible to create columns with different lengths or missing/nonsense values.  Yob will do its best to copy the data over in the same <strong>row by row</strong> fashion, but if it doesn't know what to do for a particular cell, the calculated value will be "NaN", for "Not a Number".</p>
-<p><div class="centered"><img src="../../img/calculated_column/transfer_bad.png"/></div></p>
+<h1 id="styling-and-labeling-reference">Styling and Labeling Reference</h1>
+<p>Whenever you make a graph, you want to make sure that the information is clearly labeled and presented in an appropriate style.  In this reference, we will cover everything you need to know about styling and labeling your graphs.</p>
+<div class="admonition danger">
+<p class="admonition-title">Warning</p>
+<p>This reference is currently under construction.</p>
 </div>
 <hr />
-<h2 id="examples">Examples</h2>
-<p>Calculated Columns are best understood through examples.  Check out the <a href="../../tutorials/advanced_data_sets/">Advanced Data Sets tutorial</a> to see them in action.</p></div>
+<h2 id="styling-specific-items">Styling Specific Items</h2>
+<p>...</p>
+<hr />
+<h2 id="graph-themes">Graph Themes</h2>
+<p>...</p>
+<hr />
+<h2 id="axis-labels">Axis Labels</h2>
+<p>...</p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-            
+
                 <center>Copyright © 2016 Tanner Nielsen, Jordan Hendrickson</center>
-            
+
             <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
 
