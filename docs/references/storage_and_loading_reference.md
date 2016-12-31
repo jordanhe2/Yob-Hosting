@@ -31,10 +31,6 @@ Surprisingly, this last image **is** considered a Yob graph. Since it is an imag
 
 <div class="centered"><img src="../../img/graph_storage_and_loading/kitten_good.png"/></div>
 
-!!! warning "Graph Files Must be Sharable by Link"
-    Yob graph files created by Yob are automatically shared so that **anyone with the link can view**.
-    If a graph file is not this way, Yob cannot load that graph. 
-
 So now that we know what a Yob graph is, lets see how the data is saved to your Google Drive account.
  
 ---
