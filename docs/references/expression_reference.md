@@ -55,6 +55,17 @@ In the example above, `cf1`'s expression happened to be `0.485*x + 3.071`.
 When a Data Set is removed, and a Calculated Column expression references one of its columns, nothing can be done to sensibly retain the expression.  Yob will disable the Calculated Column and clear its expression.  This leaves the data untouched, but the values will no longer be calculated.
 
 ---
+## The Indepdendent Variable
+Functions and Curve Fits both make use of the independent variable.  In most cases, this is simply known as **x**, which is the case for `f1(x) = sin(x)` and `cf1(x) = A*x + B`.
+
+However, some situations might warrant a more descriptive independent variable.  Consider the example where you are plotting distance against time.  In this scenario, it might make more sense for the independent variable to be **t** instead.  This can be changed in the **Labels** menu:
+
+<div class="centered"><img src="../../img/expression_reference/ind_var.png"></div>
+
+!!! info "Note"
+    Changing this field will automatically update any affected expressions.  For example, the `cf1(x) = A*x + B` example would become `cf1(t) = A*t + B`.
+
+---
 ## Built-in Operators
 Yob expressions can contain any of these built-in operators:
 
