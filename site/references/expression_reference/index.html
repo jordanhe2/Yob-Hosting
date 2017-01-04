@@ -196,6 +196,8 @@
         
             <li><a href="#referencing-other-items">Referencing Other Items</a></li>
         
+            <li><a href="#the-indepdendent-variable">The Indepdendent Variable</a></li>
+
             <li><a href="#built-in-operators">Built-in Operators</a></li>
         
             <li><a href="#built-in-functions">Built-in Functions</a></li>
@@ -261,6 +263,16 @@
 <p>In the example above, <code>cf1</code>'s expression happened to be <code>0.485*x + 3.071</code>.</p>
 <h4 id="dependency-removal-calculated-columns-only">Dependency Removal (Calculated Columns Only)</h4>
 <p>When a Data Set is removed, and a Calculated Column expression references one of its columns, nothing can be done to sensibly retain the expression.  Yob will disable the Calculated Column and clear its expression.  This leaves the data untouched, but the values will no longer be calculated.</p>
+<hr />
+<h2 id="the-indepdendent-variable">The Indepdendent Variable</h2>
+<p>Functions and Curve Fits both make use of the independent variable.  In most cases, this is simply known as <strong>x</strong>, which is the case for <code>f1(x) = sin(x)</code> and <code>cf1(x) = A*x + B</code>.</p>
+<p>However, some situations might warrant a more descriptive independent variable.  Consider the example where you are plotting distance against time.  In this scenario, it might make more sense for the independent variable to be <strong>t</strong> instead.  This can be changed in the <strong>Labels</strong> menu:</p>
+<div class="centered"><img src="../../img/expression_reference/ind_var.png"></div>
+
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>Changing this field will automatically update any affected expressions.  For example, the <code>cf1(x) = A*x + B</code> example would become <code>cf1(t) = A*t + B</code>.</p>
+</div>
 <hr />
 <h2 id="built-in-operators">Built-in Operators</h2>
 <p>Yob expressions can contain any of these built-in operators:</p>
