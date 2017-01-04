@@ -196,7 +196,7 @@
         
             <li><a href="#referencing-other-items">Referencing Other Items</a></li>
         
-            <li><a href="#the-indepdendent-variable">The Indepdendent Variable</a></li>
+            <li><a href="#the-independent-variable">The Independent Variable</a></li>
 
             <li><a href="#built-in-operators">Built-in Operators</a></li>
         
@@ -264,7 +264,7 @@
 <h4 id="dependency-removal-calculated-columns-only">Dependency Removal (Calculated Columns Only)</h4>
 <p>When a Data Set is removed, and a Calculated Column expression references one of its columns, nothing can be done to sensibly retain the expression.  Yob will disable the Calculated Column and clear its expression.  This leaves the data untouched, but the values will no longer be calculated.</p>
 <hr />
-<h2 id="the-indepdendent-variable">The Indepdendent Variable</h2>
+<h2 id="the-independent-variable">The Independent Variable</h2>
 <p>Functions and Curve Fits both make use of the independent variable.  In most cases, this is simply known as <strong>x</strong>, which is the case for <code>f1(x) = sin(x)</code> and <code>cf1(x) = A*x + B</code>.</p>
 <p>However, some situations might warrant a more descriptive independent variable.  Consider the example where you are plotting distance against time.  In this scenario, it might make more sense for the independent variable to be <strong>t</strong> instead.  This can be changed in the <strong>Labels</strong> menu:</p>
 <div class="centered"><img src="../../img/expression_reference/ind_var.png"></div>
