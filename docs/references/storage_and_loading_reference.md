@@ -4,7 +4,7 @@ Yob utilizes your Google Drive account to store graph information so that it is 
  
 ---
 ## How Yob Uses Your Google Drive
-All of Yob's content is stored in the **Yob** folder, which contains the files Yob needs to store on you Google Drive
+All of Yob's content is stored in the **Yob** folder, which contains the files Yob needs to store on your Google Drive
 and all of Yob's other folders.
 
 Yob stores its graph files (.yob files) in the **graphs** folder.
@@ -15,9 +15,11 @@ Yob stores its graph files (.yob files) in the **graphs** folder.
 ---
 ## What is a Yob Graph?
 Yob recognizes a graph as an image on the current Google Doc with a shareable link to a valid Yob graph file in someone's Google Drive attached to it.
-Let's go over a few examples of valid and invalid graphs.
 
-The image below **is** indeed a Yob graph.  It is an image and it contains the shareable link to a valid Yob graph file.
+!!! info "Yob Graphs Are Shareable By Link"
+    In order to make sharing graphs as easy as possible, when a graph is saved to Google Drive, we allow _anyone with the shareable link_ to view the graph content. However, if your Google account is managed by a domain (e.g., a school or work account), then _only users within that domain_ can view the graph content.
+
+Let's go over a few examples of valid and invalid graphs. The image below **is** indeed a Yob graph.  It is an image and it contains the shareable link to a valid Yob graph file.
 
 <div class="centered"><img src="../../img/graph_storage_and_loading/graph_good.png"/></div>
 
